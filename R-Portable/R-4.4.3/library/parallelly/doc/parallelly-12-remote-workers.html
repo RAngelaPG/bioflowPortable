@@ -185,7 +185,7 @@ installation, i.e. if you have one of them, you have the other too.</p>
 <p>To verify that R is installed on the other machine, SSH to the machine and call <code>Rscript --version</code>;</p>
 <pre><code class="language-sh">{ally@local}$ ssh alice@n1.remote.org
 {alice@n1}$ Rscript --version
-Rscript (R) version 4.4.2 (2024-10-31)
+Rscript (R) version 4.5.1 (2025-06-13)
 </code></pre>
 <p>If you get:</p>
 <pre><code class="language-sh">{alice@n1}$ Rscript --version
@@ -199,18 +199,18 @@ environment variable <code>PATH</code> his configured properly on that machine.<
 machine, we should be able to SSH into the other machine and query the
 R version in a single call:</p>
 <pre><code class="language-sh">{ally@local}$ ssh alice@n1.remote.org Rscript --version
-Rscript (R) version 4.4.2 (2024-10-31)
+Rscript (R) version 4.5.1 (2025-06-13)
 {ally@local}$
 </code></pre>
 <p>This is all that is needed to launch one or more parallel R workers on
 machine <code>n1.remote.org</code> running under user <code>alice</code>. We can test this
 from within R with the <strong>parallelly</strong> package using:</p>
 <pre><code class="language-sh">{ally@local}$ R --quiet
-library(parallely)
+library(parallelly)
 cl &lt;- makeClusterPSOCK(&quot;n1.remote.org&quot;, user = &quot;alice&quot;)
 print(cl)
-#&gt; Socket cluster with 1 nodes where 1 node is on host 'n1.remote.org'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu)
+#&gt; Socket cluster with 1 node on host 'n1.remote.org' (R version 4.5.1
+#&gt; (2025-06-13), platform x86_64-pc-linux-gnu)
 parallel::stopCluster(cl)
 </code></pre>
 <p>If you want to run parallel workers on other machines, repeat the
@@ -291,8 +291,8 @@ an equal number of times;</p>
 workers &lt;- c(&quot;n1.remote.org&quot;, &quot;n1.remote.org&quot;)
 cl &lt;- makeClusterPSOCK(workers, user = &quot;alice&quot;)
 print(cl)
-#&gt; Socket cluster with 2 nodes where 2 nodes are on host 'n1.remote.org'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu).
+#&gt; Socket cluster with 2 nodes are on host 'n1.remote.org' (R version 4.5.1
+#&gt; (2025-06-13), platform x86_64-pc-linux-gnu)
 </code></pre>
 <p><em>Comment</em>: In the <strong>parallel</strong> package, a parallel worker is referred
 to a parallel node, or short <em>node</em>, which is why we use the same term
@@ -327,8 +327,8 @@ workers &lt;- c(&quot;n1.remote.org&quot;, &quot;n2.remote.org&quot;)
 cl &lt;- makeClusterPSOCK(workers, user = &quot;alice&quot;)
 print(cl)
 #&gt; Socket cluster with 2 nodes where 1 node is on host 'n1.remote.org'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu), 
-#&gt; 1 node is on host 'n2.remote.org' (R version 4.4.2 (2024-10-31),
+#&gt; (R version 4.5.1 (2025-06-13), platform x86_64-pc-linux-gnu)
+#&gt; 1 node is on host 'n2.remote.org' (R version 4.5.1 (2025-06-13),
 #&gt; platform x86_64-pc-linux-gnu)
 </code></pre>
 <p><em>Technical details</em>: If we would add <code>verbose = TRUE</code> also in this
@@ -358,8 +358,8 @@ workers &lt;- c(&quot;n1.remote.org&quot;, &quot;n1.remote.org&quot;, &quot;n2.r
 cl &lt;- makeClusterPSOCK(workers)
 print(cl)
 #&gt; Socket cluster with 3 nodes where 2 nodes are on host 'n1.remote.org'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu), 
-#&gt; 1 node is on host 'n2.remote.org' (R version 4.4.2 (2024-10-31),
+#&gt; (R version 4.5.1 (2025-06-13), platform x86_64-pc-linux-gnu)
+#&gt; 1 node is on host 'n2.remote.org' (R version 4.5.1 (2025-06-13),
 #&gt; platform x86_64-pc-linux-gnu)
 </code></pre>
 <p>Again, the <code>user</code> argument does not have to be specified, because it is configured in <code>~/.ssh/config</code>.</p>
@@ -377,8 +377,8 @@ your local machine. This means, we can use:</p>
 workers &lt;- rep(&quot;localhost&quot;, 4)
 cl_local &lt;- makeClusterPSOCK(workers)
 print(cl_local)
-#&gt; Socket cluster with 4 nodes where 4 nodes are on host 'localhost'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu)
+#&gt; Socket cluster with 4 nodes on host 'localhost' (R version 4.5.1
+#&gt; (2025-06-13), platform x86_64-pc-linux-gnu)
 </code></pre>
 <p>to launch four local parallel workers. Note how we did not have to
 specify <code>user = &quot;ally&quot;</code>. This is because the default username is
@@ -389,8 +389,8 @@ set these up as:</p>
 workers &lt;- rep(&quot;n1.remote.org&quot;, 4)
 cl_remote &lt;- makeClusterPSOCK(workers, user = &quot;alice&quot;)
 print(cl_remote)
-#&gt; Socket cluster with 4 nodes where 4 nodes are on host 'n1.remote.org'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu).
+#&gt; Socket cluster with 4 nodes on host 'n1.remote.org' (R version 4.5.1
+#&gt; (2025-06-13), platform x86_64-pc-linux-gnu)
 </code></pre>
 <p>At this point, we have two independent clusters of parallel workers:
 <code>cl_local</code> and <code>cl_remote</code>. We can combine them into a single
@@ -398,8 +398,8 @@ cluster using:</p>
 <pre><code class="language-r">cl &lt;- c(cl_local, cl_remote)
 print(cl)
 #&gt; Socket cluster with 8 nodes where 4 nodes are on host 'localhost'
-#&gt; (R version 4.4.2 (2024-10-31), platform x86_64-pc-linux-gnu), 4
-#&gt; nodes are on host 'n1.remote.org' (R version 4.4.2 (2024-10-31),
+#&gt; (R version 4.5.1 (2025-06-13), platform x86_64-pc-linux-gnu)
+#&gt; nodes are on host 'n1.remote.org' (R version 4.5.1 (2025-06-13),
 #&gt; platform x86_64-pc-linux-gnu)
 </code></pre>
 <p>To emphasize the usefulness of customizing our SSH connections via

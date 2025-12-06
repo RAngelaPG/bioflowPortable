@@ -1,7 +1,9 @@
+StreamingBody           'StreamingBody' class
 curl_translate          Translate curl syntax to httr2
 is_online               Is your computer currently online?
 iterate_with_offset     Iteration helpers
 last_response           Retrieve most recent request/response
+new_response            Create a HTTP response
 oauth_cache_clear       Clear OAuth cache
 oauth_cache_path        httr2 OAuth cache location
 oauth_client            Create an OAuth client
@@ -19,6 +21,10 @@ req_cache               Automatically cache requests
 req_cookie_preserve     Set and preserve cookies
 req_dry_run             Perform a dry run
 req_error               Control handling of HTTP errors
+req_get_body_type       Get request body
+req_get_headers         Get request headers
+req_get_method          Get request method
+req_get_url             Get request URL
 req_headers             Modify request headers
 req_method              Set HTTP method in request
 req_oauth_auth_code     OAuth with authorization code
@@ -67,7 +73,9 @@ resp_request            Find the request responsible for a response
 resp_retry_after        Extract wait time from a response
 resp_status             Extract HTTP status from response
 resp_stream_raw         Read a streaming body a chunk at a time
+resp_timing             Extract timing data
 resp_url                Get URL/components from the response
+response                Create a HTTP response for testing
 resps_successes         Tools for working with lists of responses
 secret_make_key         Secret management
 url_build               Build a string from a URL object

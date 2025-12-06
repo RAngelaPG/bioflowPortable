@@ -1,9 +1,12 @@
 baseIndex	baseIndex
 cgiarPipeline	cgiarPipeline-package
 equalizeTraits	equalizeTraits
+funchunt	funchunt
+gpcp	gpcp
 indexDesire	indexDesire
 individualVerification	individualVerification
 markerAssistedSelection	markerAssistedSelection
+metASREML	metASREML
 metLMM	DEPRECATEDmetLMM
 metLMMsolver	metLMMsolver
 metML	metML

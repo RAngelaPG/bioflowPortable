@@ -6,7 +6,7 @@ Description: A simple HTTP client, with tools for making HTTP requests,
     The package name is a play on curl, the widely used command line tool
     for HTTP, and this package is built on top of the R package 'curl', an
     interface to 'libcurl' (<https://curl.se/libcurl/>).
-Version: 1.5.0
+Version: 1.6.0
 License: MIT + file LICENSE
 Authors@R: c(
     person("Scott", "Chamberlain", role = c("aut", "cre"),
@@ -19,19 +19,22 @@ BugReports: https://github.com/ropensci/crul/issues
 Encoding: UTF-8
 Language: en-US
 Imports: curl (>= 3.3), R6 (>= 2.2.0), urltools (>= 1.6.0), httpcode
-        (>= 0.2.0), jsonlite, mime
-Suggests: testthat, roxygen2 (>= 7.1.1), fauxpas (>= 0.1.0), webmockr
-        (>= 0.1.0), knitr, rmarkdown
+        (>= 0.2.0), jsonlite, mime, rlang, lifecycle
+Suggests: testthat (>= 3.0.0), roxygen2 (>= 7.1.1), fauxpas (>= 0.1.0),
+        webmockr (>= 2.2.0), withr, knitr, rmarkdown
 VignetteBuilder: knitr
 RoxygenNote: 7.3.2
+Config/testthat/edition: 3
+Config/testthat/parallel: true
 X-schema.org-applicationCategory: Web
 X-schema.org-keywords: http, https, API, web-services, curl, download,
         libcurl, async, mocking, caching
 X-schema.org-isPartOf: https://ropensci.org
 NeedsCompilation: no
-Packaged: 2024-07-19 17:29:47 UTC; sckott
-Author: Scott Chamberlain [aut, cre] (<https://orcid.org/0000-0003-1444-9135>)
+Packaged: 2025-07-21 16:40:35 UTC; sckott
+Author: Scott Chamberlain [aut, cre] (ORCID:
+    <https://orcid.org/0000-0003-1444-9135>)
 Maintainer: Scott Chamberlain <myrmecocystus@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-07-19 17:50:02 UTC
-Built: R 4.4.3; ; 2025-03-04 02:38:36 UTC; windows
+Date/Publication: 2025-07-23 12:30:02 UTC
+Built: R 4.4.3; ; 2025-12-05 03:08:44 UTC; windows

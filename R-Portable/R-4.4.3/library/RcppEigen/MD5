@@ -1,6 +1,6 @@
 85ae8c4845d02f52b357eb46770fa686 *CITATION
 8b394fa87a687b21a763754e0891b7af *COPYRIGHTS
-3b778c0931020a97bd614629583cb7b5 *DESCRIPTION
+e256b2197205113959f62081aa47077e *DESCRIPTION
 3da0da86cde258f6b65faa5051f4b75e *INDEX
 e42bf18a51bf55ebd814dbec277ee8a9 *LICENSE
 91f038d183474e9ae1e8390f5e32f093 *Meta/Rd.rds
@@ -8,7 +8,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 34ac3c97804e2bc4c0193874afb22ee6 *Meta/hsearch.rds
 0931be6b8ea050efebb44c3dd4760c93 *Meta/links.rds
 e84e21aa817fb297256048b41f7de066 *Meta/nsInfo.rds
-32fab7a5bb40a23f5e1810c28aa41408 *Meta/package.rds
+d061186c7799dceac7abf7f1041817b1 *Meta/package.rds
 80793f039326afcc89dc7b1997439886 *Meta/vignette.rds
 742cc37f7265d5c5769876355e6dd8a8 *NAMESPACE
 538d260aec3afdb31a0e37c243984ee1 *NEWS.Rd
@@ -21,10 +21,10 @@ c52f521406b904dee163f3286ba491e8 *doc/RcppEigen-Introduction.Rnw
 d336103f49b61d20056251dd1265c71b *doc/index.html
 a3f7e1e72bbe54ef5e0acaf6e0a90521 *examples/lmBenchmark.R
 5be16e2e201fdecb30c7e250b26b55ab *help/AnIndex
-b956c2b8880c9ee1f3b3a6186e01ce3a *help/RcppEigen.rdb
-a85c88109999d763827dc98a548fd4ef *help/RcppEigen.rdx
+08ae005ac75199d8256b582b8af74c7c *help/RcppEigen.rdb
+61bc1536c4b3253f62d9cb4b883218fa *help/RcppEigen.rdx
 615fdf61ec73d59f17d1cea9f55fe95c *help/aliases.rds
-edb6c30af80e54e9030d7d5264fdcdfc *help/paths.rds
+9974599b14be870b6649b16abdc92f0b *help/paths.rds
 c49e16e30d58156858ec77e6fbaa1c16 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 145af623d4b14c143f728edefb421c90 *include/Eigen/Cholesky
@@ -563,7 +563,7 @@ e32b6e9a7992d683ed5e5258516e69e5 *include/unsupported/Eigen/src/SpecialFunctions
 6cf9e021f1bc3e964b85f3b436337d4a *include/unsupported/Eigen/src/Splines/Spline.h
 a7a8b63bca04532ec7b30e6134764558 *include/unsupported/Eigen/src/Splines/SplineFitting.h
 bc75ab5a8c3ca729f8dcb08c309b6f47 *include/unsupported/Eigen/src/Splines/SplineFwd.h
-f3a4d6374692ddc3f523381508c5a2f5 *libs/x64/RcppEigen.dll
+b524fb31e2b8ea1de0b88deb250a5d87 *libs/x64/RcppEigen.dll
 c470c4f019c68e2281cf3a9d2496e5af *libs/x64/symbols.rds
 b4f0b014ec53404e843dbc718fabf57e *skeleton/Makevars
 b4f0b014ec53404e843dbc718fabf57e *skeleton/Makevars.win

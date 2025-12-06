@@ -1,4 +1,4 @@
-62761a24e3ee4768a6664a02b3971e37 *DESCRIPTION
+6a9f9d9900440b9f6d0dbd1b455cba81 *DESCRIPTION
 9304bdfd786bc5821666e6994a2cbf0d *INDEX
 25e9c54a7ecd1043186a7c8a4ce5fbd9 *LICENSE
 489146f8dcf4fa81e7cc2a01dcb33506 *Meta/Rd.rds
@@ -7,7 +7,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 e995cfba0dd7a60408a761aa67776eb3 *Meta/hsearch.rds
 f1c59b96172231f7eb82f6438eb97098 *Meta/links.rds
 400350e1ef0bea2c90631c6fbef587d6 *Meta/nsInfo.rds
-1c8a91ae37583016fa018eda2713e645 *Meta/package.rds
+15bf131cdbf577796c332a58c3e552c4 *Meta/package.rds
 31bc1f3ec5a9e13094b255795ac3484e *Meta/vignette.rds
 f64861b5a4adb5b3c45783a177a4097d *NAMESPACE
 34e1c075ca09ec366d6f8703a2f1b560 *NEWS.md
@@ -32,8 +32,8 @@ fe526030af92fead06e78d6b53186e37 *doc/billboarder.R
 e78010b5a250a9c7941671ebbedb9740 *doc/index.html
 cbf9ccfadd9af294a1fccb2f3f9ea8c7 *help/AnIndex
 f0606e2d2643aa054147c211ebcd3131 *help/aliases.rds
-12560302fe8bd8cdd91699ffee86634e *help/billboarder.rdb
-bbc6bc6a6e9477c4e598c528323ceca3 *help/billboarder.rdx
+821f8e1d166f9120182a015fe2e57baf *help/billboarder.rdb
+bb90d4aaf23876524417a60787b5286a *help/billboarder.rdx
 ac00d776f8d649a81806f2a675a8c2e8 *help/figures/density.png
 e500fb228d10f0ba8ed3bc0b23912eb8 *help/figures/histogram.png
 70b2a9ff54d8f04a638759f96a277b7d *help/figures/histogram2.png
@@ -51,7 +51,7 @@ b895186570330fd369ccf46994d34bb9 *help/figures/rte_piechart.png
 3ac0c80f49ef63797759a4896d1453b4 *help/figures/scatter_bubble.png
 e392c60fff461ae07ca4b709c1193c58 *help/figures/scatterchart0.png
 89900850bc3f749cf6bade92b341bb0b *help/figures/shiny_click.png
-567018515301f16b228fea656763cb45 *help/paths.rds
+69ce80d477321e82f1c088505e0ee509 *help/paths.rds
 f24fa4b2e83c7db35884118212ffe698 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 28a0cdd02e36bc95e45ff1087b851f72 *htmlwidgets/bauge.js

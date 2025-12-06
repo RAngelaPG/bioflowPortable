@@ -363,7 +363,14 @@ the latest version:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>ver <span class="ot">&lt;-</span> desc<span class="sc">::</span><span class="fu">desc_get_version</span>()[<span class="dv">1</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>]</span></code></pre></div>
 <p>You will use this to create and checkout the branch that you’ll work
 in:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>gert<span class="sc">::</span><span class="fu">git_branch_create</span>(<span class="fu">paste0</span>(<span class="st">&quot;pkgdown-v&quot;</span>, ver), <span class="fu">paste0</span>(<span class="st">&quot;v&quot;</span>, ver))</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a>gert<span class="sc">::</span><span class="fu">git_branch_create</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>  <span class="at">branch =</span> <span class="fu">paste0</span>(<span class="st">&quot;pkgdown-v&quot;</span>, ver),</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  <span class="at">ref =</span> <span class="fu">paste0</span>(<span class="st">&quot;v&quot;</span>, ver)</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>)</span></code></pre></div>
+<p>This assumes that the <code>ver</code> version of your package,
+e.g. version X.Y.Z, has been marked with the the git tag ‘vX.Y.Z’. This
+happens automatically if you use
+<code>usethis::use_github_release()</code>.</p>
 </div>
 <div id="backport-changes" class="section level3">
 <h3>Backport changes</h3>
@@ -383,12 +390,13 @@ common locations:</p>
 <span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a>  <span class="st">&quot;DESCRIPTION&quot;</span></span>
 <span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a>)</span>
 <span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">&quot;git checkout v{ver} -- {files}&quot;</span>)</span></code></pre></div>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a>glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">&quot;git checkout main -- {files}&quot;</span>)</span></code></pre></div>
 <p>If you backport <code>DESCRIPTION</code>, you’ll also need undo the
 change to the <code>Version</code>:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>desc<span class="sc">::</span><span class="fu">desc_set_version</span>(ver)</span></code></pre></div>
 <p>Now build the site locally and check that it looks as expected:</p>
 <div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a>pkgdown<span class="sc">::</span><span class="fu">build_site</span>()</span></code></pre></div>
+<p>Make sure to commit these changes.</p>
 </div>
 <div id="publish" class="section level3">
 <h3>Publish</h3>
@@ -398,7 +406,7 @@ GitHub:</p>
 <p>Then trigger the pkgdown workflow:</p>
 <ol style="list-style-type: decimal">
 <li>Go to your package’s GHA page, e.g. with
-<code>usethis::browse_github_actions())</code>.</li>
+<code>usethis::browse_github_actions()</code>.</li>
 <li>Select the pkgdown workflow.</li>
 <li>Click <em>Run workflow</em> and select the branch you just
 pushed.</li>
@@ -409,9 +417,9 @@ workflow config is not current.</p>
 </div>
 <div id="context" class="section level2">
 <h2>Context</h2>
-<p>Before we talk about <strong>how</strong> to update a released site,
-we first establish <strong>why</strong> you might need to do this. What
-is a released site? What other kind of pkgdown site could you have? Why
+<p>Now that we’ve sketched <strong>how</strong> to update a released
+site, we discuss <strong>why</strong> you might need to do this. What is
+a released site? What other kind of pkgdown site could you have? Why
 does updating a released site take special effort?</p>
 <div id="automatic-development-mode" class="section level3">
 <h3>Automatic development mode</h3>

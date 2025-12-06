@@ -1,8 +1,6 @@
-## Use the barley data from a uniformity field trial.
-data("piepho.barley.uniformity", package = "agridat")
+data("barley.uniformity.trial")
 
-# Remove NA to prevent spurious warnings.
-dat <- piepho.barley.uniformity[!is.na(piepho.barley.uniformity[["yield"]]), ]
+dat <- barley.uniformity.trial
 
 ## Some tests on correct input checking for combinations of splines.
 
@@ -27,7 +25,8 @@ expect_error(LMMsolve(fixed = yield ~ 1,
                       spline = ~spl1D(x = row, nseg = 36) +
                         spl2D(x1 = col, x2 = row, nseg = c(30, 36)),
                       data = dat),
-             "variables in splines should be unique")
+             "singularity problem lin(col, row) in spline argument", fixed = TRUE)
+
 expect_error(LMMsolve(fixed = yield ~ 1,
                       spline = ~spl1D(x = row, nseg = 36) +
                         spl1D(x = row, nseg = 30),

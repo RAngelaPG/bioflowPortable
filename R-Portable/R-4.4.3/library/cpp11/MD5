@@ -1,4 +1,4 @@
-de38c2bfaa3b4a04ffef3f808d0c960f *DESCRIPTION
+222c40864670fe5373fd7c0e15013f7b *DESCRIPTION
 2503942b7f6c4385c3ffab1d6c9cba89 *INDEX
 fb63bee874b625564e29f34b844c842f *LICENSE
 7e084672bcef56f14631996500fbc3d6 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 105094ca79b44060628b707a918caf23 *Meta/hsearch.rds
 36d4aed9622a14ad718b1b3ba5631d11 *Meta/links.rds
 a56ac2622772c72fa1bbae233f4afaf9 *Meta/nsInfo.rds
-0851d16b4ee9a0f945023d2b83503c46 *Meta/package.rds
+db69eb7b62ebb4b1f07609320b6edec3 *Meta/package.rds
 c9d7b0ae93e590d4d20d6a7a2ff74bf8 *Meta/vignette.rds
 3a9298876794331325c170d77feb1164 *NAMESPACE
 65339f7f67884f4ad2f662da9e2a6d81 *NEWS.md
@@ -31,9 +31,9 @@ accaae6ab848240cf5aa1788074f01ad *doc/motivations.Rmd
 63f65a43da3214f46692676f895ccf62 *doc/motivations.html
 f7946bc556e26351e69a8f7bcfe5961c *help/AnIndex
 fcb3e0a31ef0bb494ec48d9bf9a15325 *help/aliases.rds
-218da3a14c09cea9f6573038f8d05f97 *help/cpp11.rdb
-421c8125fb9203dc88eb9e865f85914b *help/cpp11.rdx
-9972db619ac1f0ea0941e69d13c7ba40 *help/paths.rds
+58bb7e40db9ad2d45cbb7b071861e864 *help/cpp11.rdb
+b256b322552b778121c7838fba95e23e *help/cpp11.rdx
+f1dc41af6874848f219d7ef56b9fd8c8 *help/paths.rds
 f190f0b8e39465df4a8feeedafb9bfb5 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 5285ae2dfd6c4f8cc939a40418ddb470 *include/cpp11.hpp

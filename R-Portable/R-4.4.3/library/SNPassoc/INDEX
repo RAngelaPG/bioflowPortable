@@ -1,0 +1,44 @@
+Bonferroni.sig          Bonferroni correction of p values
+GenomicControl          Population substructure
+HapMap                  SNPs from HapMap project
+HapMap.SNPs.pos         SNPs from HapMap project
+LD                      max-statistic for a 2x3 table
+SNPs                    SNPs in a case-control study
+SNPs.info.pos           SNPs in a case-control study
+Table.N.Per             Descriptive sample size and percentage
+Table.mean.se           Descriptive sample size, mean, and standard
+                        error
+WGassociation           Whole genome association analysis
+association             Association analysis between a single SNP and a
+                        given phenotype
+asthma                  SNP data on asthma case-control study
+getGeneSymbol           Get gene symbol from a list of SNPs
+getNiceTable            Get Latex output
+getSignificantSNPs      Extract significant SNPs from an object of
+                        class 'WGassociation'
+haplo.interaction       Haplotype interaction with a covariate
+inheritance             Collapsing (or recoding) genotypes into
+                        different categories (generally two) depending
+                        on a given genetic mode of inheritance
+int                     Identify interaction term
+interactionPval         Two-dimensional SNP analysis for association
+                        studies
+intervals               Print ORs and 95% confidence intervals for an
+                        object of class 'haplo.glm'
+make.geno               Create a group of locus objects from some SNPs,
+                        assign to 'model.matrix' class.
+maxstat                 max-statistic for a 2x3 table
+odds                    Extract odds ratios, 95% CI and pvalues
+permTest                Permutation test analysis
+plot.WGassociation      Function to plot -log p values from an object
+                        of class 'WGassociation'
+plotMissing             Plot of missing genotypes
+qqpval                  Functions for inspecting population
+                        substructure
+related                 Get related samples
+resHapMap               SNPs from HapMap project
+scanWGassociation       Whole genome association analysis
+setupSNP                Convert columns in a dataframe to class 'snp'
+snp                     SNP object
+sortSNPs                Sort a vector of SNPs by genomic position
+tableHWE                Test for Hardy-Weinberg Equilibrium

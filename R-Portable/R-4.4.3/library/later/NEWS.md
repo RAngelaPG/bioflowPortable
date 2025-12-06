@@ -1,3 +1,19 @@
+# later 1.4.4
+
+* Fixed timings in a test (#237). No user-facing changes.
+
+# later 1.4.3
+
+* Fixed #215: The `autorun` argument of `create_loop()`, long deprecated, is removed (#222).
+
+* Fixed #167: `.Random.seed` is no longer affected when the package is loaded (#220).
+
+* Set file-level variables as `static` to avoid triggering `-Wmissing-variable-declarations` (@michaelchirico, #163).
+
+# later 1.4.2
+
+* Fixed #208: Fixed `keyword is hidden by macro definition` compiler warning when using a C23 compiler. (@shikokuchuo, #209)
+
 # later 1.4.1
 
 * Fixed #203: Resolves an issue where packages that have `LinkingTo: later` (including `promises` and `httpuv`) and were built against `later` 1.4.0, would fail to load on systems that actually had older versions of `later` installed, erroring out with the message "function 'execLaterFdNative' not provided by package 'later'". With this fix, such dependent packages should gracefully deal with older versions at load time, and complain with helpful error messages if newer C interfaces (than are available on the installed `later`) are accessed. (#204)

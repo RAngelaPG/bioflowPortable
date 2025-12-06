@@ -9,18 +9,18 @@ Maintainer: Giovanny Covarrubias-Pazaran <covaruberpaz@gmail.com>
 Description: Software for analytical pipelines
 Depends: R (>= 3.5.0), Matrix (>= 1.1.1)
 License: GPL (>= 2)
-Imports: stats, graphics, grDevices
-Suggests: parallel, LMMsolver, sommer, RSpectra, pedigreemm, poolr
+Imports: stats, graphics, grDevices, poolr, corehunter
+Suggests: parallel, LMMsolver, sommer, RSpectra, pedigreemm
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: cgiarPipeline
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 6714d878632d4a8044db5de10a0a82bd696a62ad
+RemoteSha: bbd785af7d687cfd8945fb2960ce38a2f5e1dcb5
 GithubRepo: cgiarPipeline
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 6714d878632d4a8044db5de10a0a82bd696a62ad
+GithubSHA1: bbd785af7d687cfd8945fb2960ce38a2f5e1dcb5
 NeedsCompilation: no
-Packaged: 2025-03-06 17:04:42 UTC; RAPACHECO
-Built: R 4.4.3; ; 2025-03-06 17:04:43 UTC; windows
+Packaged: 2025-12-06 17:00:59 UTC; RAPACHECO
+Built: R 4.4.3; ; 2025-12-06 17:01:02 UTC; windows

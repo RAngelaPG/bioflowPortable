@@ -1,6 +1,6 @@
 c21c6a229f0aadb2579ebd618f24d40b *CODE_OF_CONDUCT.md
 76908f78f0545b2b147170b6ae20b3dc *CONTRIBUTING.md
-efdd25ea87c95b2aa427c8ccfc06740f *DESCRIPTION
+7f8b9370e8e9ceb8223fe8a0a72cbfa5 *DESCRIPTION
 c1825cf1fd78695565718e9449d400bd *INDEX
 38289457e004d56670558fae49b2ea7a *LICENSE
 023c20b409e924ec297f281d8b51f1a9 *Meta/Rd.rds
@@ -8,12 +8,12 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 d3de05badc2c99bce961d372d63aafda *Meta/hsearch.rds
 99981c1eb08304214948695acab1b0d5 *Meta/links.rds
 00bcd764462063ae680198d936591e79 *Meta/nsInfo.rds
-ab51f0e18d59e07672bf4bacfc0e629b *Meta/package.rds
+e4e4046e085e764e1a6d436fd094cfb7 *Meta/package.rds
 62752da06087053fd68bf42ec67c815c *Meta/vignette.rds
 07da3e3600128f7e9cd9f01467607ff3 *NAMESPACE
 aed85f2c9610e5c58964a3fc1fa622d3 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/kableExtra
-78a476c7303b2cceab68ba8cc7eb5fe7 *R/kableExtra.rdb
+e6e97eb7fa87a2e2c72feb8916a54e6b *R/kableExtra.rdb
 80859ed66098595e4099a7c60a806873 *R/kableExtra.rdx
 7e5d96a1d2e152f6fe8de6ff82d63fc5 *WORDLIST
 e768e9988e3af4dff9d2fcc76cff2a97 *bootstrapTable-3.3.7/bootstrapTable.js
@@ -36,9 +36,9 @@ c3c4104e47412f2f721832882704450a *doc/legacy_features.Rmd
 73e8219820cbace110ab0e9b9b4620af *doc/use_kable_in_shiny.html
 c15ebcb72e22473b90ed6000c5133211 *help/AnIndex
 87bb44ff12ab2888912cb84d9b687288 *help/aliases.rds
-319fd64322d30955902b9bebb0c90e70 *help/kableExtra.rdb
-17ded054421e770d8351474ba0f3f128 *help/kableExtra.rdx
-194e9168f749d0d373068fbfe6d737f1 *help/paths.rds
+d4e5979b32ebf158becfc9e4328955d0 *help/kableExtra.rdb
+f7d6649927b2faa07857460e4e5e1f06 *help/kableExtra.rdx
+4dd3ab678abbfd039bf348a6c35f6be8 *help/paths.rds
 b1ea8e46b59f64e413046a0e747456f4 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 03b791fcaee0a40c261c3c14f3d85d27 *kePrint-0.0.1/kePrint.js

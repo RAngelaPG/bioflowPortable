@@ -63,6 +63,7 @@ cohen.d.by	cohen.d
 cohen.d.ci	cohen.d
 cohen.kappa	kappa
 cohen.profile	congruence
+cohenPooled	cohen.d
 comorbidity	comorbidity
 con2cat	sim.item
 congeneric.sim	sim.congeneric
@@ -78,6 +79,7 @@ cor2cov	fisherz
 cor2dist	cor2dist
 corCi	cor.ci
 corFiml	corFiml
+corInfo	corr.test
 corPlot	cor.plot
 corPlotUpperLowerCi	cor.plot
 corr.p	corr.test

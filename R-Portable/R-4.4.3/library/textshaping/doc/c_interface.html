@@ -48,8 +48,9 @@ overflow: visible;
 }
 </style>
 <style type="text/css" data-origin="pandoc">
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -60,7 +61,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
 { counter-reset: source-line 0; }
@@ -341,10 +342,10 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 
 <p>textshaping is predominantly intended to be used by other packages
-implementing graphic devicees and calling it from the C level. As such
-it exports a set of functions that match the needs of graphic devices.
-The C API builds upon that of systemfonts and you’ll thus need to link
-to both packages to access it succesfully. This is done with the
+implementing graphic devices and calling it from the C level. As such it
+exports a set of functions that match the needs of graphic devices. The
+C API builds upon that of systemfonts and you’ll thus need to link to
+both packages to access it successfully. This is done with the
 <code>LinkingTo</code> field in the <code>DESCRIPTION</code> file:</p>
 <pre><code>LinkingTo: 
     systemfonts,

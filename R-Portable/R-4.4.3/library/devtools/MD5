@@ -1,4 +1,4 @@
-a651629f4e15b33ec96f770c987f5aca *DESCRIPTION
+b7ecc2a06f6be61d7699c4f19157c75d *DESCRIPTION
 9619fabe21e5dbb2e8faeb2add1e8522 *INDEX
 19545c77acbd277a383c948b34f77d84 *LICENSE
 e458276ccd116cdc9a1a57f9032a3df5 *Meta/Rd.rds
@@ -6,12 +6,12 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 07030abb85a6dd7071d3cead1660d34b *Meta/hsearch.rds
 ac795ad48b03352c57e9b0bb781cf2ce *Meta/links.rds
 a19a17380526d41fdd386630115eaf1b *Meta/nsInfo.rds
-8adf74b38b08436235497b2d8bd1d235 *Meta/package.rds
+37d956b1ce4e9ec7bb91c4f3e75897d6 *Meta/package.rds
 269feeafcf559598485bf407dd5eb0d8 *Meta/vignette.rds
 96c4691721a2b8131331f0349004669b *NAMESPACE
 4aa33b527aaa0b8b4d833c7301f0c01f *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/devtools
-82f97fe25e0e2010379c0805bda68cb7 *R/devtools.rdb
+d2c3cba68211c3dc0889153575f58d0c *R/devtools.rdb
 96dee8c6aace51486fd451ce535fbd27 *R/devtools.rdx
 756b2e5b43af8d23ad6b641c898f3c68 *WORDLIST
 e537d648a6ceb5fd6cc5e5f5450e7ad5 *doc/dependencies.Rmd
@@ -19,8 +19,8 @@ e537d648a6ceb5fd6cc5e5f5450e7ad5 *doc/dependencies.Rmd
 0db05a7f0f5e87ccedef82ee5a3740ee *doc/index.html
 9a7702c8e6ef9f76e0db4a629624c1fa *help/AnIndex
 0b35b7955f08a35af92395d03ca3fc27 *help/aliases.rds
-8718bd47445375acab85eccaf7c98423 *help/devtools.rdb
-57d4398024992d868ecc07057f1f67fd *help/devtools.rdx
+03827bf1a86c7b800eaae370a3826e16 *help/devtools.rdb
+d75dc457e2c76a6911c27692b42835f3 *help/devtools.rdx
 cb1e46f469cfbbbde29c8b5113e1d789 *help/figures/lifecycle-archived.svg
 c0d2e5a54f1fa4ff02bf9533079dd1f7 *help/figures/lifecycle-defunct.svg
 a1b8c987c676c16af790f563f96cbb1f *help/figures/lifecycle-deprecated.svg
@@ -30,7 +30,7 @@ c3978703d8f40f2679795335715e98f4 *help/figures/lifecycle-experimental.svg
 53b3f893324260b737b3c46ed2a0e643 *help/figures/lifecycle-stable.svg
 1c1fe7a759b86dc6dbcbe7797ab8246c *help/figures/lifecycle-superseded.svg
 90be1a8cfa73872e693212364f81f846 *help/figures/logo.svg
-fbb0c58011a5c55088ea1c0f9b078d9e *help/paths.rds
+05edd8bedbd308eaee614395a3cddf6e *help/paths.rds
 0717484dd521e11bfd37975e7cb77fc7 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 48df05798555d5765a367c469daf7375 *rstudio/addins.dcf

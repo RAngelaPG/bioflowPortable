@@ -1,4 +1,4 @@
-c9b399503e9821119fa553c18f00d17c *DESCRIPTION
+7d0eecc04b55bb969f3d4b0237d56e64 *DESCRIPTION
 b479e708ba14ab645bdc93dbfc2bc710 *INDEX
 0f6898d55b3e17e773ce07c36791ab9b *LICENSE
 511d19a3651eb16012a5262ccb30854c *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 1299db4a5587096b67577e042a4aa7c2 *Meta/hsearch.rds
 31664cff1f429b2354a14ae600b468ad *Meta/links.rds
 4bc2b0fd767c8eaf0a5f9a15815dea0a *Meta/nsInfo.rds
-5ee0f661e9e54c2d0c949eae8c1baea2 *Meta/package.rds
+3c187b193ae8b82c3ce972644abcf68a *Meta/package.rds
 d6e27a953d5d5a11b6c64ec914f8cb80 *Meta/vignette.rds
 a8a9e44b05c3f382e5efd70dba3c8558 *NAMESPACE
 5fdde2f7a9f34e56534489a4cbc3e001 *NEWS.md
@@ -23,8 +23,8 @@ ed5c44da95dfe7f7d672d0d95ff92ca1 *doc/tabyls.html
 fd1061ac28e903cb618fd25ea103ab4f *help/AnIndex
 3c427825ed9065f44ee94a0ceadb7826 *help/aliases.rds
 945b860420105e59bfea6380358fb89e *help/figures/logo_small.png
-fe08bcb4210a408ee8c127eb2cfff626 *help/janitor.rdb
-1da84cc12770ca4181f400caffc059b1 *help/janitor.rdx
-b88017353b6738757eaa4888922ca46d *help/paths.rds
+dfa96c83746c22d7914b5b7352e2ac1b *help/janitor.rdb
+2652dc7660eaef8a81e52e5f03b70ad1 *help/janitor.rdx
+55b0ba9494be21ed97779a5e6ddd6528 *help/paths.rds
 a9131d5e5fb8700bc94ec3c5efc9ae3c *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

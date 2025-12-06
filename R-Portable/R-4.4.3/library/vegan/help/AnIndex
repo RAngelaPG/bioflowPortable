@@ -5,7 +5,7 @@ addLingoes	vegan-internal
 adipart	adipart
 adipart.default	adipart
 adipart.formula	adipart
-adonis	vegan-deprecated
+adonis	vegan-defunct
 adonis2	adonis
 AIC.fitspecaccum	specaccum
 AIC.radfit	radfit
@@ -30,6 +30,7 @@ BCI	BCI
 BCI.env	BCI
 beals	beals
 betadisper	betadisper
+betadistances	betadisper
 betadiver	betadiver
 bgdispersal	bgdispersal
 bioenv	bioenv
@@ -92,6 +93,7 @@ densityplot.adonis	vegan-defunct
 densityplot.oecosimu	vegan-defunct
 densityplot.permustats	permustats
 designdist	designdist
+designdist2	designdist
 deviance.cca	deviance.cca
 deviance.fitspecaccum	specaccum
 deviance.radfit	radfit
@@ -100,6 +102,7 @@ deviance.rda	deviance.cca
 df.residual.cca	influence.cca
 dispindmorisita	dispindmorisita
 dispweight	dispweight
+dist2xy	MDSaddpoints
 distconnected	distconnected
 diversity	diversity
 downweight	decorana
@@ -171,6 +174,7 @@ kendall.global	kendall.global
 kendall.post	kendall.global
 labels.cca	plot.cca
 labels.envfit	envfit
+labels.ordipointlabel	ordipointlabel
 lines.fitspecaccum	specaccum
 lines.permat	permatfull
 lines.preston	fisherfit
@@ -189,6 +193,7 @@ make.commsim	commsim
 mantel	mantel
 mantel.correlog	mantel.correlog
 mantel.partial	mantel
+MDSaddpoints	MDSaddpoints
 MDSrotate	MDSrotate
 meandist	mrpp
 metaMDS	metaMDS
@@ -233,6 +238,7 @@ nobs.varpart	nobs.cca
 nobs.wcmdscale	nobs.cca
 nullmodel	nullmodel
 oecosimu	oecosimu
+optspace	optspace
 ordConstrained	cca.object
 orderingKM	cascadeKM
 ordiareatest	ordihull
@@ -241,7 +247,7 @@ ordiArrowMul	ordiArrowTextXY
 ordiarrows	ordiarrows
 ordiArrowTextXY	ordiArrowTextXY
 ordibar	ordihull
-ordicloud	ordixyplot
+ordicloud	vegan-deprecated-lattice
 ordicluster	ordihull
 ordiellipse	ordihull
 ordigrid	ordiarrows
@@ -255,22 +261,22 @@ ordiParseFormula	vegan-internal
 ordiplot	ordiplot
 ordipointlabel	ordipointlabel
 ordiR2step	ordistep
-ordiresids	ordiresids
+ordiresids	vegan-deprecated-lattice
 ordisegments	ordiarrows
 ordispider	ordihull
-ordisplom	ordixyplot
+ordisplom	vegan-deprecated-lattice
 ordistep	ordistep
 ordisurf	ordisurf
 ordisurf.default	ordisurf
 ordisurf.formula	ordisurf
 ordiTerminfo	vegan-internal
-orditkplot	vegan-deprecated
+orditkplot	vegan-defunct
 orditorp	orditorp
 ordixyplot	ordixyplot
 ordiYbar	cca.object
 pairs.permustats	permustats
 panel.ordi	ordixyplot
-panel.ordi3d	ordixyplot
+panel.ordi3d	vegan-deprecated-lattice
 panel.ordiarrows	ordixyplot
 pasteCall	vegan-internal
 pca	cca
@@ -278,6 +284,7 @@ pcnm	pcnm
 pco	dbrda
 permatfull	permatfull
 permatswap	permatfull
+permulattice	permustats
 permustats	permustats
 permustats.anosim	permustats
 permustats.anova.cca	permustats
@@ -323,7 +330,6 @@ plot.nestednodf	nestedtemp
 plot.nestedtemp	nestedtemp
 plot.ordipointlabel	ordipointlabel
 plot.ordisurf	ordisurf
-plot.orditkplot	vegan-deprecated
 plot.permat	permatfull
 plot.poolaccum	specpool
 plot.prc	prc
@@ -348,7 +354,6 @@ points.decorana	decorana
 points.metaMDS	metaMDS
 points.monoMDS	monoMDS
 points.ordiplot	ordiplot
-points.orditkplot	vegan-deprecated
 points.procrustes	procrustes
 points.radfit	radfit
 points.radline	radfit
@@ -366,7 +371,7 @@ predict.radline	radfit
 predict.rda	predict.cca
 predict.specaccum	specaccum
 pregraphKM	cascadeKM
-prepanel.ordi3d	ordixyplot
+prepanel.ordi3d	vegan-deprecated-lattice
 prestondistr	fisherfit
 prestonfit	fisherfit
 print.betadisper	betadisper
@@ -377,7 +382,6 @@ print.permat	permatfull
 print.simmat	nullmodel
 print.specaccum	specaccum
 print.summary.cca	plot.cca
-print.summary.decorana	decorana
 print.summary.permat	permatfull
 procrustes	procrustes
 profile.MOStest	MOStest
@@ -432,9 +436,9 @@ scores.metaMDS	metaMDS
 scores.monoMDS	monoMDS
 scores.ordihull	ordihull
 scores.ordiplot	ordiplot
-scores.orditkplot	vegan-deprecated
 scores.pcnm	pcnm
 scores.rda	plot.cca
+scores.wascores	wascores
 scores.wcmdscale	wcmdscale
 screeplot.cca	screeplot.cca
 screeplot.decorana	screeplot.cca
@@ -467,6 +471,8 @@ sppscores<-	sppscores
 sppscores<-.capscale	sppscores
 sppscores<-.dbrda	sppscores
 sppscores<-.metaMDS	sppscores
+sppscores<-.monoMDS	sppscores
+sppscores<-.wcmdscale	sppscores
 SSarrhenius	SSarrhenius
 SSD.cca	influence.cca
 SSgitay	SSarrhenius
@@ -492,7 +498,11 @@ summary.decorana	decorana
 summary.dispweight	dispweight
 summary.eigenvals	eigenvals
 summary.isomap	isomap
+summary.mantel	mantel
 summary.meandist	mrpp
+summary.mrpp	mrpp
+summary.oecosimu	oecosimu
+summary.ordiareatest	ordihull
 summary.ordiellipse	ordihull
 summary.ordihull	ordihull
 summary.permat	permatfull
@@ -514,7 +524,6 @@ text.decorana	decorana
 text.metaMDS	metaMDS
 text.monoMDS	monoMDS
 text.ordiplot	ordiplot
-text.orditkplot	vegan-deprecated
 text.procrustes	procrustes
 toCoda	oecosimu
 toCoda.oecosimu	oecosimu

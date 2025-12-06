@@ -1,4 +1,4 @@
-724f4a120450712cabae341ef42bed86 *DESCRIPTION
+58ce6c46b6c9f8204546be02920bfa90 *DESCRIPTION
 b0e03d87c02ff365fee835151b3422e5 *INDEX
 05b244661505b5129abd2d115a783f4c *LICENSE
 eb4da3aac210e635a2c362008a8347c1 *Meta/Rd.rds
@@ -6,12 +6,12 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 0b1b6bd90d515f4c64298606b16a18a3 *Meta/hsearch.rds
 f7833d20ba0104afddfccda5e7ed8d88 *Meta/links.rds
 c76f94d30e6d7e5824a1da191d3e7773 *Meta/nsInfo.rds
-dac67758392f631b9dad3838af75838b *Meta/package.rds
+39a492ebf1703ef43b4dc79a69b22216 *Meta/package.rds
 1ad0cf6c736318df5e3bafab1295d11a *Meta/vignette.rds
 94b12b308c81719097c2d9b8d6013660 *NAMESPACE
 1478720ea3624744faa8cb8638464516 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/golem
-5e46dc84fc1739fad431453f9fdb2374 *R/golem.rdb
+0adebce8d62f21259c6eed874d35d637 *R/golem.rdb
 b51b0b3092d38939d448691bddebdb26 *R/golem.rdx
 0a22549ce04f2c68786334c584a214cc *WORDLIST
 a19938fe48b9fa60bc58c99a82d24422 *app/maintenance.html
@@ -39,9 +39,9 @@ a8eaecdfd33289e8005d635ed4f0c311 *doc/z_golem_cheatsheet.Rmd
 e5dbe14421ef1b0e21a6ed3196cafcc3 *doc/z_golem_cheatsheet.html
 20b7f2428a9239110c615602856a86a3 *help/AnIndex
 26d5537a22470ca9ad3c6579ecb78475 *help/aliases.rds
-bea8f448fe2121f493f14a6cd2ffb64c *help/golem.rdb
-ce0eecb3933d68b9f5d9350c7dd7a238 *help/golem.rdx
-68f880a68c0b5e8a292af384985e3d1c *help/paths.rds
+61783ca0a13c4b11111e49f504bc1a5e *help/golem.rdb
+dbf15cb048d852020b35ae71e049ce68 *help/golem.rdx
+8345d9647c48318bf9f6de73634db2e0 *help/paths.rds
 d1e60b3e96a2b9a0c76c42926b9c69df *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 d5f41d55f37be1cb0614f30a930bdbde *img/golemtemplate.png

@@ -1,4 +1,4 @@
-905a0a9666466deb005ce6febfdc6545 *DESCRIPTION
+5cfd361ee4d12d51cf26dca791e0c65d *DESCRIPTION
 5045fc8bc027afa17bd6e78ac113c227 *INDEX
 fe14fc721eb4432259e3710581db6050 *LICENSE
 c48f6547a5694297059dd441886dcc2c *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 d331e8dffdc99fa9768acb74c486160b *Meta/hsearch.rds
 1d0ab8656df8fc2b5a4b360bf7b6291a *Meta/links.rds
 fbb68d1312535653fbd3b554960ff93b *Meta/nsInfo.rds
-b3df5784ce99c9d9d0aacb669a699afb *Meta/package.rds
+48167ac428e6e19f6f0f2132d8dc7668 *Meta/package.rds
 5f93eb2a34eccb91bb5379c84dba1935 *NAMESPACE
 62abd160dd5a4dd45b41b042386b8581 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/downlit
@@ -15,8 +15,8 @@ ea2a4fcebc295ab8435b554c30ea3e87 *R/downlit.rdx
 2f5ded4720a7ee335439f52c56978e56 *WORDLIST
 051d1085e9a3e9d5e70dd5995152e01f *help/AnIndex
 6f709e345ec9c188218d343ce6355cf2 *help/aliases.rds
-8974614a57d1c4771fb1d6fedfac7b74 *help/downlit.rdb
-b4fa3be5c7d5f9f02f9b1b55d6a08602 *help/downlit.rdx
-7b892de3a49e3e635aca873099b60dfb *help/paths.rds
+079e7abcb310799243e63fad2ae03e2c *help/downlit.rdb
+e25d2b81718169fb31ebfc8678349fee *help/downlit.rdx
+5e2e9f269dcbdf1bbe1fd617a60951ad *help/paths.rds
 26f5c79f1d1fcd072349f53be1aa01ac *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

@@ -1,4 +1,4 @@
-71163bd2f5672f949c4bab006fdc3ef9 *DESCRIPTION
+f515d22b4d157c681d7237a87b2bf1c3 *DESCRIPTION
 a2962bbd0faa09e22f797f3c9b37f32e *INDEX
 ff977da29d719193f4cd7cf39036780d *LICENSE
 cd1afbbca3c5bb990eaa04087868acea *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 930e14375a9a8c4c65eeac818a418e84 *Meta/hsearch.rds
 f8786584af0fd5b2c14d91d58f3a9eb9 *Meta/links.rds
 d4e4569892d99670cbad83994abb8647 *Meta/nsInfo.rds
-8066b3863a4a4cc13eae25a8ad59a87c *Meta/package.rds
+cfcd19366b861204b45bf42c5b5150a3 *Meta/package.rds
 39405469c7643984f9f4daa6fb869a64 *NAMESPACE
 aa01f5008b0575d7c046712a37d3d600 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/bslib
@@ -221,8 +221,8 @@ a47c3355aae82555f7ca3c38e8a4c1d6 *fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTVOm
 7ee76905723eb3be9ad3966653e71c93 *fonts/q5uGsou0JOdh94bfvQlt.woff2
 523ff462651390eed0de9e01d0359685 *help/AnIndex
 c2ef7b13f62998994245c8fc22f16d0a *help/aliases.rds
-e4c02f2d57a3257671d0019b87d267c0 *help/bslib.rdb
-a67f5a2b04ea4bbd5387daa59a8a02dc *help/bslib.rdx
+33d9d3c024bf9ff7bb8599139b93c903 *help/bslib.rdb
+d1d2714a3828eb62ce13d7ec37945d44 *help/bslib.rdx
 a1cbaf3f328e8d74e747faacf640c7fc *help/figures/lifecycle-archived.svg
 6f521fb1819410630e279d1abf88685a *help/figures/lifecycle-defunct.svg
 391f696f961e28914508628a7af31b74 *help/figures/lifecycle-deprecated.svg
@@ -255,7 +255,7 @@ c64ecceb9ed6dbde53f441ca6a208089 *help/figures/value-box-named-theme.png
 bf0e7231bf37149d857a40d25f62356d *help/figures/value-box-text-color.png
 5260a8f5bd13f712a8c61d36b94c65c0 *help/figures/value-box-text-theme.png
 5ac76d39f003552471a258f8eddd876a *help/figures/value-box-theme-class.png
-c50e114117743b3aa396683a4e48d6c9 *help/paths.rds
+933d8e6afaebb50aa8e744e1ba1a5212 *help/paths.rds
 6502d1fc2e8de6c0c74f7a8e53689284 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 a1652c5952a73193374e6a6d61323e62 *lib/bs-a11y-p/LICENSE.md

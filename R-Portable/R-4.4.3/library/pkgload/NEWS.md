@@ -1,10 +1,28 @@
+# pkgload 1.4.1
+
+* `load_all()` now supports explicit `debug` option to control using debug compiler flags (#224, @assaron).
+
+* The generator of `compile_commands.json` now works with packages that compile extra libraries such as ragg.
+
+* The generator of `compile_commands.json` now works with sources in subdirectories (#308, @krlmlr).
+
+* The generator of `compile_commands.json` now checks for existing `R_SHARE_DIR`
+  and `R_INCLUDE_DIR` environment variables (#287, #296, @TimTaylor and
+  @shikokuchuo).
+
+* The generator of `compile_commands.json` is now more reliable in the presence
+  of extra whitespace in `make`'s output (#288, @TimTaylor).
+
+* The generator of `compile_commands.json` now uses escaped double quotes for LinkingTo packages to ensure valid argument strings when parsed on Windows (#305, @tylermorganwall).
+
+
 # pkgload 1.4.0
 
-* The `reset` argment of `load_all()` is no longer supported because preserving
+* The `reset` argument of `load_all()` is no longer supported because preserving
   the namespace requires unlocking its environment, which is no longer possible
   in recent versions of R. It should no longer be necessary as the performance
   issues caused by resetting the namespace were resolved a while ago.
- 
+
 * New experimental feature for generating a `compile_commands.json` file after
   each `load_all()`. This file is used by LSP servers such as clangd to provide
   intellisense features in your native files. To enable it, add this directive
@@ -22,7 +40,7 @@
   usethis package.
 
 * `load_all()` now includes a link to the exact location when loading failed (@olivroy, #282).
-  
+
 * User onload hooks are now passed a library path.
 
 * Fixed an error when updating packages on load (@olivroy, #261).
@@ -257,7 +275,7 @@
 * `load_all()` now updates imports of dependent packages when a package is
   reloaded (#59).
 
-* `load_all()` now assigns `DESCRIPTION/Depends` to `.Depends` object of 
+* `load_all()` now assigns `DESCRIPTION/Depends` to `.Depends` object of
   package environment. (@yiufung pkgload#61)
 
 * `load_all()` now attaches `testthat` if the `attach_testthat` option is

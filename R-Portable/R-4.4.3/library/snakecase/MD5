@@ -1,11 +1,11 @@
-88320b365634939dbe4cc3f7efdbff0c *DESCRIPTION
+ca7799ff233140f0c156bd3062d10f23 *DESCRIPTION
 7df7f78e57d2040d178d89cec5758674 *INDEX
 dd57be8d29cff316bf060a27ceecbf75 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 b6443e7234d2ed6ca2ec7ace3ccf23f9 *Meta/hsearch.rds
 88d800098bce2a53c899b18a957e2914 *Meta/links.rds
 45237bb9aa50853801a6824c7b708c64 *Meta/nsInfo.rds
-44e3353bede04328af0b40c7ecdd8cf7 *Meta/package.rds
+3f53a25a7493ede8a8fafd32ec83abfd *Meta/package.rds
 d15d7e732abb136e71d1c32cff590ace *Meta/vignette.rds
 6426c25a3ae2976c65061d638bafb47e *NAMESPACE
 e14afcee7fb7a0a549212b0c99778214 *NEWS.md
@@ -22,8 +22,8 @@ f28c31372d0e3ae2be4bef3aad3c1298 *doc/introducing-the-snakecase-package.R
 c64c7139c300cccc53d81760bcf2debd *help/AnIndex
 6c646fe179b4c532694653ce080a8216 *help/aliases.rds
 0039b3cf48c3f6aa41f5ab851b8c5fe5 *help/figures/snakecase05.png
-175d943b72a284c7f9029122b8211fa2 *help/paths.rds
-3bd8a572d3786991fbe47ee5508f7a7c *help/snakecase.rdb
-6bc00d2b74822e8c9d5c42f15c6235e3 *help/snakecase.rdx
+4cfd7cecbd5768da75b01f0ada0c651c *help/paths.rds
+f949defc897316346ae7f2729c1b9cd9 *help/snakecase.rdb
+2e823c33761409dcae566a8968357d69 *help/snakecase.rdx
 7b6bfe2c21d367d3ecf5f071dfdcb4de *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

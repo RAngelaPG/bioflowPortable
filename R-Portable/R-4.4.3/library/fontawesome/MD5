@@ -1,4 +1,4 @@
-6030f9cac85cc050f67c3d2ddb398060 *DESCRIPTION
+290e6eef79403ffb201ef07ae021b98c *DESCRIPTION
 c03211a538f80fc776616a22f5875856 *INDEX
 11caaf4ec0ba74100cac2e4e59350c43 *LICENSE
 bb4edc612c35304bdb5e75628b9f3a1f *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 d2aba49f0eae126844867630aaec8902 *Meta/hsearch.rds
 f0fe3db44d292d41cb1b61db2b49ad96 *Meta/links.rds
 6610b8274d87a60bcce78eb217dc7ce1 *Meta/nsInfo.rds
-c7ec53b9851a7a3d6920729b4d1e8f3e *Meta/package.rds
+fb9a0202f6b820f31b06a133327c5e95 *Meta/package.rds
 b312a2b4d8e71241a31de3cdb7b66776 *NAMESPACE
 2d8147e287709d2ef0c989f4df1cab0f *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/fontawesome
@@ -32,8 +32,8 @@ c777bb4255fd03adf44f135df300a51f *help/AnIndex
 144a890a5fc1bfa9d1772e64570b7196 *help/figures/fontawesome_rmd.png
 54aba43d1a797519ed459b45513a5ca7 *help/figures/fontawesome_shiny_app.png
 a99f2c5356f0f525f85db8fd7ce2f9fd *help/figures/logo.svg
-05145228edeb7d2818ff9180b5acfd63 *help/fontawesome.rdb
-e5084b8f1b4fb84954d24f4ddcf21ca4 *help/fontawesome.rdx
-d885784bf4a5a7d5f1289f54617779c4 *help/paths.rds
+7c4c41323e1087e1238484742b216e7f *help/fontawesome.rdb
+3c89a1c908d3a9a40dea6453a68e0aa4 *help/fontawesome.rdx
+2944d2fe11969731ba8b874bd44d272f *help/paths.rds
 d9037fc8cd0eba0ca0e463f6707694bf *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

@@ -14,8 +14,8 @@ if (identical(Sys.getenv("IN_PKGDOWN"), "true") &&
 library(gert)
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  git_config_global_set("user.name", "Jerry Johnson")
-#  git_config_global_set("user.email", "jerry@gmail.com")
+# git_config_global_set("user.name", "Jerry Johnson")
+# git_config_global_set("user.email", "jerry@gmail.com")
 
 ## -----------------------------------------------------------------------------
 git_config_global()

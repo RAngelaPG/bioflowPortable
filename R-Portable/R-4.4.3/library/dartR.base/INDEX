@@ -1,0 +1,355 @@
+[,dartR,ANY,ANY,ANY-method
+                        indexing dartR objects correctly...
+cbind.dartR             adjust cbind for dartR
+gl.He                   Estimates expected Heterozygosity
+gl.Ho                   Estimates observed Heterozygosity
+gl.add.indmetrics       Adds metadata into a genlight object
+gl.alf                  Calculates allele frequency of the first and
+                        second allele for each locus A very simple
+                        function to report allele frequencies
+gl.allele.freq          Generates percentage allele frequencies by
+                        locus and population
+gl.amova                Performs AMOVA using genlight data
+gl.check.verbosity      Checks the current global verbosity
+gl.check.wd             Checks the global working directory
+gl.colors               Returns a list of colors for use in plots
+gl.compliance.check     Checks a genlight object to see if it complies
+                        with dartR expectations and amends it to comply
+                        if necessary @family environment
+gl.define.pop           Defines a new population in a genlight object
+                        for specified individuals
+gl.diagnostics.hwe      Provides descriptive stats and plots to
+                        diagnose potential problems with Hardy-Weinberg
+                        proportions @family matched report
+gl.dist.ind             Calculates a distance matrix for individuals
+                        defined in a genlight object
+gl.dist.phylo           Generates a distance matrix from a SNP genlight
+                        object taking into account a substitution model
+gl.dist.pop             Calculates a distance matrix for populations
+                        with SNP or Silicodart genotypes in a genlight
+                        object
+gl.drop.ind             Removes specified individuals from a dartR
+                        genlight object
+gl.drop.loc             Removes specified loci from a dartR genlight
+                        object
+gl.drop.pop             Removes specified populations from a dartR
+                        genlight object
+gl.edit.recode.ind      Creates or edits individual (=specimen) names,
+                        creates a recode_ind file and applies the
+                        changes to a genlight object @family data
+                        manipulation
+gl.edit.recode.pop      Creates or edits and applies a population
+                        re-assignment table
+gl.fdsim                Estimates the rate of false positives in a
+                        fixed difference analysis
+gl.filter.allna         Filters loci that are all NA across individuals
+                        and/or populations with all NA across loci
+gl.filter.callrate      Filters loci or specimens in a genlight
+                        {adegenet} object based on call rate
+gl.filter.excess.het    Filters excessively-heterozygous loci from a
+                        genlight object
+gl.filter.factorloadings
+                        Filters loci based on factor loadings for a PCA
+                        or PCoA
+gl.filter.hamming       Filters loci based on pairwise Hamming distance
+                        between sequence tags
+gl.filter.heterozygosity
+                        Filters individuals with average heterozygosity
+                        greater than a specified upper threshold or
+                        less than a specified lower threshold @family
+                        matched filter
+gl.filter.hwe           Filters loci that show significant departure
+                        from Hardy-Weinberg Equilibrium @family matched
+                        filter
+gl.filter.ld            Filters loci based on linkage disequilibrium
+                        (LD)
+gl.filter.locmetric     Filters loci on the basis of numeric
+                        information stored in other$loc.metrics in a
+                        genlight {adegenet} object
+gl.filter.maf           Filters loci on the basis of minor allele
+                        frequency (MAF) or minor allele count (MAC)
+gl.filter.monomorphs    Filters monomorphic loci, including those with
+                        all NAs
+gl.filter.overshoot     Filters loci for which the SNP has been trimmed
+                        from the sequence tag along with the adaptor
+gl.filter.pa            Filters loci that contain private (and fixed
+                        alleles) between two populations
+gl.filter.rdepth        Filters loci based on counts of sequence tags
+                        scored at a locus (read depth) @family matched
+                        filter
+gl.filter.reproducibility
+                        Filters loci in a genlight {adegenet} object
+                        based on average repeatability of alleles at a
+                        locus @family matched filter
+gl.filter.secondaries   Filters loci that represent secondary SNPs in a
+                        genlight object
+gl.filter.taglength     Filters loci in a genlight {adegenet} object
+                        based on sequence tag length @family matched
+                        filter
+gl.fixed.diff           Generates a matrix of fixed differences and
+                        associated statistics for populations taken
+                        pairwise
+gl.fst.pop              Calculates a pairwise Fst values for
+                        populations in a genlight object This script
+                        calculates pairwise Fst values based on the
+                        implementation in the StAMPP package
+                        (?stamppFst). It allows to run bootstrap to
+                        estimate probability of Fst values to be
+                        different from zero. For detailed information
+                        please check the help pages (?stamppFst).
+gl.hwe.pop              Performs Hardy-Weinberg tests over loci and
+                        populations
+gl.impute               Imputes missing data
+gl.join                 Combines two dartR genlight objects
+gl.keep.ind             Removes all but the specified individuals from
+                        a dartR genlight object
+gl.keep.loc             Removes all but the specified loci from a
+                        genlight object
+gl.keep.pop             Removes all but the specified populations from
+                        a dartR genlight object
+gl.load                 Loads an object from compressed binary format
+                        produced by gl.save()
+gl.mahal.assign         Assigns individuals to populations with an
+                        associated probability
+gl.make.recode.ind      Creates a proforma recode_ind file for
+                        reassigning individual (=specimen) names
+gl.make.recode.pop      Creates a proforma recode_pop_table file for
+                        reassigning population names @family data
+                        manipulation
+gl.map.interactive      Creates an interactive map (based on latlon)
+                        from a genlight object
+gl.merge.pop            Merges two or more populations in a dartR
+                        genlight object into one population
+gl.pcoa                 Ordination applied to genotypes in a genlight
+                        object (PCA), in an fd object, or to a distance
+                        matrix (PCoA)
+gl.pcoa.plot            Bivariate or trivariate plot of the results of
+                        an ordination generated using gl.pcoa()
+gl.plot.heatmap         Represents a distance matrix as a heatmap
+gl.print.history        Prints history of a genlight object
+gl.prop.shared          Calculates a similarity (distance) matrix for
+                        individuals on the proportion of shared alleles
+                        @family distance
+gl.randomize.snps       Randomly changes the allocation of 0's and 2's
+                        in a genlight object
+gl.read.PLINK           Reads PLINK data file into a genlight object
+gl.read.csv             Reads SNP data from a csv file into a genlight
+                        object
+gl.read.dart            Imports DArT data into dartR and converts it
+                        into a dartR genlight object
+gl.read.fasta           Reads FASTA files and converts them to genlight
+                        object
+gl.read.silicodart      Imports presence/absence data from SilicoDArT
+                        to genlight {agegenet} format (ploidy=1)
+gl.read.vcf             Converts a vcf file into a genlight object
+gl.reassign.pop         Assigns an individual metric as pop in a
+                        genlight {adegenet} object
+gl.recalc.metrics       Recalculates locus metrics when individuals or
+                        populations are deleted from a genlight
+                        {adegenet} object @family environment
+gl.recode.ind           Recodes individual (=specimen = sample) labels
+                        in a genlight object
+gl.recode.pop           Recodes population assignments in a genlight
+                        object
+gl.rename.pop           Renames a population in a genlight object
+gl.report.allelerich    Report allelic richness per population from a
+                        genlight object
+gl.report.allna         Reports loci that are all NA across individuals
+                        and/or populations with all NA across loci
+gl.report.bases         Reports summary of base pair frequencies
+gl.report.basics        Basic statistics for a genlight object
+gl.report.callrate      Reports summary of Call Rate for loci or
+                        individuals
+gl.report.diversity     Calculates diversity indexes for SNPs
+gl.report.excess.het    Report loci with excess of heterozygosity
+gl.report.factorloadings
+                        Reports factor loadings for a PCA or PCoA
+gl.report.fstat         Reports various statistics of genetic
+                        differentiation between populations with
+                        confidence intervals
+gl.report.hamming       Calculates the pairwise Hamming distance
+                        between DArT trimmed DNA sequences
+gl.report.heterozygosity
+                        Reports observed, expected and unbiased
+                        heterozygosities and FIS (inbreeding
+                        coefficient) by population or by individual
+                        from SNP data
+gl.report.hwe           Reports departure from Hardy-Weinberg
+                        proportions
+gl.report.ld            Calculates pairwise population based Linkage
+                        Disequilibrium across all loci using the
+                        specified number of cores @family matched
+                        report
+gl.report.ld.map        Calculates pairwise linkage disequilibrium by
+                        population
+gl.report.locmetric     Reports summary of the slot $other$loc.metrics
+gl.report.maf           Reports minor allele frequency (MAF) for each
+                        locus in a SNP dataset
+gl.report.monomorphs    Reports monomorphic loci
+gl.report.overshoot     Reports loci for which the SNP has been trimmed
+                        from the sequence tag along with the adaptor
+gl.report.pa            Reports private alleles (and fixed alleles) per
+                        pair of populations
+gl.report.polyploid_heterozygosity
+                        Reports observed, expected and unbiased
+                        heterozygosities and FIS (inbreeding
+                        coefficient) by population or by individual
+                        from SNP data
+gl.report.rdepth        Reports summary of Read Depth for each locus
+gl.report.replicates    Identify replicated individuals
+gl.report.reproducibility
+                        Reports summary of RepAvg (repeatability
+                        averaged over both alleles for each locus) or
+                        reproducibility (repeatability of the scores
+                        for fragment presence/absence)
+gl.report.secondaries   Reports loci containing secondary SNPs in
+                        sequence tags and calculates number of
+                        invariant sites
+gl.report.shannon       Report SNP diversity from a genlight object,
+                        with reference to Ma, Z., Li, L., & Zhang, Y.
+                        P. (2020). Defining individual-level genetic
+                        diversity and similarity profiles. Scientific
+                        reports, 10(1), 5805.
+gl.report.taglength     Reports summary of sequence tag length across
+                        loci
+gl.sample               Samples individuals from populations
+gl.save                 Saves an object in compressed binary format for
+                        later rapid retrieval
+gl.select.colors        Selects colors from one of several palettes and
+                        outputs as a vector
+gl.select.shapes        Selects shapes from the base R shape palette
+                        and outputs as a vector
+gl.set.verbosity        Sets the default verbosity level
+gl.set.wd               Sets the default working directory
+gl.sim.cross            Generates random crosses between fathers and
+                        mothers
+gl.sim.genotypes        Generate random genotypes
+gl.smearplot            Smear plot
+gl.sort                 Sorts genlight objects
+gl.subsample.ind        Subsample individuals from a genlight object
+gl.subsample.loc        Subsample loci from a genlight object
+gl.subsample.loci       Subsamples n loci from a genlight object and
+                        return it as a genlight object
+gl.test.heterozygosity
+                        Tests the difference in heterozygosity between
+                        populations taken pairwise
+gl.tree.fitch           Generates a distance phylogeny
+gl.tree.nj              Outputs a tree to summarize genetic similarity
+                        among populations (e.g. phenogram)
+gl.write.csv            Writes out data from a genlight object to csv
+                        file
+gl2bayesAss             Converts a genlight object into bayesAss (BA3)
+                        input format
+gl2bayescan             Converts a genlight object into a format
+                        suitable for input to Bayescan
+gl2bpp                  Converts a genlight object into a format
+                        suitable for input to the BPP program
+gl2demerelate           Creates a dataframe suitable for input to
+                        package {Demerelate} from a genlight {adegenet}
+                        object
+gl2eigenstrat           Converts a genlight object into eigenstrat
+                        format
+gl2fasta                Concatenates DArT trimmed sequences and outputs
+                        a FASTA file
+gl2faststructure        Converts a genlight object into faststructure
+                        format (to run faststructure elsewhere)
+gl2gds                  Converts a genlight object into gds format
+gl2genalex              Converts a genlight object into a format
+                        suitable for input to genalex
+gl2genepop              Converts a genlight object into genepop format
+                        (and file)
+gl2geno                 Converts a genlight object to geno format from
+                        package LEA
+gl2gi                   Converts a genind object into a genlight object
+gl2hiphop               Converts a genlight objects into hiphop format
+gl2paup.parsimony       Converts a genlight object to nexus format for
+                        parsimony phylogeny analysis in PAUP and,
+                        optionally produces accompanying files for
+                        parallel processing.
+gl2paup.svdquartets     Converts a genlight object to nexus format PAUP
+                        SVDquartets
+gl2phylip               Creates a Phylip input distance matrix from a
+                        genlight (SNP) {adegenet} object
+gl2plink                Converts a genlight object into PLINK format
+gl2related              Converts a genlight object to format suitable
+                        to be run with Coancestry
+gl2sa                   Converts genlight objects to the format used in
+                        the SNPassoc package
+gl2snapper              Converts a genlight object to nexus format
+                        suitable for phylogenetic analysis by Snapper
+                        (via BEAUti) @family linker
+gl2structure            Converts a genlight object to STRUCTURE
+                        formatted files
+gl2treemix              Converts a genlight object to a treemix input
+                        file
+gl2vcf                  Converts a genlight object into vcf format
+rbind.dartR             adjust rbind for dartR
+theme_dartR             Default theme for dartR plots
+utils.basic.stats       Calculates mean observed heterozygosity, mean
+                        expected heterozygosity and FIS per locus, per
+                        population and various population
+                        differentiation measures @family utilities
+utils.check.datatype    Utility function to check the class of an
+                        object passed to a function
+utils.collapse.matrix   Collapses a distance matrix calculated for
+                        individuals to a distance matrix for
+                        populations defined in a dartR genlight object
+utils.dart2genlight     An internal function to converts DarT to
+                        genlight.
+utils.dist.binary       Calculates a distance matrix for individuals
+                        defined in a dartR genlight object using binary
+                        P/A data (SilicoDArT)
+utils.dist.ind.snp      Calculates a distance matrix for individuals
+                        defined in a genlight object using SNP data
+                        (DArTseq)
+utils.flag.start        A utility script to flag the start of a script
+utils.hamming           Calculates the Hamming distance between two
+                        DArT trimmed DNA sequences
+utils.het.pop           An internal function that calculates expected
+                        mean heterozygosity per population
+utils.impute            An internal script [Custodian to provide a
+                        title]
+utils.is.fixed          An internal function to tests if two
+                        populations are fixed at a given locus
+utils.jackknife         An internal function to conducts jackknife
+                        resampling using a genlight object
+utils.n.var.invariant   An internal utility function to calculate the
+                        number of variant and invariant sites by locus
+utils.plink.run         Runs PLINK from within R
+utils.plot.save         An internal function to save a ggplot object to
+                        disk in RDS binary format
+utils.read.dart         Utility to import DarT data to R
+utils.read.fasta        An internal script to read a fastA file into a
+                        genlight object
+utils.read.ped          An internal script [Custodian to provide a
+                        title]
+utils.recalc.avgpic     A utility function to recalculate intermediate
+                        locus metrics
+utils.recalc.callrate   A utility script to recalculate the callrate by
+                        locus after some populations have been deleted
+utils.recalc.freqhets   A utility script to recalculate the frequency
+                        of the heterozygous SNPs by locus after some
+                        populations have been deleted
+utils.recalc.freqhomref
+                        #' An internal utility function to recalculate
+                        the frequency of the homozygous reference SNP
+                        by locus after some populations have been
+                        deleted
+utils.recalc.freqhomsnp
+                        A utility function to recalculate the frequency
+                        of the homozygous alternate SNP by locus after
+                        some populations have been deleted
+utils.recalc.maf        A utility function to recalculate the minor
+                        allele frequency by locus, typically after some
+                        populations have been deleted
+utils.reset.flags       #' An internal utility function to reset to
+                        FALSE (or TRUE) the locus metric flags after
+                        some individuals or populations have been
+                        deleted.
+utils.transpose         An internal utility function to transpose a
+                        genlight object.
+utils.vcfr2genlight.polyploid
+                        Utility function to convert polyploid vcfR
+                        object as genlight
+zzz                     Setting up the package Setting theme, colors
+                        and verbosity

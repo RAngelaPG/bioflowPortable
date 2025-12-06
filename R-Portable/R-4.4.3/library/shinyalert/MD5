@@ -1,4 +1,4 @@
-33e054f6e0f366a9f36eeecfd07c7eab *DESCRIPTION
+13f1db9bafbbc3ae3a5894675a7d6274 *DESCRIPTION
 1718c7fb048a75e929315e83c98fa35e *INDEX
 30a27622c8e9db2cbe2df29c09d406fa *LICENSE
 447268901156b9f4b87ca30489341c65 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 6ac3b0b68566b34eb352db5f9e6e236f *Meta/hsearch.rds
 869d176da471552b9afc9db0ececd6ea *Meta/links.rds
 d80b862384caf05d8d621c74d936dda9 *Meta/nsInfo.rds
-ebbc7550dfe4ca96269ea64529c3a640 *Meta/package.rds
+7a8493b4865b10e5f7b62cc6f8ae0433 *Meta/package.rds
 45ea3d9978dce9c542dcfb509fa0276c *NAMESPACE
 bc887ff9fc93559e8ee69a71e00f7cf8 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/shinyalert
@@ -25,9 +25,9 @@ da4aa48dba1f7969cc0f3edb05988266 *assets/shinyalert/shinyalert.js
 1d1826907b9ae94be9691012e8aafdde *examples/demo/www/style.css
 7c5d5bedc89061d0c041d7374995a53c *help/AnIndex
 4330a01313858fcd8539ead123f9b743 *help/aliases.rds
-accb5ca4053855c17c5af0cf139bbdc0 *help/paths.rds
-eaee0ed8a7d4f2a1048d067328940557 *help/shinyalert.rdb
-e9e430c9b28a0b66b1741dd04a5c093b *help/shinyalert.rdx
+1eb731df4fc00361c1594c79c68e7690 *help/paths.rds
+0bd49149572ea8d1e73878a5d4836af6 *help/shinyalert.rdb
+c51563f81201efdaf67fedeff4ef5b32 *help/shinyalert.rdx
 568a5dadfaecb0689e9e11884ba64e3e *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 1209644b741193d7d383d36c82a0d3c4 *img/hex.png

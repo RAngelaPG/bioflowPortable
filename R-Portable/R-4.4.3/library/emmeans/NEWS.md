@@ -2,7 +2,87 @@
 title: "NEWS for the emmeans package"
 ---
 
-## emmeans 1.10-7
+## emmeans 2.0.0
+We have a new major version number, with a new graphics look and a new maintainer,
+Julia Piaskowski (however, Russ is still very much involved).
+
+  * Added a new `post.ci.method` option to set the default for `ci.method`
+    in `hpd.summary()` (#538)
+  * Extended `qdrg()` so that it is a generic that can dispatch S3 methods
+    based on the class of `object`. This allows a "budget" option for
+    package developers who want to provide rudimentary **emmeans** support.
+  * Fixed code for `emmip_ggplot()`, so that we no longer call `aes_()` (#547)
+  * **ggplot2**-based graphics have a new look. If you liked the old one
+    better, use `emm_options(gg.theme = 1)` to get an approximation of the old look.
+  * May also use `gg.theme` option to set any theme you want for future plots.
+  * Scaling changes so `emmip()` so that plots better fill the plotting area.
+  * Intervals in `plot.emmGrid()` are now solid colors, rather than transparent ones,
+    to prevent grid lines from partially masking them.
+  * Weights were not present in `ordinal` objects created with `mode = "mean.class"`
+    (#553)
+  * Cautionary note added on bias correction (in documentation of `summary.emmGrid`)
+    when `sigma` is large (#540)
+
+
+## emmeans 1.11.2-8
+  * Correction in `summary.emmGrid` to calculation of adjustment factors when
+    'by` variables are nested (#536)
+  * More detailed annotations for cross-group adjustments (#536)
+  * Added `ci.method` argument to `hpd.summary()` to allow option of
+    producing quantile-based intervals (#538)
+  * Efficiency improvements in method dispatching
+  * Fix to `.make.scale()` to play nice with new R requirements
+  
+
+## emmeans 1.11.2
+  * In ordinal-model support, changed all estimator names to match mode names
+    (this was true for `"prob"` and `"exc.prob"`, but not `"cum.prob"`)
+    (postponed from CRAN version 1.11.1 to allow time for other package(s) to adapt)
+  * Fix to coding errors that prevented more than one counterfactual factor
+    from being used.
+
+## emmeans 1.11.1
+  * Modified `as.data.frame.summary_emm` so it can't loop infinitely (#525)
+  * Added documentation to `ref_grid` and `FAQs` vignette to clarify how we
+    use `all.vars()` to identify predictors, e.g. if a model formula contains 
+    `log(dose)`, the covariate is `dose`, not `log(dose)` (#523)
+  * **UPCOMING:** In ordinal-model support, changed all estimator names to match mode names
+    (this was true for `"prob"` and `"exc.prob"`, but not `"cum.prob"`).
+    [This change is on hold as it breaks another package.]
+  * Added a contrast function `opoly.emmc()` that does not rescale the coefficients
+    to integers, and allows unequally-spaced levels to be specified as `scores` 
+    (#527). In addition, unlike `poly.emmc`, `opoly.emmc` supports the
+    `exclude` and `include` arguments.
+  * Also added contrast functions `helmert.emmc` and `nrmlz.emmc`. The latter is
+    a wrapper that can be used to normalize the contrast coefficients from any
+    other `.emmc` function.
+  * Fixed a scoping issue in `contrast.emmGrid` to make a custom `.emmc` function
+    easier to find. This bug prevented some examples from being rendered correctly
+    in all contexts.
+  * Restored the `joint_tests()` code that was omitted in 1.11.0 because apparently
+    it was right the first time. (#528)
+  * Added an argument `npts` to `make.meanint()` and `make.symmint()` to facilitate
+    generating an interval with more than two points. 
+  * Fix to `test()` for situations with non-estimability and infinite df (#528)
+  * Added `linfct.emm_list())` method
+  * Made `emmobj()` less rigid (so that `as.emmGrid(as.list(obj))` more faithfully
+    reproduces `obj`)
+  * Added an optional `drop` argument (`TRUE` by default) to the `emm_list` methods.
+  * Added optional arguments `se.bhat` and `se.diff` to `emmobj()` (#529)
+  
+## emmeans 1.11.0
+  * Added a `linfct()` generic and default method that returns `object@linfct`
+  * Removed some code in `joint_tests()` that prevented some terms from
+    being tested in nested models. Alas, this is still not perfect.
+  * Added the possibility of specifying `.` in the `specs` argument of
+    `emmeans()` -- e.g., `emmeans(mod, ".")`, `emmeans(mod, pairwise ~ . | drug)`.
+    (#522).
+    This creates a list of all sets of means (and contrasts), thus creating 
+    an `emm_list` object. This also works in `emtrends()`.
+  * In certain `emm_list` methods, we changed the default for `which` from
+    `1` to to `NULL`
+
+## emmeans 1.10.7
   * Spelling changes in several vignettes
   * We have completely revamped the design of reference grids involving
     counterfactuals. Now, if we specify counterfactuals `A` and `B`, the

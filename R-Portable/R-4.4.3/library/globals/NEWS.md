@@ -1,3 +1,49 @@
+# Version 0.18.0 [2025-05-06]
+
+## New Features
+
+ * Add `findGlobals(..., method = "dfs")`, which finds globals in R
+   expressions by walking its abstract syntax tree (AST) using
+   depth-first search. This new approach does a better job in
+   emulating how the R engine identifies global variables. For
+   example, the new `"dfs"` method picks up `x` in `local({
+   function(x) x; x })` as a global variable, which the `"ordered"`
+   method fails to do. Analogously, `globalsOf()` gained support for
+   `method = "dfs"`
+
+ * Now `findGlobals()` supports `expression` objects, e.g.
+   `findGlobals(expression(x + y))`.
+
+ * It is now possible to specify multiple `method` search algorithms
+   for `findGlobals()` and `globalsOf()`, which then will combine the
+   results from all of them, e.g. `findGlobals(expr, method = c("dfs",
+   "ordered"))`.
+
+## Bug Fixes
+
+ * `walkAST()` did not recognize objects of type `externalptr`,
+   leading to an error on `Cannot walk expression. Unknown object type
+   'externalptr'`.
+
+
+# Version 0.17.0 [2025-04-15]
+
+## New Features
+
+ * `walkAST()` now walks also the body of closures ("functions").
+
+## Bug Fixes
+
+ * `walkAST()` did not recognize objects of type `object`, leading to
+   an error on `Cannot walk expression. Unknown object type 'object'`.
+   
+ * `findGlobals()` would produce `Error in e[[4]] : subscript out of
+   expressions of format` for expressions of type ``LHS INFIX_OP
+   `$<-`(name, value)``, e.g. ``x %>% `$<-`("a", 42)``. This is due to
+   a bug in the **codetools** package, which `findGlobals()` now works
+   around internally.
+
+
 # Version 0.16.3 [2024-03-07]
 
 ## Bug Fixes

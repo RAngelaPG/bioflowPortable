@@ -74,22 +74,25 @@ pre code {
 %\VignetteEngine{parallelly::selfonly}
 -->
 <h1>Introduction</h1>
-<p>This vignette shows how to set up parallel workers running on MS
-Windows via Wine (<a href="https://www.winehq.org/">https://www.winehq.org/</a>) on Linux and macOS.</p>
+<p>This vignette shows how to set up parallel workers running R for MS
+Windows via Wine (<a href="https://www.winehq.org/">https://www.winehq.org/</a>) on Linux and macOS. This
+can be useful when we need to run R code or call R packages that work
+only on MS Windows.</p>
+<p>The below instructions assumes that you already have Wine installed.</p>
 <h2>Install R for MS Windows 10</h2>
 <p>To install R for MS Windows in Wine, first configure Wine to use
 Windows 10;</p>
 <pre><code class="language-sh">$ winecfg
 </code></pre>
-<p>In the GUI, set ‘Windows version’ to ‘Windows 10’. Then, install R for
-Windows in Wine, by:</p>
-<pre><code class="language-sh">$ wget https://cran.r-project.org/bin/windows/base/R-4.4.2-win.exe
-$ wine R-4.4.2-win.exe /SILENT
+<p>In the GUI, set ‘Windows version’ to ‘Windows 10’. Then, install <a href="https://cran.r-project.org/bin/windows/base/">R for
+Windows</a> in Wine, by:</p>
+<pre><code class="language-sh">$ wget https://cran.r-project.org/bin/windows/base/R-4.5.1-win.exe
+$ wine R-4.5.1-win.exe /SILENT
 </code></pre>
 <p>Finally, verify that R is available in Wine;</p>
-<pre><code class="language-sh">$ wine &quot;C:/Program Files/R/R-4.4.2/bin/x64/Rscript.exe&quot; --version
+<pre><code class="language-sh">$ wine &quot;C:/Program Files/R/R-4.5.1/bin/x64/Rscript.exe&quot; --version
 ...
-Rscript (R) version 4.4.2 (2024-10-31)
+Rscript (R) version 4.5.1 (2025-06-13)
 </code></pre>
 <h1>Examples</h1>
 <h2>Example: Parallel workers running MS Windows via Wine</h2>
@@ -103,12 +106,12 @@ on the local machine.</p>
     ## Don't pass LC_* and R_LIBS* environments from host to Wine
     sprintf(&quot;%s=&quot;, grep(&quot;^(LC_|R_LIBS)&quot;, names(Sys.getenv()), value = TRUE)),
     &quot;wine&quot;,
-    &quot;C:/Program Files/R/R-4.4.2/bin/x64/Rscript.exe&quot;
+    &quot;C:/Program Files/R/R-4.5.1/bin/x64/Rscript.exe&quot;
   )
 )
 print(cl)
-#&gt; Socket cluster with 1 nodes where 1 node is on host 'localhost'
-#&gt; (R version 4.4.2 (2024-10-31 ucrt), platform x86_64-w64-mingw32)
+#&gt; Socket cluster with 1 node on host 'localhost'
+#&gt; (R version 4.5.1 (2025-06-13 ucrt), platform x86_64-w64-mingw32)
 </code></pre>
 </body>
 </html>

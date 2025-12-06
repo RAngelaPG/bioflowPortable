@@ -12,7 +12,7 @@
 
 <meta name="author" content="Alexander Walker, Philipp Schauberger" />
 
-<meta name="date" content="2025-01-25" />
+<meta name="date" content="2025-10-30" />
 
 <title>Introduction</title>
 
@@ -341,7 +341,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Introduction</h1>
 <h4 class="author">Alexander Walker, Philipp Schauberger</h4>
-<h4 class="date">2025-01-25</h4>
+<h4 class="date">2025-10-30</h4>
 
 
 
@@ -359,34 +359,36 @@ as an Excel table.</p>
 </div>
 <div id="write-list-of-data.frames-to-xlsx-file" class="section level3">
 <h3>write list of data.frames to xlsx-file</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="do">## write a list of data.frames to individual worksheets using list names as</span></span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="do">## worksheet names</span></span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">IRIS =</span> iris, <span class="at">MTCARS =</span> mtcars)</span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">write.xlsx</span>(l, <span class="at">file =</span> <span class="st">&quot;writeXLSX2.xlsx&quot;</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="fu">write.xlsx</span>(l, <span class="at">file =</span> <span class="st">&quot;writeXLSXTable2.xlsx&quot;</span>, <span class="at">asTable =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="do">## write a list of data.frames to individual worksheets using list names as worksheet names</span></span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">&quot;IRIS&quot;</span> <span class="ot">=</span> iris, <span class="st">&quot;MTCARS&quot;</span> <span class="ot">=</span> mtcars)</span>
+<span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="fu">write.xlsx</span>(l, <span class="at">file =</span> <span class="st">&quot;writeXLSX2.xlsx&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="fu">write.xlsx</span>(l, <span class="at">file =</span> <span class="st">&quot;writeXLSXTable2.xlsx&quot;</span>, <span class="at">asTable =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </div>
 <div id="write.xlsx-also-accepts-styling-parameters" class="section level3">
 <h3>write.xlsx also accepts styling parameters</h3>
 <div id="the-simplest-way-is-to-set-default-options-and-set-column-class" class="section level4">
 <h4>The simplest way is to set default options and set column class</h4>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">options</span>(<span class="at">openxlsx.borderColour =</span> <span class="st">&quot;#4F80BD&quot;</span>)</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">options</span>(<span class="at">openxlsx.borderStyle =</span> <span class="st">&quot;thin&quot;</span>)</span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="fu">options</span>(<span class="at">openxlsx.dateFormat =</span> <span class="st">&quot;mm/dd/yyyy&quot;</span>)</span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="fu">options</span>(<span class="at">openxlsx.datetimeFormat =</span> <span class="st">&quot;yyyy-mm-dd hh:mm:ss&quot;</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="fu">options</span>(<span class="at">openxlsx.numFmt =</span> <span class="cn">NULL</span>)  <span class="do">## For default style rounding of numeric columns</span></span>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">options</span>(<span class="st">&quot;openxlsx.borderColour&quot;</span> <span class="ot">=</span> <span class="st">&quot;#4F80BD&quot;</span>)</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="fu">options</span>(<span class="st">&quot;openxlsx.borderStyle&quot;</span> <span class="ot">=</span> <span class="st">&quot;thin&quot;</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="fu">options</span>(<span class="st">&quot;openxlsx.dateFormat&quot;</span> <span class="ot">=</span> <span class="st">&quot;mm/dd/yyyy&quot;</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="fu">options</span>(<span class="st">&quot;openxlsx.datetimeFormat&quot;</span> <span class="ot">=</span> <span class="st">&quot;yyyy-mm-dd hh:mm:ss&quot;</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="fu">options</span>(<span class="st">&quot;openxlsx.numFmt&quot;</span> <span class="ot">=</span> <span class="cn">NULL</span>) <span class="do">## For default style rounding of numeric columns</span></span>
 <span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Date =</span> <span class="fu">Sys.Date</span>() <span class="sc">-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">19</span>, <span class="at">LogicalT =</span> <span class="cn">TRUE</span>, <span class="at">Time =</span> <span class="fu">Sys.time</span>() <span class="sc">-</span> <span class="dv">0</span><span class="sc">:</span><span class="dv">19</span> <span class="sc">*</span></span>
-<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>    <span class="dv">60</span> <span class="sc">*</span> <span class="dv">60</span>, <span class="at">Cash =</span> <span class="fu">paste</span>(<span class="st">&quot;$&quot;</span>, <span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>), <span class="at">Cash2 =</span> <span class="dv">31</span><span class="sc">:</span><span class="dv">50</span>, <span class="at">hLink =</span> <span class="st">&quot;https://CRAN.R-project.org/&quot;</span>,</span>
-<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>    <span class="at">Percentage =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="at">length.out =</span> <span class="dv">20</span>), <span class="at">TinyNumbers =</span> <span class="fu">runif</span>(<span class="dv">20</span>)<span class="sc">/</span><span class="fl">1e+09</span>, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a></span>
-<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>Cash) <span class="ot">&lt;-</span> <span class="st">&quot;currency&quot;</span></span>
-<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>Cash2) <span class="ot">&lt;-</span> <span class="st">&quot;accounting&quot;</span></span>
-<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>hLink) <span class="ot">&lt;-</span> <span class="st">&quot;hyperlink&quot;</span></span>
-<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>Percentage) <span class="ot">&lt;-</span> <span class="st">&quot;percentage&quot;</span></span>
-<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>TinyNumbers) <span class="ot">&lt;-</span> <span class="st">&quot;scientific&quot;</span></span>
-<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a></span>
-<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="fu">write.xlsx</span>(df, <span class="st">&quot;writeXLSX3.xlsx&quot;</span>)</span>
-<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="fu">write.xlsx</span>(df, <span class="at">file =</span> <span class="st">&quot;writeXLSXTable3.xlsx&quot;</span>, <span class="at">asTable =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<span id="cb3-7"><a href="#cb3-7" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="st">&quot;Date&quot;</span> <span class="ot">=</span> <span class="fu">Sys.Date</span>()<span class="sc">-</span><span class="dv">0</span><span class="sc">:</span><span class="dv">19</span>, <span class="st">&quot;LogicalT&quot;</span> <span class="ot">=</span> <span class="cn">TRUE</span>,</span>
+<span id="cb3-8"><a href="#cb3-8" tabindex="-1"></a>                 <span class="st">&quot;Time&quot;</span> <span class="ot">=</span> <span class="fu">Sys.time</span>()<span class="sc">-</span><span class="dv">0</span><span class="sc">:</span><span class="dv">19</span><span class="sc">*</span><span class="dv">60</span><span class="sc">*</span><span class="dv">60</span>,</span>
+<span id="cb3-9"><a href="#cb3-9" tabindex="-1"></a>                 <span class="st">&quot;Cash&quot;</span> <span class="ot">=</span> <span class="fu">paste</span>(<span class="st">&quot;$&quot;</span>,<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>), <span class="st">&quot;Cash2&quot;</span> <span class="ot">=</span> <span class="dv">31</span><span class="sc">:</span><span class="dv">50</span>,</span>
+<span id="cb3-10"><a href="#cb3-10" tabindex="-1"></a>                 <span class="st">&quot;hLink&quot;</span> <span class="ot">=</span> <span class="st">&quot;https://CRAN.R-project.org/&quot;</span>,</span>
+<span id="cb3-11"><a href="#cb3-11" tabindex="-1"></a>                 <span class="st">&quot;Percentage&quot;</span> <span class="ot">=</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">1</span>, <span class="at">length.out=</span><span class="dv">20</span>),</span>
+<span id="cb3-12"><a href="#cb3-12" tabindex="-1"></a>                 <span class="st">&quot;TinyNumbers&quot;</span> <span class="ot">=</span> <span class="fu">runif</span>(<span class="dv">20</span>) <span class="sc">/</span> <span class="fl">1E9</span>,  <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" tabindex="-1"></a></span>
+<span id="cb3-14"><a href="#cb3-14" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>Cash) <span class="ot">&lt;-</span> <span class="st">&quot;currency&quot;</span></span>
+<span id="cb3-15"><a href="#cb3-15" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>Cash2) <span class="ot">&lt;-</span> <span class="st">&quot;accounting&quot;</span></span>
+<span id="cb3-16"><a href="#cb3-16" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>hLink) <span class="ot">&lt;-</span> <span class="st">&quot;hyperlink&quot;</span></span>
+<span id="cb3-17"><a href="#cb3-17" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>Percentage) <span class="ot">&lt;-</span> <span class="st">&quot;percentage&quot;</span></span>
+<span id="cb3-18"><a href="#cb3-18" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>TinyNumbers) <span class="ot">&lt;-</span> <span class="st">&quot;scientific&quot;</span></span>
+<span id="cb3-19"><a href="#cb3-19" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" tabindex="-1"></a><span class="fu">write.xlsx</span>(df, <span class="st">&quot;writeXLSX3.xlsx&quot;</span>)</span>
+<span id="cb3-21"><a href="#cb3-21" tabindex="-1"></a><span class="fu">write.xlsx</span>(df, <span class="at">file =</span> <span class="st">&quot;writeXLSXTable3.xlsx&quot;</span>, <span class="at">asTable =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -394,18 +396,20 @@ as an Excel table.</p>
 <h2>Workbook styles</h2>
 <div id="define-a-style-for-column-headers" class="section level3">
 <h3>define a style for column headers</h3>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>hs <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(<span class="at">fontColour =</span> <span class="st">&quot;#ffffff&quot;</span>, <span class="at">fgFill =</span> <span class="st">&quot;#4F80BD&quot;</span>, <span class="at">halign =</span> <span class="st">&quot;center&quot;</span>,</span>
-<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>    <span class="at">valign =</span> <span class="st">&quot;center&quot;</span>, <span class="at">textDecoration =</span> <span class="st">&quot;Bold&quot;</span>, <span class="at">border =</span> <span class="st">&quot;TopBottomLeftRight&quot;</span>, <span class="at">textRotation =</span> <span class="dv">45</span>)</span>
-<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a><span class="fu">write.xlsx</span>(iris, <span class="at">file =</span> <span class="st">&quot;writeXLSX4.xlsx&quot;</span>, <span class="at">borders =</span> <span class="st">&quot;rows&quot;</span>, <span class="at">headerStyle =</span> hs)</span>
-<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="fu">write.xlsx</span>(iris, <span class="at">file =</span> <span class="st">&quot;writeXLSX5.xlsx&quot;</span>, <span class="at">borders =</span> <span class="st">&quot;columns&quot;</span>, <span class="at">headerStyle =</span> hs)</span>
-<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a><span class="fu">write.xlsx</span>(iris, <span class="st">&quot;writeXLSXTable4.xlsx&quot;</span>, <span class="at">asTable =</span> <span class="cn">TRUE</span>, <span class="at">headerStyle =</span> <span class="fu">createStyle</span>(<span class="at">textRotation =</span> <span class="dv">45</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a>hs <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(<span class="at">fontColour =</span> <span class="st">&quot;#ffffff&quot;</span>, <span class="at">fgFill =</span> <span class="st">&quot;#4F80BD&quot;</span>,</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1"></a>                  <span class="at">halign =</span> <span class="st">&quot;center&quot;</span>, <span class="at">valign =</span> <span class="st">&quot;center&quot;</span>, <span class="at">textDecoration =</span> <span class="st">&quot;Bold&quot;</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1"></a>                  <span class="at">border =</span> <span class="st">&quot;TopBottomLeftRight&quot;</span>, <span class="at">textRotation =</span> <span class="dv">45</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" tabindex="-1"></a><span class="fu">write.xlsx</span>(iris, <span class="at">file =</span> <span class="st">&quot;writeXLSX4.xlsx&quot;</span>, <span class="at">borders =</span> <span class="st">&quot;rows&quot;</span>, <span class="at">headerStyle =</span> hs)</span>
+<span id="cb4-6"><a href="#cb4-6" tabindex="-1"></a><span class="fu">write.xlsx</span>(iris, <span class="at">file =</span> <span class="st">&quot;writeXLSX5.xlsx&quot;</span>, <span class="at">borders =</span> <span class="st">&quot;columns&quot;</span>, <span class="at">headerStyle =</span> hs)</span>
+<span id="cb4-7"><a href="#cb4-7" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="fu">write.xlsx</span>(iris, <span class="st">&quot;writeXLSXTable4.xlsx&quot;</span>, <span class="at">asTable =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="at">headerStyle =</span> <span class="fu">createStyle</span>(<span class="at">textRotation =</span> <span class="dv">45</span>))</span></code></pre></div>
 </div>
 <div id="when-writing-a-list-the-stylings-will-apply-to-all-list-elements" class="section level3">
 <h3>When writing a list, the stylings will apply to all list
 elements</h3>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">IRIS =</span> iris, <span class="at">colClasses =</span> df)</span>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="st">&quot;IRIS&quot;</span> <span class="ot">=</span> iris, <span class="st">&quot;colClasses&quot;</span> <span class="ot">=</span> df)</span>
 <span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="fu">write.xlsx</span>(l, <span class="at">file =</span> <span class="st">&quot;writeXLSX6.xlsx&quot;</span>, <span class="at">borders =</span> <span class="st">&quot;columns&quot;</span>, <span class="at">headerStyle =</span> hs)</span>
 <span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="fu">write.xlsx</span>(l, <span class="at">file =</span> <span class="st">&quot;writeXLSXTable5.xlsx&quot;</span>, <span class="at">asTable =</span> <span class="cn">TRUE</span>, <span class="at">tableStyle =</span> <span class="st">&quot;TableStyleLight2&quot;</span>)</span>
 <span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a></span>
@@ -425,8 +429,8 @@ elements</h3>
 <h3>create workbook and set default border Colour and style</h3>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">require</span>(ggplot2)</span>
 <span id="cb7-2"><a href="#cb7-2" tabindex="-1"></a>wb <span class="ot">&lt;-</span> <span class="fu">createWorkbook</span>()</span>
-<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">options</span>(<span class="at">openxlsx.borderColour =</span> <span class="st">&quot;#4F80BD&quot;</span>)</span>
-<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="fu">options</span>(<span class="at">openxlsx.borderStyle =</span> <span class="st">&quot;thin&quot;</span>)</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1"></a><span class="fu">options</span>(<span class="st">&quot;openxlsx.borderColour&quot;</span> <span class="ot">=</span> <span class="st">&quot;#4F80BD&quot;</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1"></a><span class="fu">options</span>(<span class="st">&quot;openxlsx.borderStyle&quot;</span> <span class="ot">=</span> <span class="st">&quot;thin&quot;</span>)</span>
 <span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="fu">modifyBaseFont</span>(wb, <span class="at">fontSize =</span> <span class="dv">10</span>, <span class="at">fontName =</span> <span class="st">&quot;Arial Narrow&quot;</span>)</span></code></pre></div>
 </div>
 <div id="add-sheets" class="section level3">
@@ -436,44 +440,47 @@ elements</h3>
 </div>
 <div id="write-data-to-sheet-1" class="section level3">
 <h3>write data to sheet 1</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">freezePane</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">firstRow =</span> <span class="cn">TRUE</span>, <span class="at">firstCol =</span> <span class="cn">TRUE</span>)  <span class="do">## freeze first row and column</span></span>
-<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="fu">writeDataTable</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">x =</span> mtcars, <span class="at">colNames =</span> <span class="cn">TRUE</span>, <span class="at">rowNames =</span> <span class="cn">TRUE</span>, <span class="at">tableStyle =</span> <span class="st">&quot;TableStyleLight9&quot;</span>)</span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a></span>
-<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">cols =</span> <span class="st">&quot;A&quot;</span>, <span class="at">widths =</span> <span class="dv">18</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">freezePane</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">firstRow =</span> <span class="cn">TRUE</span>, <span class="at">firstCol =</span> <span class="cn">TRUE</span>) <span class="do">## freeze first row and column</span></span>
+<span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="fu">writeDataTable</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">x =</span> mtcars,</span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="at">colNames =</span> <span class="cn">TRUE</span>, <span class="at">rowNames =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="at">tableStyle =</span> <span class="st">&quot;TableStyleLight9&quot;</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">cols =</span> <span class="st">&quot;A&quot;</span>, <span class="at">widths =</span> <span class="dv">18</span>)</span></code></pre></div>
 </div>
 <div id="write-data-to-sheet-2" class="section level3">
 <h3>write data to sheet 2</h3>
 <p>iris data.frame is added as excel table on sheet 2.</p>
 <div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">writeDataTable</span>(wb, <span class="at">sheet =</span> <span class="dv">2</span>, iris, <span class="at">startCol =</span> <span class="st">&quot;K&quot;</span>, <span class="at">startRow =</span> <span class="dv">2</span>)</span>
 <span id="cb10-2"><a href="#cb10-2" tabindex="-1"></a></span>
-<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">data =</span> iris, <span class="at">x =</span> Sepal.Length, <span class="at">y =</span> Sepal.Width, <span class="at">colour =</span> Species)</span>
-<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="fu">insertPlot</span>(wb, <span class="dv">2</span>, <span class="at">xy =</span> <span class="fu">c</span>(<span class="st">&quot;B&quot;</span>, <span class="dv">16</span>))  <span class="do">## insert plot at cell B16</span></span>
+<span id="cb10-3"><a href="#cb10-3" tabindex="-1"></a><span class="fu">qplot</span>(<span class="at">data=</span>iris, <span class="at">x =</span> Sepal.Length, <span class="at">y=</span> Sepal.Width, <span class="at">colour =</span> Species)</span>
+<span id="cb10-4"><a href="#cb10-4" tabindex="-1"></a><span class="fu">insertPlot</span>(wb, <span class="dv">2</span>, <span class="at">xy=</span><span class="fu">c</span>(<span class="st">&quot;B&quot;</span>, <span class="dv">16</span>)) <span class="do">## insert plot at cell B16</span></span>
 <span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a></span>
-<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>means <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(<span class="at">x =</span> iris[, <span class="sc">-</span><span class="dv">5</span>], <span class="at">by =</span> <span class="fu">list</span>(iris<span class="sc">$</span>Species), <span class="at">FUN =</span> mean)</span>
-<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>vars <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(<span class="at">x =</span> iris[, <span class="sc">-</span><span class="dv">5</span>], <span class="at">by =</span> <span class="fu">list</span>(iris<span class="sc">$</span>Species), <span class="at">FUN =</span> var)</span></code></pre></div>
+<span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>means <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(<span class="at">x =</span> iris[,<span class="sc">-</span><span class="dv">5</span>], <span class="at">by =</span> <span class="fu">list</span>(iris<span class="sc">$</span>Species), <span class="at">FUN =</span> mean)</span>
+<span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>vars <span class="ot">&lt;-</span> <span class="fu">aggregate</span>(<span class="at">x =</span> iris[,<span class="sc">-</span><span class="dv">5</span>], <span class="at">by =</span> <span class="fu">list</span>(iris<span class="sc">$</span>Species), <span class="at">FUN =</span> var)</span></code></pre></div>
 </div>
 <div id="add-write-group-means" class="section level3">
 <h3>add write group means</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>headSty <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(<span class="at">fgFill =</span> <span class="st">&quot;#DCE6F1&quot;</span>, <span class="at">halign =</span> <span class="st">&quot;center&quot;</span>, <span class="at">border =</span> <span class="st">&quot;TopBottomLeftRight&quot;</span>)</span>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>headSty <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(<span class="at">fgFill=</span><span class="st">&quot;#DCE6F1&quot;</span>, <span class="at">halign=</span><span class="st">&quot;center&quot;</span>, <span class="at">border =</span> <span class="st">&quot;TopBottomLeftRight&quot;</span>)</span>
 <span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="fu">writeData</span>(wb, <span class="dv">2</span>, <span class="at">x =</span> <span class="st">&quot;Iris dataset group means&quot;</span>, <span class="at">startCol =</span> <span class="dv">2</span>, <span class="at">startRow =</span> <span class="dv">2</span>)</span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="fu">writeData</span>(wb, <span class="dv">2</span>, <span class="at">x =</span> means, <span class="at">startCol =</span> <span class="st">&quot;B&quot;</span>, <span class="at">startRow =</span> <span class="dv">3</span>, <span class="at">borders =</span> <span class="st">&quot;rows&quot;</span>, <span class="at">headerStyle =</span> headSty)</span></code></pre></div>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="fu">writeData</span>(wb, <span class="dv">2</span>, <span class="at">x =</span> means, <span class="at">startCol =</span> <span class="st">&quot;B&quot;</span>, <span class="at">startRow=</span><span class="dv">3</span>, <span class="at">borders=</span><span class="st">&quot;rows&quot;</span>, <span class="at">headerStyle =</span> headSty)</span></code></pre></div>
 </div>
 <div id="add-write-group-variances" class="section level3">
 <h3>add write group variances</h3>
 <div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">writeData</span>(wb, <span class="dv">2</span>, <span class="at">x =</span> <span class="st">&quot;Iris dataset group variances&quot;</span>, <span class="at">startCol =</span> <span class="dv">2</span>, <span class="at">startRow =</span> <span class="dv">9</span>)</span>
-<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">writeData</span>(wb, <span class="dv">2</span>, <span class="at">x =</span> vars, <span class="at">startCol =</span> <span class="st">&quot;B&quot;</span>, <span class="at">startRow =</span> <span class="dv">10</span>, <span class="at">borders =</span> <span class="st">&quot;columns&quot;</span>, <span class="at">headerStyle =</span> headSty)</span>
-<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a></span>
-<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="dv">2</span>, <span class="at">cols =</span> <span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">widths =</span> <span class="dv">12</span>)  <span class="do">## width is recycled for each col</span></span>
-<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="dv">2</span>, <span class="at">cols =</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">15</span>, <span class="at">widths =</span> <span class="dv">15</span>)</span></code></pre></div>
+<span id="cb12-2"><a href="#cb12-2" tabindex="-1"></a><span class="fu">writeData</span>(wb, <span class="dv">2</span>, <span class="at">x=</span> vars, <span class="at">startCol =</span> <span class="st">&quot;B&quot;</span>, <span class="at">startRow=</span><span class="dv">10</span>, <span class="at">borders=</span><span class="st">&quot;columns&quot;</span>,</span>
+<span id="cb12-3"><a href="#cb12-3" tabindex="-1"></a><span class="at">headerStyle =</span> headSty)</span>
+<span id="cb12-4"><a href="#cb12-4" tabindex="-1"></a></span>
+<span id="cb12-5"><a href="#cb12-5" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="dv">2</span>, <span class="at">cols=</span><span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">widths =</span> <span class="dv">12</span>) <span class="do">## width is recycled for each col</span></span>
+<span id="cb12-6"><a href="#cb12-6" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="dv">2</span>, <span class="at">cols=</span><span class="dv">11</span><span class="sc">:</span><span class="dv">15</span>, <span class="at">widths =</span> <span class="dv">15</span>)</span></code></pre></div>
 </div>
 <div id="add-style-mean-variance-table-headers" class="section level3">
 <h3>add style mean &amp; variance table headers</h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>s1 <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(<span class="at">fontSize =</span> <span class="dv">14</span>, <span class="at">textDecoration =</span> <span class="fu">c</span>(<span class="st">&quot;bold&quot;</span>, <span class="st">&quot;italic&quot;</span>))</span>
-<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="fu">addStyle</span>(wb, <span class="dv">2</span>, <span class="at">style =</span> s1, <span class="at">rows =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">9</span>), <span class="at">cols =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a>s1 <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(<span class="at">fontSize=</span><span class="dv">14</span>, <span class="at">textDecoration=</span><span class="fu">c</span>(<span class="st">&quot;bold&quot;</span>, <span class="st">&quot;italic&quot;</span>))</span>
+<span id="cb13-2"><a href="#cb13-2" tabindex="-1"></a><span class="fu">addStyle</span>(wb, <span class="dv">2</span>, <span class="at">style =</span> s1, <span class="at">rows=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">9</span>), <span class="at">cols=</span><span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span></code></pre></div>
 </div>
 <div id="save-workbook" class="section level3">
 <h3>save workbook</h3>
-<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">saveWorkbook</span>(wb, <span class="st">&quot;basics.xlsx&quot;</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)  <span class="do">## save to working directory</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">saveWorkbook</span>(wb, <span class="st">&quot;basics.xlsx&quot;</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>) <span class="do">## save to working directory</span></span></code></pre></div>
 </div>
 </div>
 <div id="gallery" class="section level2">
@@ -612,49 +619,50 @@ elements</h3>
 <span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a></span>
 <span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a><span class="do">## read historical prices from yahoo finance</span></span>
 <span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a>ticker <span class="ot">&lt;-</span> <span class="st">&quot;CBA.AX&quot;</span></span>
-<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>csv.url <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;https://query1.finance.yahoo.com/v7/finance/download/&quot;</span>, ticker,</span>
-<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a>    <span class="st">&quot;?period1=1597597610&amp;period2=1629133610&amp;interval=1d&amp;events=history&amp;includeAdjustedClose= TRue&quot;</span>)</span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>csv.url <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">&quot;https://query1.finance.yahoo.com/v7/finance/download/&quot;</span>,</span>
+<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a>ticker, <span class="st">&quot;?period1=1597597610&amp;period2=1629133610&amp;interval=1d&amp;events=history&amp;includeAdjustedClose= TRue&quot;</span>)</span>
 <span id="cb16-9"><a href="#cb16-9" tabindex="-1"></a>prices <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">url</span>(csv.url), <span class="at">as.is =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb16-10"><a href="#cb16-10" tabindex="-1"></a>prices<span class="sc">$</span>Date <span class="ot">&lt;-</span> <span class="fu">as.Date</span>(prices<span class="sc">$</span>Date)</span>
 <span id="cb16-11"><a href="#cb16-11" tabindex="-1"></a>close <span class="ot">&lt;-</span> prices<span class="sc">$</span>Close</span>
-<span id="cb16-12"><a href="#cb16-12" tabindex="-1"></a>prices<span class="sc">$</span>logReturns <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">log</span>(close[<span class="dv">2</span><span class="sc">:</span><span class="fu">length</span>(close)]<span class="sc">/</span>close[<span class="dv">1</span><span class="sc">:</span>(<span class="fu">length</span>(close) <span class="sc">-</span> <span class="dv">1</span>)]))</span>
+<span id="cb16-12"><a href="#cb16-12" tabindex="-1"></a>prices<span class="sc">$</span>logReturns <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="fu">log</span>(close[<span class="dv">2</span><span class="sc">:</span><span class="fu">length</span>(close)]<span class="sc">/</span>close[<span class="dv">1</span><span class="sc">:</span>(<span class="fu">length</span>(close)<span class="sc">-</span><span class="dv">1</span>)]))</span>
 <span id="cb16-13"><a href="#cb16-13" tabindex="-1"></a></span>
 <span id="cb16-14"><a href="#cb16-14" tabindex="-1"></a><span class="do">## Create plot of price series and add to worksheet</span></span>
-<span id="cb16-15"><a href="#cb16-15" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> prices, <span class="fu">aes</span>(<span class="fu">as.Date</span>(Date), <span class="fu">as.numeric</span>(Close))) <span class="sc">+</span> <span class="fu">geom_line</span>(<span class="at">colour =</span> <span class="st">&quot;royalblue2&quot;</span>) <span class="sc">+</span></span>
-<span id="cb16-16"><a href="#cb16-16" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Date&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Price&quot;</span>, <span class="at">title =</span> ticker) <span class="sc">+</span> <span class="fu">geom_area</span>(<span class="at">fill =</span> <span class="st">&quot;royalblue1&quot;</span>,</span>
-<span id="cb16-17"><a href="#cb16-17" tabindex="-1"></a>    <span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span> <span class="fu">coord_cartesian</span>(<span class="at">ylim =</span> <span class="fu">c</span>(<span class="fu">min</span>(prices<span class="sc">$</span>Close) <span class="sc">-</span> <span class="fl">1.5</span>, <span class="fu">max</span>(prices<span class="sc">$</span>Close) <span class="sc">+</span></span>
-<span id="cb16-18"><a href="#cb16-18" tabindex="-1"></a>    <span class="fl">1.5</span>))</span>
-<span id="cb16-19"><a href="#cb16-19" tabindex="-1"></a></span>
-<span id="cb16-20"><a href="#cb16-20" tabindex="-1"></a><span class="do">## Add worksheet and write plot to sheet</span></span>
-<span id="cb16-21"><a href="#cb16-21" tabindex="-1"></a><span class="fu">addWorksheet</span>(wb, <span class="at">sheetName =</span> <span class="st">&quot;CBA&quot;</span>)</span>
-<span id="cb16-22"><a href="#cb16-22" tabindex="-1"></a><span class="fu">insertPlot</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">xy =</span> <span class="fu">c</span>(<span class="st">&quot;J&quot;</span>, <span class="dv">3</span>))</span>
-<span id="cb16-23"><a href="#cb16-23" tabindex="-1"></a></span>
-<span id="cb16-24"><a href="#cb16-24" tabindex="-1"></a><span class="do">## Histogram of log returns</span></span>
-<span id="cb16-25"><a href="#cb16-25" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> prices, <span class="fu">aes</span>(<span class="at">x =</span> logReturns)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth =</span> <span class="fl">0.0025</span>) <span class="sc">+</span></span>
-<span id="cb16-26"><a href="#cb16-26" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Histogram of log returns&quot;</span>)</span>
-<span id="cb16-27"><a href="#cb16-27" tabindex="-1"></a></span>
-<span id="cb16-28"><a href="#cb16-28" tabindex="-1"></a><span class="do">## currency</span></span>
-<span id="cb16-29"><a href="#cb16-29" tabindex="-1"></a><span class="fu">class</span>(prices<span class="sc">$</span>Close) <span class="ot">&lt;-</span> <span class="st">&quot;currency&quot;</span>  <span class="do">## styles as currency in workbook</span></span>
-<span id="cb16-30"><a href="#cb16-30" tabindex="-1"></a></span>
-<span id="cb16-31"><a href="#cb16-31" tabindex="-1"></a><span class="do">## write historical data and histogram of returns</span></span>
-<span id="cb16-32"><a href="#cb16-32" tabindex="-1"></a><span class="fu">writeDataTable</span>(wb, <span class="at">sheet =</span> <span class="st">&quot;CBA&quot;</span>, <span class="at">x =</span> prices)</span>
-<span id="cb16-33"><a href="#cb16-33" tabindex="-1"></a><span class="fu">insertPlot</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">startRow =</span> <span class="dv">25</span>, <span class="at">startCol =</span> <span class="st">&quot;J&quot;</span>)</span>
-<span id="cb16-34"><a href="#cb16-34" tabindex="-1"></a></span>
-<span id="cb16-35"><a href="#cb16-35" tabindex="-1"></a><span class="do">## Add conditional formatting to show where logReturn &gt; 0.01 using default</span></span>
-<span id="cb16-36"><a href="#cb16-36" tabindex="-1"></a><span class="do">## style</span></span>
-<span id="cb16-37"><a href="#cb16-37" tabindex="-1"></a><span class="fu">conditionalFormat</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">cols =</span> <span class="fu">seq_len</span>((prices)), <span class="at">rows =</span> <span class="dv">2</span><span class="sc">:</span>(<span class="fu">nrow</span>(prices) <span class="sc">+</span></span>
-<span id="cb16-38"><a href="#cb16-38" tabindex="-1"></a>    <span class="dv">1</span>), <span class="at">rule =</span> <span class="st">&quot;$H2 &gt; 0.01&quot;</span>)</span>
+<span id="cb16-15"><a href="#cb16-15" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> prices, <span class="fu">aes</span>(<span class="fu">as.Date</span>(Date), <span class="fu">as.numeric</span>(Close))) <span class="sc">+</span></span>
+<span id="cb16-16"><a href="#cb16-16" tabindex="-1"></a><span class="fu">geom_line</span>(<span class="at">colour=</span><span class="st">&quot;royalblue2&quot;</span>) <span class="sc">+</span></span>
+<span id="cb16-17"><a href="#cb16-17" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">x =</span> <span class="st">&quot;Date&quot;</span>, <span class="at">y =</span> <span class="st">&quot;Price&quot;</span>, <span class="at">title =</span> ticker) <span class="sc">+</span></span>
+<span id="cb16-18"><a href="#cb16-18" tabindex="-1"></a><span class="fu">geom_area</span>(<span class="at">fill =</span> <span class="st">&quot;royalblue1&quot;</span>,<span class="at">alpha =</span> <span class="fl">0.3</span>) <span class="sc">+</span></span>
+<span id="cb16-19"><a href="#cb16-19" tabindex="-1"></a><span class="fu">coord_cartesian</span>(<span class="at">ylim=</span><span class="fu">c</span>(<span class="fu">min</span>(prices<span class="sc">$</span>Close)<span class="sc">-</span><span class="fl">1.5</span>, <span class="fu">max</span>(prices<span class="sc">$</span>Close)<span class="sc">+</span><span class="fl">1.5</span>)) </span>
+<span id="cb16-20"><a href="#cb16-20" tabindex="-1"></a></span>
+<span id="cb16-21"><a href="#cb16-21" tabindex="-1"></a><span class="do">## Add worksheet and write plot to sheet</span></span>
+<span id="cb16-22"><a href="#cb16-22" tabindex="-1"></a><span class="fu">addWorksheet</span>(wb, <span class="at">sheetName =</span> <span class="st">&quot;CBA&quot;</span>)</span>
+<span id="cb16-23"><a href="#cb16-23" tabindex="-1"></a><span class="fu">insertPlot</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">xy =</span> <span class="fu">c</span>(<span class="st">&quot;J&quot;</span>, <span class="dv">3</span>))</span>
+<span id="cb16-24"><a href="#cb16-24" tabindex="-1"></a></span>
+<span id="cb16-25"><a href="#cb16-25" tabindex="-1"></a><span class="do">## Histogram of log returns</span></span>
+<span id="cb16-26"><a href="#cb16-26" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> prices, <span class="fu">aes</span>(<span class="at">x =</span> logReturns)) <span class="sc">+</span> <span class="fu">geom_histogram</span>(<span class="at">binwidth=</span><span class="fl">0.0025</span>) <span class="sc">+</span></span>
+<span id="cb16-27"><a href="#cb16-27" tabindex="-1"></a><span class="fu">labs</span>(<span class="at">title =</span> <span class="st">&quot;Histogram of log returns&quot;</span>)</span>
+<span id="cb16-28"><a href="#cb16-28" tabindex="-1"></a></span>
+<span id="cb16-29"><a href="#cb16-29" tabindex="-1"></a><span class="do">## currency </span></span>
+<span id="cb16-30"><a href="#cb16-30" tabindex="-1"></a><span class="fu">class</span>(prices<span class="sc">$</span>Close) <span class="ot">&lt;-</span> <span class="st">&quot;currency&quot;</span> <span class="do">## styles as currency in workbook</span></span>
+<span id="cb16-31"><a href="#cb16-31" tabindex="-1"></a></span>
+<span id="cb16-32"><a href="#cb16-32" tabindex="-1"></a><span class="do">## write historical data and  histogram of returns</span></span>
+<span id="cb16-33"><a href="#cb16-33" tabindex="-1"></a><span class="fu">writeDataTable</span>(wb, <span class="at">sheet =</span> <span class="st">&quot;CBA&quot;</span>, <span class="at">x =</span> prices)</span>
+<span id="cb16-34"><a href="#cb16-34" tabindex="-1"></a><span class="fu">insertPlot</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">startRow=</span><span class="dv">25</span>, <span class="at">startCol =</span> <span class="st">&quot;J&quot;</span>)</span>
+<span id="cb16-35"><a href="#cb16-35" tabindex="-1"></a></span>
+<span id="cb16-36"><a href="#cb16-36" tabindex="-1"></a><span class="do">## Add conditional formatting to show where logReturn &gt; 0.01 using default style</span></span>
+<span id="cb16-37"><a href="#cb16-37" tabindex="-1"></a><span class="fu">conditionalFormat</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">cols =</span> <span class="fu">seq_len</span>((prices)), <span class="at">rows =</span> <span class="dv">2</span><span class="sc">:</span>(<span class="fu">nrow</span>(prices)<span class="sc">+</span><span class="dv">1</span>),</span>
+<span id="cb16-38"><a href="#cb16-38" tabindex="-1"></a><span class="at">rule =</span> <span class="st">&quot;$H2 &gt; 0.01&quot;</span>)</span>
 <span id="cb16-39"><a href="#cb16-39" tabindex="-1"></a></span>
-<span id="cb16-40"><a href="#cb16-40" tabindex="-1"></a><span class="do">## style log return col as a percentage</span></span>
+<span id="cb16-40"><a href="#cb16-40" tabindex="-1"></a><span class="do">## style log return col as a percentage  </span></span>
 <span id="cb16-41"><a href="#cb16-41" tabindex="-1"></a>logRetStyle <span class="ot">&lt;-</span> <span class="fu">createStyle</span>(<span class="at">numFmt =</span> <span class="st">&quot;percentage&quot;</span>)</span>
 <span id="cb16-42"><a href="#cb16-42" tabindex="-1"></a></span>
-<span id="cb16-43"><a href="#cb16-43" tabindex="-1"></a><span class="fu">addStyle</span>(wb, <span class="dv">1</span>, <span class="at">style =</span> logRetStyle, <span class="at">rows =</span> <span class="dv">2</span><span class="sc">:</span>(<span class="fu">nrow</span>(prices) <span class="sc">+</span> <span class="dv">1</span>), <span class="at">cols =</span> <span class="st">&quot;H&quot;</span>, <span class="at">gridExpand =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb16-44"><a href="#cb16-44" tabindex="-1"></a></span>
-<span id="cb16-45"><a href="#cb16-45" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="at">sheet =</span> <span class="dv">1</span>, <span class="at">cols =</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;F&quot;</span>, <span class="st">&quot;G&quot;</span>, <span class="st">&quot;H&quot;</span>), <span class="at">widths =</span> <span class="dv">15</span>)</span>
-<span id="cb16-46"><a href="#cb16-46" tabindex="-1"></a></span>
-<span id="cb16-47"><a href="#cb16-47" tabindex="-1"></a><span class="do">## save workbook to working directory</span></span>
-<span id="cb16-48"><a href="#cb16-48" tabindex="-1"></a><span class="fu">saveWorkbook</span>(wb, <span class="st">&quot;stockPrice.xlsx&quot;</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb16-49"><a href="#cb16-49" tabindex="-1"></a><span class="fu">openXL</span>(<span class="st">&quot;stockPrice.xlsx&quot;</span>)</span></code></pre></div>
+<span id="cb16-43"><a href="#cb16-43" tabindex="-1"></a><span class="fu">addStyle</span>(wb, <span class="dv">1</span>, <span class="at">style =</span> logRetStyle, <span class="at">rows =</span> <span class="dv">2</span><span class="sc">:</span>(<span class="fu">nrow</span>(prices) <span class="sc">+</span> <span class="dv">1</span>), </span>
+<span id="cb16-44"><a href="#cb16-44" tabindex="-1"></a><span class="at">cols =</span> <span class="st">&quot;H&quot;</span>, <span class="at">gridExpand =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-45"><a href="#cb16-45" tabindex="-1"></a></span>
+<span id="cb16-46"><a href="#cb16-46" tabindex="-1"></a><span class="fu">setColWidths</span>(wb, <span class="at">sheet=</span><span class="dv">1</span>, <span class="at">cols =</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;F&quot;</span>, <span class="st">&quot;G&quot;</span>, <span class="st">&quot;H&quot;</span>), <span class="at">widths =</span> <span class="dv">15</span>)</span>
+<span id="cb16-47"><a href="#cb16-47" tabindex="-1"></a></span>
+<span id="cb16-48"><a href="#cb16-48" tabindex="-1"></a><span class="do">## save workbook to working directory</span></span>
+<span id="cb16-49"><a href="#cb16-49" tabindex="-1"></a><span class="fu">saveWorkbook</span>(wb, <span class="st">&quot;stockPrice.xlsx&quot;</span>, <span class="at">overwrite =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb16-50"><a href="#cb16-50" tabindex="-1"></a><span class="fu">openXL</span>(<span class="st">&quot;stockPrice.xlsx&quot;</span>)</span></code></pre></div>
 </div>
 <div id="image-compression-using-pca" class="section level3">
 <h3>Image Compression using PCA</h3>

@@ -39,6 +39,7 @@ aging.ba.game	aging.ba.game
 aging.barabasi.game	aging.barabasi.game
 aging.prefatt.game	aging.prefatt.game
 algorithm	communities
+align_layout	align_layout
 all_shortest_paths	distances
 all_simple_paths	all_simple_paths
 alpha.centrality	alpha.centrality
@@ -110,6 +111,8 @@ bipartite.mapping	bipartite.mapping
 bipartite.projection	bipartite.projection
 bipartite.projection.size	bipartite.projection.size
 bipartite.random.game	bipartite.random.game
+bipartite_gnm	sample_bipartite_gnm
+bipartite_gnp	sample_bipartite_gnm
 bipartite_graph	make_bipartite_graph
 bipartite_mapping	bipartite_mapping
 bipartite_projection	bipartite_projection
@@ -291,6 +294,8 @@ farthest.nodes	farthest.nodes
 farthest_vertices	diameter
 fastgreedy.community	fastgreedy.community
 feedback_arc_set	feedback_arc_set
+feedback_vertex_set	feedback_vertex_set
+find_cycle	find_cycle
 fit_hrg	fit_hrg
 fit_power_law	fit_power_law
 forest.fire.game	forest.fire.game
@@ -472,8 +477,6 @@ igraph.shape.noplot	igraph.shape.noplot
 igraph.to.graphNEL	igraph.to.graphNEL
 igraph.version	igraph.version
 igraph.vertex.shapes	shapes
-igraphdemo	igraphdemo
-igraph_demo	igraph_demo
 igraph_opt	igraph_options
 igraph_options	igraph_options
 igraph_version	igraph_version
@@ -518,6 +521,8 @@ is_acyclic	is_acyclic
 is_biconnected	is_biconnected
 is_bipartite	is_bipartite
 is_chordal	is_chordal
+is_clique	cliques
+is_complete	is_complete
 is_connected	components
 is_dag	is_dag
 is_degseq	is_degseq
@@ -527,6 +532,7 @@ is_graphical	is_graphical
 is_hierarchical	communities
 is_igraph	is_igraph
 is_isomorphic_to	isomorphic
+is_ivs	ivs
 is_matching	matching
 is_max_matching	matching
 is_min_separator	is_min_separator
@@ -741,6 +747,8 @@ r_pal	r_pal
 sample_	sample_
 sample_asym_pref	sample_pref
 sample_bipartite	sample_bipartite
+sample_bipartite_gnm	sample_bipartite_gnm
+sample_bipartite_gnp	sample_bipartite_gnm
 sample_chung_lu	sample_chung_lu
 sample_cit_cit_types	sample_last_cit
 sample_cit_types	sample_last_cit
@@ -785,6 +793,7 @@ set.vertex.attribute	set.vertex.attribute
 set_edge_attr	set_edge_attr
 set_graph_attr	set_graph_attr
 set_vertex_attr	set_vertex_attr
+set_vertex_attrs	set_vertex_attrs
 shapes	shapes
 shape_noclip	shapes
 shape_noplot	shapes
@@ -796,6 +805,7 @@ similarity	similarity
 similarity.dice	similarity.dice
 similarity.invlogweighted	similarity.invlogweighted
 similarity.jaccard	similarity.jaccard
+simple_cycles	simple_cycles
 simplified	simplified
 simplify	simplify
 simplify_and_colorize	simplify

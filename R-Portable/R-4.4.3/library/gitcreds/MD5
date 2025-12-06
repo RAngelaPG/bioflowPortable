@@ -1,4 +1,4 @@
-8b869c47959ceb9015f7d0bf965febb2 *DESCRIPTION
+12047e324a1fc3c82279d94c25bde50f *DESCRIPTION
 5fd25a52bea747f60aaa764bdb353991 *INDEX
 fd6302a7bb0d29c2fba79b66644039bc *LICENSE
 2597599f6dda305d8099c85f049fa5a2 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 8fa78826171e2249f33fce5f1e105da7 *Meta/hsearch.rds
 6d3b3cdf64fcdd31a5da05ea47f77477 *Meta/links.rds
 71cfb1a2c16551fd211df3ab064e3f71 *Meta/nsInfo.rds
-f1b8440db0644bbcadc97363e8ef8c6b *Meta/package.rds
+8d4bf23401fda800ef6b2137aa7a1980 *Meta/package.rds
 214d99f2ce7320bac0b4689408e5ed38 *Meta/vignette.rds
 0d1ea6e7936dc778f0cee3be19b228a7 *NAMESPACE
 4372e2972c799d13dd80105bd9ddd99c *NEWS.md
@@ -21,8 +21,8 @@ ffac8e37f7bfefbb2236d127a5ffce12 *doc/package.R
 66879e3ebd62dcce31979a69dfd92767 *doc/package.html
 d86e00bbce154a51a657639ac1a1868a *help/AnIndex
 27a8844f334b776dd53476ced5fb1b5b *help/aliases.rds
-2285faa93fbcff3da6c7914418c8325e *help/gitcreds.rdb
-874c5f8f5e5f9b0f3b5daa8eafa73b48 *help/gitcreds.rdx
-48e87fe5b2dd3b51b0b39fe5894f6f32 *help/paths.rds
+c302e13c77edb3c17d4ee9a69b80dc28 *help/gitcreds.rdb
+ebeba736958ab512de7223ae6ff17925 *help/gitcreds.rdx
+ccf3626cbe1ce952afc648f88302eff9 *help/paths.rds
 b5c7de2c50b2243b56951e8c4af49d99 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

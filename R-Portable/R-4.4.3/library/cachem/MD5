@@ -1,4 +1,4 @@
-1513689f28da7592f7a475ae5b9b0c55 *DESCRIPTION
+f9eac7618ba0abbe4bc7ca682dca0c03 *DESCRIPTION
 f296d0e3c57e5f7ad84effceb2c583e9 *INDEX
 309ce96fc5f60de8f8040e36efadd724 *LICENSE
 757155e19f5487bb6eb8758868b879ef *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 0106ff254bec89edfcf66d82bb544354 *Meta/hsearch.rds
 7119f66bfa6900fb5424e45023a3fb6a *Meta/links.rds
 65ab4848571b009a24d336bde8e3c2f8 *Meta/nsInfo.rds
-9e483758c1a3296dd81eb02fbfb793c9 *Meta/package.rds
+77feb91d65a1881e38c34b7b3d1c24a0 *Meta/package.rds
 d04ed310118f0f6793fd21dded64e62c *NAMESPACE
 556870dba4f783debc4415ccc8796f5a *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/cachem
@@ -14,10 +14,10 @@ d6c68f1fe41ced6e98a766a3757313da *R/cachem
 ab08c54099e21d321017e86d7af73d80 *R/cachem.rdx
 4d2c42c715f565722d3db3512f466921 *help/AnIndex
 dee45a2123ba87013adab9f29e3857b6 *help/aliases.rds
-7a205776a3155a3aead7d73a0008ab1c *help/cachem.rdb
-27f67096c63bfa4fcffecbac6cd3c8f4 *help/cachem.rdx
-3f546925c0f7da6c566d83c689df9e7b *help/paths.rds
+95d2a3aeab1395a0e758337f3be091f1 *help/cachem.rdb
+f0fe8c7a0a7dd11e80fbcd22bc0eee79 *help/cachem.rdx
+34acd14edf9980ab3d6b86765aa981e1 *help/paths.rds
 7b04f4383af3423db34c03bbfbd0ea8f *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-1c8e6e0c77352db99149bdbf17ad412e *libs/x64/cachem.dll
+1268eacc34b0934814943be22623cf8a *libs/x64/cachem.dll
 fc0d8ce4c09476ac72e9a7164291bb18 *libs/x64/symbols.rds

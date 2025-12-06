@@ -1,7 +1,6 @@
 ## ----echo = FALSE, message = FALSE--------------------------------------------
 knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
 library(xml2)
-library(magrittr)
 
 ## -----------------------------------------------------------------------------
 x <- read_xml("<p>This is some <b>text</b>. This is more.</p>")
@@ -84,12 +83,12 @@ x
 
 ## -----------------------------------------------------------------------------
 x <- read_xml("<foo><bar><baz/></bar></foo>")
-x1 <- x %>%
-  xml_children() %>%
-  .[[1]]
-x2 <- x1 %>%
-  xml_children() %>%
-  .[[1]]
+x1 <- x |>
+  xml_children() |>
+  (\(.) .[[1]])()
+x2 <- x1 |>
+  xml_children() |>
+  (\(.) .[[1]])()
 
 xml_remove(x1)
 rm(x1)
@@ -111,9 +110,9 @@ d <- xml_new_root("sld",
   "xmlns:ogc" = "http://www.opengis.net/ogc",
   "xmlns:se" = "http://www.opengis.net//se",
   version = "1.1.0"
-) %>%
-  xml_add_child("layer") %>%
-  xml_add_child("se:Name", "My Layer") %>%
+) |>
+  xml_add_child("layer") |>
+  xml_add_child("se:Name", "My Layer") |>
   xml_root()
 
 d

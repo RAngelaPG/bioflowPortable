@@ -1,11 +1,11 @@
-01439ee91db59b64ac2b6d6d8f79f46b *DESCRIPTION
+2ff665a42412e56f6701b22f37f11b00 *DESCRIPTION
 ed08e6da4b4277d04a9cd030c11bcfbd *INDEX
 1500d57754387653b1fd05d6a248a1e7 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 d593c856fbae5e084bb54450b8263026 *Meta/hsearch.rds
 d6beb57a004f74450defbcefefb11765 *Meta/links.rds
 08b8219bfaa3d24343b3970b30e1d7fa *Meta/nsInfo.rds
-07159d8ff1aa66881574615aa5296bdb *Meta/package.rds
+adf77c634b9db738a48f8c9f82e201fa *Meta/package.rds
 c6045caab99fe2d155e4e6d813ce2ed4 *Meta/vignette.rds
 abe6b52096d8d7a6e869484df2c377aa *NAMESPACE
 f5bad4fb88448b0b0ca0a5c5a62b091e *NEWS.md
@@ -49,9 +49,9 @@ b7a7cce0fd4bbb7e09a01c01fa0ac0e3 *help/figures/logo-silex.png
 e7bf4938faf0be2883bfd7bacfed957f *help/figures/spin-classic.png
 5b52fea55385e4422679ed0c8e85a031 *help/figures/spin-dash.png
 06beacf7a4d49023c4f8e3b98a3cae0d *help/figures/spin-theme.png
-f216927ca4801f97171f68cb450dff66 *help/paths.rds
-996730e675b1c420b552501ec141f23a *help/shinybusy.rdb
-04d4704f7849ff37f519433ba6c198f8 *help/shinybusy.rdx
+b105a720f379d3fb217c904bd83148af *help/paths.rds
+6a8ea28ea30f98c5333c984beae39950 *help/shinybusy.rdb
+70b84837efd3349d0c55def6326e8a08 *help/shinybusy.rdx
 4cd6ec3fed62402b53abcced9a01aee9 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 cb172e38d25301231f02ad5698cb2777 *htmlwidgets/lib/LICENSE

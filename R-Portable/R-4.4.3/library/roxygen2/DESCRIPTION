@@ -1,13 +1,14 @@
 Package: roxygen2
 Title: In-Line Documentation for R
-Version: 7.3.2
+Version: 7.3.3
 Authors@R: c(
     person("Hadley", "Wickham", , "hadley@posit.co", role = c("aut", "cre", "cph"),
            comment = c(ORCID = "0000-0003-4757-117X")),
     person("Peter", "Danenberg", , "pcd@roxygen.org", role = c("aut", "cph")),
     person("Gábor", "Csárdi", , "csardi.gabor@gmail.com", role = "aut"),
     person("Manuel", "Eugster", role = c("aut", "cph")),
-    person("Posit Software, PBC", role = c("cph", "fnd"))
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
   )
 Description: Generate your Rd documentation, 'NAMESPACE' file, and
     collation field using specially formatted comments. Writing
@@ -32,17 +33,17 @@ Config/testthat/edition: 3
 Config/testthat/parallel: TRUE
 Encoding: UTF-8
 Language: en-GB
-RoxygenNote: 7.3.1.9000
+RoxygenNote: 7.3.2.9000
 NeedsCompilation: yes
-Packaged: 2024-06-27 21:29:24 UTC; hadleywickham
-Author: Hadley Wickham [aut, cre, cph]
-    (<https://orcid.org/0000-0003-4757-117X>),
+Packaged: 2025-09-03 20:12:40 UTC; hadleywickham
+Author: Hadley Wickham [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4757-117X>),
   Peter Danenberg [aut, cph],
   Gábor Csárdi [aut],
   Manuel Eugster [aut, cph],
-  Posit Software, PBC [cph, fnd]
+  Posit Software, PBC [cph, fnd] (ROR: <https://ror.org/03wc8by49>)
 Maintainer: Hadley Wickham <hadley@posit.co>
 Repository: CRAN
-Date/Publication: 2024-06-28 08:20:02 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-03-04 02:48:40 UTC; windows
+Date/Publication: 2025-09-03 21:40:02 UTC
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-12-05 04:18:01 UTC; windows
 Archs: x64

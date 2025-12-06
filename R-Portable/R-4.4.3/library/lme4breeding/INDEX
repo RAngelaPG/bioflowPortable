@@ -1,49 +1,13 @@
-A.mat                   Additive relationship matrix
-DT_augment              DT_augment design example.
-DT_btdata               Blue Tit Data for a Quantitative Genetic
-                        Experiment
-DT_cornhybrids          Corn crosses and markers
-DT_cpdata               Genotypic and Phenotypic data for a CP
-                        population
-DT_example              Broad sense heritability calculation.
-DT_expdesigns           Data for different experimental designs
-DT_fulldiallel          Full diallel data for corn hybrids
-DT_gryphon              Gryphon data from the Journal of Animal Ecology
-DT_h2                   Broad sense heritability calculation.
-DT_halfdiallel          half diallel data for corn hybrids
-DT_ige                  Data to fit indirect genetic effects.
-DT_legendre             Simulated data for random regression
-DT_mohring              Full diallel data for corn hybrids
-DT_polyploid            Genotypic and Phenotypic data for a potato
-                        polyploid population
-DT_rice                 Rice lines dataset
-DT_sleepstudy           Reaction times in a sleep deprivation study
-DT_technow              Genotypic and Phenotypic data from single cross
-                        hybrids (Technow et al.,2014)
-DT_wheat                wheat lines dataset
-DT_yatesoats            Yield of oats in a split-block experiment
-add.diallel.vars        add.diallel.vars
+Dtable                  Get the hypertable for predictions
 adjBeta                 Adjusting fixed effects for intercept
-atcg1234                Letter to number converter
-bbasis                  Function for creating B-spline basis functions
-                        (Eilers & Marx, 2010)
-build.HMM               Build a hybrid marker matrix using parental
-                        genotypes from inbred individuals
-fillData                Filling gaps for a dataset to balance
-getMME                  Build the mixed model equations from a lmebreed
+balanceData             Balance a dataset
+condVarRotated          Get the rotated conditional variance matrix
+getMME                  Build the mixed model equations from a lmeb
                         object
-imputev                 Imputing a numeric or character vector
-leg                     Legendre polynomial matrix
 lme4breeding            *L*inear *m*ixed *e*quations *4* *B*reeding
-lmebreed                Fit mixed-effects models incorporating
-                        relationships
-lmebreed-class          Relationship-based mixed-effects model fits
-overlay                 Overlay Matrix
-redmm                   Reduced Model Matrix
-rrm                     reduced rank matrix
-simage                  Image of sparsity between two variables
+lmeb                    Fit breeding-related mixed-effects models
+lmeb-class              Relationship-based mixed-effects model fits
+mkMmeIndex              Table to track effects
+predict.lmeb            Predict form of a LMM fitted with lmeb/lmebreed
 smm                     sparse model matrix
-stackTrait              Stacking traits in a dataset
-tps                     Get Tensor Product Spline Mixed Model Incidence
-                        Matrices
 umat                    Rotation matrix UDU' decomposition

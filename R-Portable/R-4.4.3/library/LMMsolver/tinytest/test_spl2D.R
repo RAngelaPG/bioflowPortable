@@ -1,7 +1,4 @@
-## Use the oats data described in BioRxiv 2021 paper by Hans-Peter Piepho.
-data("durban.rowcol", package = "agridat")
-## Restict data to 5 columns and rows for speed of testing.
-durban.rowcol <- durban.rowcol[durban.rowcol$row < 6 & durban.rowcol$bed < 6, ]
+load("testdata.rda")
 
 ## Some tests on correct input checking for spl2D.
 
@@ -35,8 +32,15 @@ expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
 # pord
 expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
                       spline = ~spl2D(x1 = bed, x2 = row, nseg = c(10, 10),
-                                      pord = 3)),
-             "pord should be either 1 or 2")
+                                      pord = 4)),
+             "pord should be equal to 1, 2 or 3")
+
+# pord
+expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
+                      spline = ~spl2D(x1 = bed, x2 = row, nseg = c(10, 10),
+                                      pord = 3, degree = 2)),
+             "pord should be less or equal to degree")
+
 
 # degree
 expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
@@ -67,6 +71,23 @@ expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
                       spline = ~spl2D(x1 = bed, x2 = row, nseg = c(10, 10),
                                       x2lim = c(2, 72))),
              "All values of row should be between the lower and upper value of x2lim")
+
+# cyclic
+expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
+                      spline = ~spl2D(x1 = bed, x2 = row, nseg = c(10, 10),
+                                      x2lim = c(2, 72), cyclic = c(3,4))),
+             "cyclic should be a logical vector of length two", fixed=TRUE)
+
+expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
+                      spline = ~spl2D(x1 = bed, x2 = row, nseg = c(10, 10),
+                                      x2lim = c(2, 72), cyclic= c(TRUE,FALSE))),
+             "x1 should be in the range [0,1] for cyclic data", fixed=TRUE)
+
+expect_error(LMMsolve(fixed = yield ~ 1, data = durban.rowcol,
+                      spline = ~spl2D(x1 = bed, x2 = row, nseg = c(10, 10),
+                                      x2lim = c(2, 72), cyclic= c(FALSE,TRUE))),
+             "x2 should be in the range [0,1] for cyclic data", fixed=TRUE)
+
 
 ## Fit simplified (for speed) version of model described in bioRxiv 2021 paper.
 
@@ -100,3 +121,80 @@ expect_equal(sumObj2[["Term"]],
 expect_equal(sumObj2[["Ratio"]],
              c(1, 1, 0.458895940871542, 4.82648592298555e-05,
                0.0821598533833015, 0.458895940885926))
+
+## pord=1
+obj1a <- LMMsolve(fixed = yield ~ 1, random = ~ gen,
+                 spline = ~ spl2D(x1 = bed, x2 = row, nseg = c(3, 3), pord = 1),
+                 data = durban.rowcol,
+                 tolerance = 1e-6)
+expect_equivalent_to_reference(obj1a, "spl2DFull2", tolerance= 1.0e-6)
+
+## pord=3
+obj1b <- LMMsolve(fixed = yield ~ 1, random = ~ gen,
+                  spline = ~ spl2D(x1 = bed, x2 = row, nseg = c(3, 3) , pord = 3),
+                  data = durban.rowcol,
+                  tolerance = 1e-6)
+expect_equivalent_to_reference(obj1b, "spl2DFull3", tolerance= 1.0e-6)
+
+## cyclic: cylinder
+
+set.seed(1234)
+
+sim_fun <- function(x) {
+  y <- exp(sin(1.25*pi*x[1])) + exp(sin(2*pi*(x[2]-0.1)))
+  y
+}
+
+# simulate data on a grid:
+n1 <- 100
+n2 <- 100
+n <- n1*n2
+dat <- expand.grid(x1=seq(0,2,length=n1),x2=seq(0,1,length=n2))
+dat$ytrue <- apply(dat, MARGIN=1, FUN = sim_fun)
+
+# take subset for training
+Ntraining <- 2500
+k <- sample(x=c(1:n), size = Ntraining)
+dat_train <- dat[k, ]
+dat_train$y <- dat_train$ytrue + rnorm(n=Ntraining)
+
+nseg <- c(20,20)
+
+obj3 <- LMMsolve(fixed = y~1,
+                spline = ~spl2D(x1=x1,x2=x2, nseg=nseg,
+                                cyclic=c(FALSE,TRUE)),
+                data = dat_train)
+expect_equal(obj3$logL, -1308.57082500809)
+
+#expect_equivalent_to_reference(obj3, "spl2Dcylinder", tolerance = 1e-6)
+
+## cyclic: torus
+set.seed(1234)
+
+sim_fun <- function(x) {
+  y <- exp(sin(2*pi*x[1])) + exp(cos(2*pi*x[2]))
+  y
+}
+
+# simulate data on a grid:
+n1 <- 100
+n2 <- 100
+n <- n1*n2
+dat <- expand.grid(x1=seq(0,1,length=n1),x2=seq(0,1,length=n2))
+dat$ytrue <- apply(dat, MARGIN=1, FUN = sim_fun)
+
+Ntraining <- 2500
+k <- sample(x=c(1:n), size = Ntraining)
+dat_train <- dat[k, ]
+
+dat_train$y <- dat_train$ytrue + rnorm(n=Ntraining)
+
+nseg <- c(20, 20)
+
+obj4 <- LMMsolve(fixed = y~1,
+                spline = ~spl2D(x1, x2, nseg, cyclic=c(TRUE, TRUE)),
+                data = dat_train)
+
+expect_equal(obj4$logL, -1287.57534355148)
+
+#expect_equivalent_to_reference(obj4, "spl2Dtorus", tolerance = 1e-6)

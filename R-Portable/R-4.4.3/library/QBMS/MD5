@@ -1,11 +1,11 @@
-7a8e01d6bf1e5995f7264f73825ebf92 *DESCRIPTION
+94bd46deafb500871fb0a56be5fc032a *DESCRIPTION
 c4e0160db53bfc09f44d4be9180c35e0 *INDEX
 fe4c872a392cc0c0b64a94f3ead9356a *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 b208b9930034f1cbd54f097e5b495685 *Meta/hsearch.rds
 6d860679323383fe7d0fc73f0adf273a *Meta/links.rds
 b18480e88b194b167e716142306167b0 *Meta/nsInfo.rds
-b67a5b83650190dd9b0b38f861c8cf71 *Meta/package.rds
+f42a905622e032aec51a003632a462e4 *Meta/package.rds
 7eca78a3bc4a126b400771767d3641a9 *Meta/vignette.rds
 df083a9d1c2ff49e6ab0710c6dcaa07d *NAMESPACE
 a32679c6d9bebadb394a5e35753362f1 *NEWS.md
@@ -26,9 +26,9 @@ de08921dce3f2346fa4cc598deb36a07 *doc/hwsd2_example.Rmd
 9528665cf5650ba70fd790361941e4db *doc/terraclimate_example.Rmd
 4be77f6b9abc39ad3ce270c24a3d0a7d *doc/terraclimate_example.html
 042f8dc6384e461185670dbcdea6d751 *help/AnIndex
-ab36c981d65f10c1c913b1bda73419e1 *help/QBMS.rdb
-517c58db516fbdd90f68782fdfc86062 *help/QBMS.rdx
+5f7ecf5b438ad695de719e25ff90b1bc *help/QBMS.rdb
+80d134c4a16addb6f5c2c68f57c42a47 *help/QBMS.rdx
 4ae62fc99e7a1ae0470827927da28442 *help/aliases.rds
-39001b4cf32df5da432d0e7d7613f8f2 *help/paths.rds
+9efc7f7b1a1f0300947cc12d75e88cf9 *help/paths.rds
 f6dfbcf03e03b1cca113210a0d716b09 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

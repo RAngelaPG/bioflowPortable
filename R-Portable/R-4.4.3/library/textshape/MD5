@@ -1,4 +1,4 @@
-5571fab4bc5cb9cc618b1664bd871747 *DESCRIPTION
+87986fc9c7d924592f9fafc258634062 *DESCRIPTION
 ff180863db96a89f8d8cb26f57570c59 *INDEX
 8f447b41b2aa6efa7358c63c8328806c *Meta/Rd.rds
 fe8a83095b0e5092c0a7c4baea2cfb1b *Meta/data.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 ab4b6c8d0cd0764ab004e9ea75806bba *Meta/hsearch.rds
 e1e7e9d5f0045924867e7b41525036ab *Meta/links.rds
 35240a88edb1aa63b890e11ead2a7382 *Meta/nsInfo.rds
-1d23e252f68b7442c49fb1294397cdb8 *Meta/package.rds
+f77028aab5522b7b56036c218d7c1de3 *Meta/package.rds
 440cb5856abb974eda7a6555cae60a14 *NAMESPACE
 d6c68f1fe41ced6e98a766a3757313da *R/textshape
 c13afb0d6bf42d4a7e98c050c6884422 *R/textshape.rdb
@@ -17,8 +17,8 @@ b804177209312c576ee0f3609b1ea8f1 *data/Rdata.rdx
 68adb2af75b55fdd95961eb3ef178548 *docs/Simpsons_Roasting_on_an_Open_Fire_Script.pdf
 c990844784b5edc7350d2a10315aa61b *help/AnIndex
 5fc4cd891799b3d06c8e6137ebeb4421 *help/aliases.rds
-70faa0d2118940895f9f6df8013a68c5 *help/paths.rds
-c56f0549859014935e7981c6195a235a *help/textshape.rdb
-1ad500bdd83093ca3a279efeb5725640 *help/textshape.rdx
+e9b3e8def2d7abb48ff87d8f8044819b *help/paths.rds
+73656b52cb1c61ebe66e9e4c6f3133b3 *help/textshape.rdb
+13f7bf839877fabd17179e9cc730f5ef *help/textshape.rdx
 b1d30c21233f6a94357f7434667c30cd *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

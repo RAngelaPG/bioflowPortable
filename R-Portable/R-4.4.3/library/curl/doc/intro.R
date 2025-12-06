@@ -66,6 +66,14 @@ curl_download('https://cloud.r-project.org/CRAN_mirrors.csv', 'mirrors.csv')
 mirros <- read.csv('mirrors.csv')
 unlink('mirrors.csv')
 
+## ----error=TRUE-------------------------------------------------------------------------------------------------------
+try({
+# Oops! A typo in the URL!
+curl_download('https://cloud.r-project.org/CRAN_mirrorZ.csv', 'mirrors.csv')
+con <- curl('https://cloud.r-project.org/CRAN_mirrorZ.csv')
+open(con)
+})
+
 ## ----echo = FALSE, message = FALSE, warning=FALSE---------------------------------------------------------------------
 close(con)
 rm(con)
@@ -82,6 +90,12 @@ print(req$status_code)
 # This is not the CSV file we were expecting!
 head(readLines('mirrors.csv'))
 unlink('mirrors.csv')
+
+## ----error=TRUE-------------------------------------------------------------------------------------------------------
+try({
+h <- new_handle(failonerror = TRUE)
+curl_fetch_memory('https://cloud.r-project.org/CRAN_mirrorZ.csv', handle = h)
+})
 
 ## ---------------------------------------------------------------------------------------------------------------------
 h <- new_handle()

@@ -1,6 +1,6 @@
 52066ed7a20504a282a091060a794d57 *AUTHORS
 28e8ead6b87a0c883522b26f0e163d68 *CITATION
-4011d956db0370de8580e4276e8e3174 *DESCRIPTION
+8507723928a9218a05fe788cb0869b43 *DESCRIPTION
 22e18095854ed5fb74d54afe0eee5ee1 *INDEX
 e2db398f2559fcf50851d0910a91d11e *Meta/Rd.rds
 d0954df35e1d9b3b426bcadb94cbf155 *Meta/data.rds
@@ -8,7 +8,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 6ebf250d6520b4eb2cffaccefd17cb6b *Meta/hsearch.rds
 503d806cc460a2c777ceaacbe77b549b *Meta/links.rds
 9eacc7b7658de0513322a1acc5dee3b7 *Meta/nsInfo.rds
-bb88f2e004455f66708eeca6d05c9461 *Meta/package.rds
+5886f6d7d0e8f1e31a68740a6514a204 *Meta/package.rds
 b0ab1efea562993f9f77ada2eeefd6d9 *NAMESPACE
 d6c68f1fe41ced6e98a766a3757313da *R/coda
 497b366a183f3995b18664771d10f1d6 *R/coda.rdb
@@ -16,8 +16,8 @@ f627b4711bcd721263416b9f5a4b1316 *R/coda.rdx
 b7a931790fd73a52fa8c791513540ed8 *data/line.rda
 32567d2421b869d985be8a8a9a360b26 *help/AnIndex
 b5fd30499aa8b99cbb4d25638faee978 *help/aliases.rds
-a17409bab5e9e9cc2a1840613d813480 *help/coda.rdb
-4f97690e0d807b641b4e9df676fd4c7a *help/coda.rdx
-78e43ec8e63307d2f0f0e78643165150 *help/paths.rds
+9b9516ecf6b25597590abbd1a168ef04 *help/coda.rdb
+f75e75cc0c9bcf830deb2384a9132b51 *help/coda.rdx
+1e9ca026179b7f18aa665817b94ceede *help/paths.rds
 eb8c86643d877b83793fb8f287e2a790 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

@@ -1,0 +1,27 @@
+athena                  Amazon Athena
+cloudsearch             Amazon CloudSearch
+cloudsearchdomain       Amazon CloudSearch Domain
+datapipeline            AWS Data Pipeline
+datazone                Amazon DataZone
+elasticsearchservice    Amazon Elasticsearch Service
+emr                     Amazon EMR
+entityresolution        AWS EntityResolution
+firehose                Amazon Kinesis Firehose
+glue                    AWS Glue
+gluedatabrew            AWS Glue DataBrew
+healthlake              Amazon HealthLake
+ivs                     Amazon Interactive Video Service
+ivsrealtime             Amazon Interactive Video Service RealTime
+kafka                   Managed Streaming for Kafka
+kafkaconnect            Managed Streaming for Kafka Connect
+kendra                  AWSKendraFrontendService
+kendraranking           Amazon Kendra Intelligent Ranking
+kinesis                 Amazon Kinesis
+kinesisanalytics        Amazon Kinesis Analytics
+kinesisanalyticsv2      Amazon Kinesis Analytics
+mturk                   Amazon Mechanical Turk
+opensearchingestion     Amazon OpenSearch Ingestion
+opensearchservice       Amazon OpenSearch Service
+opensearchserviceserverless
+                        OpenSearch Service Serverless
+quicksight              Amazon QuickSight

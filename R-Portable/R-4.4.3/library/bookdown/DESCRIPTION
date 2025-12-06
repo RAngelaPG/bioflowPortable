@@ -1,7 +1,7 @@
 Package: bookdown
 Type: Package
 Title: Authoring Books and Technical Documents with R Markdown
-Version: 0.42
+Version: 0.46
 Authors@R: c(
     person("Yihui", "Xie", role = c("aut", "cre"), email = "xie@yihui.name", comment = c(ORCID = "0000-0003-0645-5666")),
     person("Christophe", "Dervieux", , "cderv@posit.co", role = c("ctb"),
@@ -63,29 +63,30 @@ Depends: R (>= 3.5.0)
 Imports: htmltools (>= 0.3.6), knitr (>= 1.38), rmarkdown (>= 2.14),
         jquerylib, xfun (>= 0.48), tinytex (>= 0.12), yaml (>= 2.1.19)
 Suggests: bslib (>= 0.2.4), downlit (>= 0.4.0), htmlwidgets, jsonlite,
-        rstudioapi, miniUI, rsconnect (>= 0.4.3), servr (>= 0.13),
-        shiny, tibble, testit (>= 0.9), tufte, xml2, webshot, testthat
-        (>= 3.1.0), withr (>= 2.3.0)
+        curl, rstudioapi, miniUI, rsconnect (>= 1.6.0), servr (>=
+        0.13), shiny, tibble, testit (>= 0.9), tufte, xml2, webshot,
+        testthat (>= 3.1.0), withr (>= 2.3.0)
 URL: https://github.com/rstudio/bookdown,
         https://pkgs.rstudio.com/bookdown/
 BugReports: https://github.com/rstudio/bookdown/issues
 SystemRequirements: Pandoc (>= 1.17.2)
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 Encoding: UTF-8
 Config/Needs/book: remotes, webshot, svglite
 Config/Needs/website: pkgdown, tidyverse/tidytemplate, rstudio/quillt
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2025-01-07 14:48:34 UTC; runner
-Author: Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),
-  Christophe Dervieux [ctb] (<https://orcid.org/0000-0003-4474-2498>),
+Packaged: 2025-12-05 03:44:11 UTC; yihui
+Author: Yihui Xie [aut, cre] (ORCID: <https://orcid.org/0000-0003-0645-5666>),
+  Christophe Dervieux [ctb] (ORCID:
+    <https://orcid.org/0000-0003-4474-2498>),
   JJ Allaire [ctb],
   Albert Kim [ctb],
   Alessandro Samuel-Rosa [ctb],
   Andrzej Oles [ctb],
-  Atsushi Yasumoto [ctb] (<https://orcid.org/0000-0002-8335-495X>),
-  Aust Frederik [ctb] (<https://orcid.org/0000-0003-4900-788X>),
+  Atsushi Yasumoto [ctb] (ORCID: <https://orcid.org/0000-0002-8335-495X>),
+  Aust Frederik [ctb] (ORCID: <https://orcid.org/0000-0003-4900-788X>),
   Bastiaan Quast [ctb],
   Ben Marwick [ctb],
   Chester Ismay [ctb],
@@ -100,7 +101,7 @@ Author: Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),
   Jeff Allen [ctb],
   Jennifer Bryan [ctb],
   Jonathan McPhers [ctb],
-  JooYoung Seo [ctb] (<https://orcid.org/0000-0002-4064-6012>),
+  JooYoung Seo [ctb] (ORCID: <https://orcid.org/0000-0002-4064-6012>),
   Joyce Robbins [ctb],
   Junwen Huang [ctb],
   Kevin Cheung [ctb],
@@ -115,12 +116,13 @@ Author: Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),
   Nathan Werth [ctb],
   Noam Ross [ctb],
   Peter Hickey [ctb],
-  Pedro Rafael D. Marinho [ctb] (<https://orcid.org/0000-0003-1591-8300>),
-  Romain Lesur [ctb] (<https://orcid.org/0000-0002-0721-5595>),
+  Pedro Rafael D. Marinho [ctb] (ORCID:
+    <https://orcid.org/0000-0003-1591-8300>),
+  Romain Lesur [ctb] (ORCID: <https://orcid.org/0000-0002-0721-5595>),
   Sahir Bhatnagar [ctb],
-  Shir Dekel [ctb] (<https://orcid.org/0000-0003-1773-2446>),
+  Shir Dekel [ctb] (ORCID: <https://orcid.org/0000-0003-1773-2446>),
   Steve Simpson [ctb],
-  Thierry Onkelinx [ctb] (<https://orcid.org/0000-0001-8804-4216>),
+  Thierry Onkelinx [ctb] (ORCID: <https://orcid.org/0000-0001-8804-4216>),
   Vincent Fulco [ctb],
   Yixuan Qiu [ctb],
   Zhuoer Dong [ctb],
@@ -131,5 +133,5 @@ Author: Yihui Xie [aut, cre] (<https://orcid.org/0000-0003-0645-5666>),
     inst/resources/AUTHORS),
   FriendCode Inc [cph, ctb] (The gitbook style, with modifications)
 Repository: CRAN
-Date/Publication: 2025-01-07 16:00:07 UTC
-Built: R 4.4.3; ; 2025-03-04 02:48:41 UTC; windows
+Date/Publication: 2025-12-05 06:30:34 UTC
+Built: R 4.4.3; ; 2025-12-06 17:33:15 UTC; windows

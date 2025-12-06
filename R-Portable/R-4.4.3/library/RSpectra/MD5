@@ -1,11 +1,11 @@
-871e621428804608c4bc2dbaf011f206 *DESCRIPTION
+1af359f14e07623f6040073a83b6ac78 *DESCRIPTION
 17b97c992488bf1628609a7170d29dee *INDEX
 f80ec3b700bfeab4439556f366740c10 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 7734a30a4a708a2c66386017809bcf09 *Meta/hsearch.rds
 e8fac5ea0b66177f014f4752b684a746 *Meta/links.rds
 2a17704ad9ac1e5d3d9509deff527135 *Meta/nsInfo.rds
-022bb75a6d2af4052be29b77d58938dd *Meta/package.rds
+03b91995b48f0f991ed712a2e502780e *Meta/package.rds
 85d4c4ec710676cdee230fcf7cf025ca *Meta/vignette.rds
 a82fbcf8508370ccfe7554cd19f4ccd0 *NAMESPACE
 3b636635962f292e5e6c735da2fea64c *NEWS.Rd
@@ -20,10 +20,10 @@ d67b195eac1bf6b96235493882b235f9 *examples/eigs.R
 2da11575480cd4ea60afd889cd2405fe *examples/svds.R
 ceeda76aad665f73d8467fb7a9781d95 *examples/svds_center_scale.R
 bc7831962712a2d4b0968dd92638a25c *help/AnIndex
-ebad3dc3a35e855459fd7ad0832d5572 *help/RSpectra.rdb
-381e9250bc7b5b1c1378f86d1232ad4c *help/RSpectra.rdx
+f9589f09a1da5dc372849a0bc2e4bda6 *help/RSpectra.rdb
+f9874c87dd4fa317dffb373375dbdfb5 *help/RSpectra.rdx
 5dc2fee43b3cfc860601065f53db2dde *help/aliases.rds
-d08167efa603b66ba5833468ec6ee2fa *help/paths.rds
+6b9c9669bfda9adb5b80a5d42d634f7f *help/paths.rds
 6a8e127752ce5f6535363c0b2be39653 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 b7300312c9360e7267bca8270b52f419 *include/GenEigs.h
@@ -88,5 +88,5 @@ da1e5d4ee4ff370dd112035b311de609 *include/Spectra/Util/SimpleRandom.h
 4bc7cc8931ee9332d70c32f87e50ea1b *include/Spectra/Util/TypeTraits.h
 c8825d4727017d1d2c3226c768c717de *include/SpectraC.h
 92cf191e41211dc2b67d297f7a87be98 *include/SymEigs.h
-9147357214478f65058a15c776a56f67 *libs/x64/RSpectra.dll
+5a9fc579641ecd03a6015922fcfe788a *libs/x64/RSpectra.dll
 8291461918601bae6047b01ebd159fdd *libs/x64/symbols.rds

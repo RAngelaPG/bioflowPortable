@@ -5,19 +5,19 @@ knitr::opts_chunk$set(
 )
 
 ## -----------------------------------------------------------------------------
-#  install.packages(c("potools", "usethis"))
+# install.packages(c("potools", "usethis"))
 
 ## -----------------------------------------------------------------------------
-#  usethis::pr_init("translation-zu")
+# usethis::pr_init("translation-zu")
 
 ## -----------------------------------------------------------------------------
-#  potools::po_compile()
-#  devtools::load_all()
-#  build_site("~/path/to/your/site")
+# potools::po_compile()
+# devtools::load_all()
+# build_site("~/path/to/your/site")
 
 ## -----------------------------------------------------------------------------
-#  potools::po_compile()
+# potools::po_compile()
 
 ## -----------------------------------------------------------------------------
-#  usethis::pr_push()
+# usethis::pr_push()
 

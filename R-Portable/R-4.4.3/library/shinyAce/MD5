@@ -1,4 +1,4 @@
-88e11615ea9aa0a1c80cca2d035f1d78 *DESCRIPTION
+3bd554688e0c8a0669262233deacfec3 *DESCRIPTION
 c9c84959dc09a8110ad3d74692295a34 *INDEX
 ee37697abaf5de029c13970304aa2078 *LICENSE
 2a35a00c6257a0d77e683c778ee39998 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 289ef3b249fa5eeec9b23d9459d793a8 *Meta/hsearch.rds
 6aa9a56607f615aa22bab6e9baf359ad *Meta/links.rds
 fea8ddaf0f94c34f24b367eaf53f8455 *Meta/nsInfo.rds
-d9dae2bda9516f5216d39319b6aa0ffc *Meta/package.rds
+a940ff9f49ec7fad75ad03ac08045353 *Meta/package.rds
 24ef0b9400284ee5f103d8ef3abfef71 *NAMESPACE
 84b2eef86a275f6cb4e1835cf006fb34 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/shinyAce
@@ -59,9 +59,9 @@ c078fb3a07add57d83f289623e41915a *examples/13-modules-with-tooltips/server.R
 8ba90605aa38be2e63e2cd6cc6de71c5 *examples/13-modules-with-tooltips/ui.R
 3c41cd0ecc209b84eb97efc5259eae2c *help/AnIndex
 ec8a27ea9b145b10688aa81cbf19070c *help/aliases.rds
-ccf43f5d0fcadb3617151e82d50ce268 *help/paths.rds
-8b46ce2e64b6f172034befbd1935a7cf *help/shinyAce.rdb
-19ba2f44a6b07652302886b7065ca1de *help/shinyAce.rdx
+16577e949ea4ea6c902b8a449f0e6283 *help/paths.rds
+b1dcbb5b47f4375f955d4db1b505b1de *help/shinyAce.rdb
+a823157b7ecf778b2c80e7cd7731e1eb *help/shinyAce.rdx
 cb120f99a0255a66ef64281cf948d0af *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 3c731e1d003de11df7a15d7c7acc2ad0 *www/ace/ace.js

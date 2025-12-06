@@ -1,6 +1,7 @@
 LMMsolver-package	LMMsolver
 ADchol	ADchol
 APSIMdat	APSIMdat
+barley.uniformity.trial	barley.uniformity.trial
 Bsplines	Bsplines
 calcStandardErrors	calcStandardErrors
 coef.LMMsolve	coef.LMMsolve
@@ -8,16 +9,18 @@ constructRinv	constructRinv
 deviance.LMMsolve	deviance.LMMsolve
 diagnosticsMME	diagnosticsMME
 displayMME	displayMME
+effDim	effDim
 fitted.LMMsolve	fitted.LMMsolve
 LMMsolve	LMMsolve
 LMMsolveObject	LMMsolveObject
 LMMsolver	LMMsolver
 logLik.LMMsolve	logLik.LMMsolve
+mLogLik	mLogLik
 multinomial	multinomial
 multipop	multipop
+oats.data	oats.data
 obtainSmoothTrend	obtainSmoothTrend
 predict.LMMsolve	predict.LMMsolve
-predictTest	predictTest
 print.summary.LMMsolve	summary.LMMsolve
 PsplinesKnots	PsplinesKnots
 residuals.LMMsolve	residuals.LMMsolve

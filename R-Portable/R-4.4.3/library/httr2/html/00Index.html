@@ -12,7 +12,7 @@
 <div style="text-align: center;">
 <a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
 <a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
-</div><h2>Documentation for package &lsquo;httr2&rsquo; version 1.1.0</h2>
+</div><h2>Documentation for package &lsquo;httr2&rsquo; version 1.2.1</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 <li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
@@ -26,6 +26,7 @@
 <a href="#C">C</a>
 <a href="#I">I</a>
 <a href="#L">L</a>
+<a href="#N">N</a>
 <a href="#O">O</a>
 <a href="#R">R</a>
 <a href="#S">S</a>
@@ -63,12 +64,23 @@
 <table style="width: 100%;">
 <tr><td style="width: 25%;"><a href="last_response.html">last_request</a></td>
 <td>Retrieve most recent request/response</td></tr>
+<tr><td style="width: 25%;"><a href="last_response.html">last_request_json</a></td>
+<td>Retrieve most recent request/response</td></tr>
 <tr><td style="width: 25%;"><a href="last_response.html">last_response</a></td>
 <td>Retrieve most recent request/response</td></tr>
-<tr><td style="width: 25%;"><a href="with_mocked_responses.html">local_mock</a></td>
-<td>Temporarily mock requests</td></tr>
+<tr><td style="width: 25%;"><a href="last_response.html">last_response_json</a></td>
+<td>Retrieve most recent request/response</td></tr>
 <tr><td style="width: 25%;"><a href="with_mocked_responses.html">local_mocked_responses</a></td>
 <td>Temporarily mock requests</td></tr>
+<tr><td style="width: 25%;"><a href="with_verbosity.html">local_verbosity</a></td>
+<td>Temporarily set verbosity for all requests</td></tr>
+</table>
+
+<h2><a id="N">-- N --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="new_response.html">new_response</a></td>
+<td>Create a HTTP response</td></tr>
 </table>
 
 <h2><a id="O">-- O --</a></h2>
@@ -145,6 +157,16 @@
 <td>Perform a dry run</td></tr>
 <tr><td style="width: 25%;"><a href="req_error.html">req_error</a></td>
 <td>Control handling of HTTP errors</td></tr>
+<tr><td style="width: 25%;"><a href="req_get_body_type.html">req_get_body</a></td>
+<td>Get request body</td></tr>
+<tr><td style="width: 25%;"><a href="req_get_body_type.html">req_get_body_type</a></td>
+<td>Get request body</td></tr>
+<tr><td style="width: 25%;"><a href="req_get_headers.html">req_get_headers</a></td>
+<td>Get request headers</td></tr>
+<tr><td style="width: 25%;"><a href="req_get_method.html">req_get_method</a></td>
+<td>Get request method</td></tr>
+<tr><td style="width: 25%;"><a href="req_get_url.html">req_get_url</a></td>
+<td>Get request URL</td></tr>
 <tr><td style="width: 25%;"><a href="req_headers.html">req_headers</a></td>
 <td>Modify request headers</td></tr>
 <tr><td style="width: 25%;"><a href="req_headers.html">req_headers_redacted</a></td>
@@ -187,8 +209,6 @@
 <td>Use a proxy for a request</td></tr>
 <tr><td style="width: 25%;"><a href="req_retry.html">req_retry</a></td>
 <td>Automatically retry a request on failure</td></tr>
-<tr><td style="width: 25%;"><a href="req_perform_stream.html">req_stream</a></td>
-<td>Perform a request and handle data as it streams back</td></tr>
 <tr><td style="width: 25%;"><a href="req_template.html">req_template</a></td>
 <td>Set request method/path from a template</td></tr>
 <tr><td style="width: 25%;"><a href="req_throttle.html">req_throttle</a></td>
@@ -209,6 +229,10 @@
 <td>Set user-agent for a request</td></tr>
 <tr><td style="width: 25%;"><a href="req_verbose.html">req_verbose</a></td>
 <td>Show extra output when request is performed</td></tr>
+<tr><td style="width: 25%;"><a href="response.html">response</a></td>
+<td>Create a HTTP response for testing</td></tr>
+<tr><td style="width: 25%;"><a href="response.html">response_json</a></td>
+<td>Create a HTTP response for testing</td></tr>
 <tr><td style="width: 25%;"><a href="resps_successes.html">resps_data</a></td>
 <td>Tools for working with lists of responses</td></tr>
 <tr><td style="width: 25%;"><a href="resps_successes.html">resps_failures</a></td>
@@ -269,6 +293,8 @@
 <td>Read a streaming body a chunk at a time</td></tr>
 <tr><td style="width: 25%;"><a href="resp_stream_raw.html">resp_stream_sse</a></td>
 <td>Read a streaming body a chunk at a time</td></tr>
+<tr><td style="width: 25%;"><a href="resp_timing.html">resp_timing</a></td>
+<td>Extract timing data</td></tr>
 <tr><td style="width: 25%;"><a href="resp_url.html">resp_url</a></td>
 <td>Get URL/components from the response</td></tr>
 <tr><td style="width: 25%;"><a href="resp_url.html">resp_url_path</a></td>
@@ -298,6 +324,8 @@
 <td>Secret management</td></tr>
 <tr><td style="width: 25%;"><a href="secrets.html">secret_write_rds</a></td>
 <td>Secret management</td></tr>
+<tr><td style="width: 25%;"><a href="StreamingBody.html">StreamingBody</a></td>
+<td>'StreamingBody' class</td></tr>
 </table>
 
 <h2><a id="U">-- U --</a></h2>
@@ -322,8 +350,6 @@
 <h2><a id="W">-- W --</a></h2>
 
 <table style="width: 100%;">
-<tr><td style="width: 25%;"><a href="with_mocked_responses.html">with_mock</a></td>
-<td>Temporarily mock requests</td></tr>
 <tr><td style="width: 25%;"><a href="with_mocked_responses.html">with_mocked_responses</a></td>
 <td>Temporarily mock requests</td></tr>
 <tr><td style="width: 25%;"><a href="with_verbosity.html">with_verbosity</a></td>

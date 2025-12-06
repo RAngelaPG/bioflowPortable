@@ -100,8 +100,8 @@ cl &lt;- makeClusterPSOCK(
   master = if (.Platform$OS.type == &quot;unix&quot;) NULL else &quot;host.docker.internal&quot;,
 )
 print(cl)
-#&gt; Socket cluster with 2 nodes where 2 nodes are on host 'localhost'
-#&gt; (R version 4.3.3 (2024-02-29), platform x86_64-pc-linux-gnu)
+#&gt; Socket cluster with 2 nodes on host 'localhost' (R version 4.3.3
+#&gt; (2024-02-29), platform x86_64-pc-linux-gnu)
 </code></pre>
 <h2>Example: Two parallel workers running in Apptainer</h2>
 <p>This example shows how to set up two parallel workers running Docker
@@ -118,8 +118,8 @@ cl &lt;- makeClusterPSOCK(
   )
 )
 print(cl)
-#&gt; Socket cluster with 2 nodes where 2 nodes are on host 'localhost'
-#&gt; (R version 3.6.1 (2019-07-05), platform x86_64-pc-linux-gnu)
+#&gt; Socket cluster with 2 nodes on host 'localhost' (R version 3.6.1
+#&gt; (2019-07-05), platform x86_64-pc-linux-gnu)
 </code></pre>
 <h2>Example: Two parallel workers running in udocker</h2>
 <p>This example shows how to set up two parallel workers running Docker
@@ -136,8 +136,8 @@ cl &lt;- makeClusterPSOCK(
   )
 )
 print(cl)
-#&gt; Socket cluster with 2 nodes where 2 nodes are on host 'localhost'
-#&gt; (R version 3.6.1 (2019-07-05), platform x86_64-pc-linux-gnu)
+#&gt; Socket cluster with 2 nodes on host 'localhost' (R version 3.6.1
+#&gt; (2019-07-05), platform x86_64-pc-linux-gnu)
 </code></pre>
 </body>
 </html>

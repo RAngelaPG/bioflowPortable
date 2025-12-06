@@ -42,6 +42,7 @@ test-index	index
 test-links	test-links
 test-lists	test-lists
 test-long-lines	test-long-lines
+test-math-examples	test-math-examples
 test-output-styles	test-output-styles
 test-params	test-params
 test-sexpr-title	test-sexpr-title

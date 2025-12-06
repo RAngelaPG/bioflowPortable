@@ -1,4 +1,4 @@
-170b11bd88cacd42de09eea5baff908b *DESCRIPTION
+43b75c2ffd92bfaad66323831432e68b *DESCRIPTION
 0b5504989564f28578d5bc20178693de *INDEX
 1902819ec89d94d87b7d35ef39414201 *LICENSE
 6dd598940f01edddcc0af705a5d279df *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 34f54f20dee79b4bc9565bebd7804a01 *Meta/hsearch.rds
 94428084f14e986371c007e2a28bdf34 *Meta/links.rds
 e8484ab186a1bf5a19d64c7cd31f0897 *Meta/nsInfo.rds
-b74960108ecde2fe400b3da6fa03c563 *Meta/package.rds
+076676094c2b0b17f68e758eec972518 *Meta/package.rds
 cafe6abd98495de247c2e0182674a058 *NAMESPACE
 e8d5e72a192e0af55b3183c462119b39 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/brio
@@ -14,10 +14,10 @@ d6c68f1fe41ced6e98a766a3757313da *R/brio
 30d49af58ff9e1f8b2927092a509f5b9 *R/brio.rdx
 59d44108c6869699425fa61baba0d9cf *help/AnIndex
 6f23161bc07d0e6b6d1b399dd144dd23 *help/aliases.rds
-347a1a8e66f6bfe01b58e15b888c1e97 *help/brio.rdb
-0f356a442e883ad2efc9e77686f03b54 *help/brio.rdx
-4ca9160ffe807868887d56c3dc4ca0ce *help/paths.rds
+fba5eeca89d251bdfb624bda7b7b02a3 *help/brio.rdb
+7e14404dab7f055e3fa43fefc9104803 *help/brio.rdx
+7b8d970a2d1fdf2de8dec1d78e305534 *help/paths.rds
 f6d90e15dff1ad73109b86411a2fd46a *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-b1a021a8667225ec233dcb95034846ab *libs/x64/brio.dll
+8908c270c0ecf0102c47d7afdd653598 *libs/x64/brio.dll
 e49bf2217921d61ab5a58c9a141d814f *libs/x64/symbols.rds

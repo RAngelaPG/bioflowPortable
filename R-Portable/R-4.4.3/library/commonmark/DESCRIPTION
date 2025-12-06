@@ -1,7 +1,7 @@
 Package: commonmark
 Type: Package
 Title: High Performance CommonMark and Github Markdown Rendering in R
-Version: 1.9.2
+Version: 2.0.0
 Authors@R: c(
     person("Jeroen", "Ooms", ,"jeroenooms@gmail.com", role = c("aut", "cre"),
         comment = c(ORCID = "0000-0002-4035-0289")),
@@ -17,15 +17,15 @@ URL: https://docs.ropensci.org/commonmark/
         https://ropensci.r-universe.dev/commonmark
 BugReports: https://github.com/r-lib/commonmark/issues
 Suggests: curl, testthat, xml2
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.2
 Language: en-US
 Encoding: UTF-8
 NeedsCompilation: yes
-Packaged: 2024-10-03 14:12:30 UTC; jeroen
-Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>),
+Packaged: 2025-07-07 13:20:39 UTC; jeroen
+Author: Jeroen Ooms [aut, cre] (ORCID: <https://orcid.org/0000-0002-4035-0289>),
   John MacFarlane [cph] (Author of cmark)
 Maintainer: Jeroen Ooms <jeroenooms@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-10-04 12:40:06 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-03-04 01:28:43 UTC; windows
+Date/Publication: 2025-07-07 13:40:02 UTC
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-12-05 02:01:49 UTC; windows
 Archs: x64

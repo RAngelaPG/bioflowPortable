@@ -1,22 +1,25 @@
 Package: miniUI
 Type: Package
 Title: Shiny UI Widgets for Small Screens
-Version: 0.1.1.1
+Version: 0.1.2
 Authors@R: c(
-    person("Joe", "Cheng", role = c("cre", "aut"), email = "joe@rstudio.com"),
-    person(family = "RStudio", role = "cph")
+    person("Joe", "Cheng", role = c("cre", "aut"), email = "joe@posit.co"),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
     )
 Description: Provides UI widget and layout functions for writing Shiny apps
     that work well on small screens.
 License: GPL-3
-LazyData: TRUE
+URL: https://github.com/rstudio/miniUI
+BugReports: https://github.com/rstudio/miniUI/issues
 Imports: shiny (>= 0.13), htmltools (>= 0.3), utils
-RoxygenNote: 5.0.1
+RoxygenNote: 7.3.2
+Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2018-05-18 17:00:34 UTC; jcheng
+Packaged: 2025-04-17 22:30:11 UTC; jcheng
 Author: Joe Cheng [cre, aut],
-  RStudio [cph]
-Maintainer: Joe Cheng <joe@rstudio.com>
+  Posit Software, PBC [cph, fnd] (03wc8by49)
+Maintainer: Joe Cheng <joe@posit.co>
 Repository: CRAN
-Date/Publication: 2018-05-18 18:37:18 UTC
-Built: R 4.4.3; ; 2025-03-04 02:59:05 UTC; windows
+Date/Publication: 2025-04-17 23:20:02 UTC
+Built: R 4.4.3; ; 2025-05-04 02:26:29 UTC; windows

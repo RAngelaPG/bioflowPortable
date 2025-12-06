@@ -1,4 +1,4 @@
-17fc42c217a80307a2f3a9417df7feb2 *DESCRIPTION
+4500c97f6a545e739a1cc32d635a6030 *DESCRIPTION
 70fece2e68e2f0dde076d42ed53a7b40 *INDEX
 8b1531c6c9ae6ac557a3c9c342449361 *Meta/Rd.rds
 77e07a39833afada3a043d88dd84cefa *Meta/data.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 213e7e1a261eef44aefddaa22e807586 *Meta/hsearch.rds
 997fd8bf98514f4397b2d4f68c4c0e2a *Meta/links.rds
 1862d653f4b66a7d07759cd75914111f *Meta/nsInfo.rds
-c00541d45564c48a28b89ad97a36fe5f *Meta/package.rds
+1a3dc5e710ff6c24ab881087e4f17e2e *Meta/package.rds
 89d4e48fb8a65f0a7663d30f71b3b1d6 *NAMESPACE
 8c14a1e1105fb8872268703bc66f4689 *NEWS
 d6c68f1fe41ced6e98a766a3757313da *R/bit64
@@ -19,10 +19,10 @@ d6c68f1fe41ced6e98a766a3757313da *R/bit64
 9dcd6f7db12489e423e98069ca9d780e *doc/ANNOUNCEMENT-0.9.txt
 cdb5d60aa7e6cafb301bbc00c57d7e2f *help/AnIndex
 9abff88329ea983c70f0ac4d9faf18fd *help/aliases.rds
-90ef8e3aace65e961c4cf4eb8924eff6 *help/bit64.rdb
-5016cfc598202bee41b2b1b56cc086c4 *help/bit64.rdx
-f78c251e68b13fe9557aa0bdfea3ac57 *help/paths.rds
+6552f0eeebfcb78e6cc8cc067112b244 *help/bit64.rdb
+166107127328dc61066331ae3802d2e7 *help/bit64.rdx
+d073af67667769155842326fab95278d *help/paths.rds
 6e6a09dda51ef705f9ab1784ccc901eb *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-9f1f59b105269a55f690f9398a2a832f *libs/x64/bit64.dll
+04e6d1ece68b9ca13a78658d336ba82e *libs/x64/bit64.dll
 ecb9e4e28c15e5f7cb0bb2a22d14a0e7 *libs/x64/symbols.rds

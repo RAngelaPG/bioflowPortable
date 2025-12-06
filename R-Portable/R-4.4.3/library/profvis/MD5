@@ -1,4 +1,4 @@
-5f4e0d7b398eb96bc1afbf1749732618 *DESCRIPTION
+cac62309d7050938f7aa169192ff2fce *DESCRIPTION
 ef5de615299a16b4a1bf590edcd77191 *INDEX
 6745d835972eeb2a536de97f58197c50 *LICENSE
 70125c8636769d8b02f67c0bc6da7f21 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 14ae300597917b9d96594e0f994d5071 *Meta/hsearch.rds
 494efe9803ceb3f9d2e335cad6c2e90d *Meta/links.rds
 92c07af3f0e0fd9d5016c26817a2bda8 *Meta/nsInfo.rds
-0fba969aebf20af0eeefa3cba34f1167 *Meta/package.rds
+f43e5f1bf88e1b88c89ba976771fa1e5 *Meta/package.rds
 e6da8820b6cb65d14f71f5f984e19ade *Meta/vignette.rds
 9ad3f3c9d024ccfe50dd55cc0dcaa7aa *NAMESPACE
 a3aeb8d4784cddfa412af4f3e9cdb5ea *NEWS.md
@@ -19,9 +19,9 @@ fa5d8e81d4047f542bca777dcf4c08ce *doc/profvis.Rmd
 1d6cd4655ab901976a3078054cfb426b *doc/profvis.html
 9ada0d799ada872ce12a7795f009cbd3 *help/AnIndex
 2ab01dbfeb673ab482631f6633f93bf7 *help/aliases.rds
-61b32f76923a414097926df12a7de079 *help/paths.rds
-92f8e0ef345341b8d4de4d4e0560a92b *help/profvis.rdb
-00a0ba1474a37cdb5c224ec564996fbb *help/profvis.rdx
+4f0fa37630142a91ccac834cb6b27e0f *help/paths.rds
+3d4f75dcd3827b8271b8afe0a87cb310 *help/profvis.rdb
+1bc7b59d0eb000d7806ac9adae72c0d6 *help/profvis.rdx
 feb88c8bfcf7f45ba49b8e8de16f3398 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 9a43e3ae9eeb6821b99b41158d0b08cd *htmlwidgets/lib/d3/LICENSE
@@ -36,6 +36,6 @@ c9152d800ab9c61f0c711b9457b77763 *htmlwidgets/lib/highlight/textmate.css
 f1aff1fccd1bfad791d235661db8e661 *htmlwidgets/lib/profvis/scroll.js
 fbfaf87de560067baca923e490fbfff9 *htmlwidgets/profvis.js
 f5c41f39d05bebc740398d386b903c51 *htmlwidgets/profvis.yaml
-0631c1f521378734397dfc9da1a1682a *libs/x64/profvis.dll
+54dbbd0693f5921c59e14b1d218e12ba *libs/x64/profvis.dll
 5d50c291f19dbc73205467a8b7e04f5c *libs/x64/symbols.rds
 d222330d592b01fc53c38d4105be302c *shinymodule/draggable-helper.js

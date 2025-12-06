@@ -1,4 +1,4 @@
-94a9c1f3640f8ab656ae6ca7486bbbc8 *DESCRIPTION
+45d2c93ba9889ea14da989e05109dc71 *DESCRIPTION
 0fab319ca0b88decec2267e956793336 *INDEX
 597e2bb79d625f8b9139bf5c89728dea *LICENSE
 b90fc3d55c1386181d836ef83c6c80d3 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 942abe0509f94518c5a221cbb805dd54 *Meta/hsearch.rds
 c837317a0dcf11ec8312c919c7a31e2a *Meta/links.rds
 7750a53ffc664ae9ec718226f01fcba5 *Meta/nsInfo.rds
-9376a85183030d7818491dcad574495c *Meta/package.rds
+b6adc7d11ef128792ba233465505bd62 *Meta/package.rds
 deb6ceef8d8275f3c277fa8e6e486688 *NAMESPACE
 7f3e7b0fe90761464f7b976c21545d3f *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/ellipsis
@@ -14,10 +14,10 @@ acb118809dda579dda8715e2836ed372 *R/ellipsis.rdb
 2ccfec95f2b545b1cc99daa0d3002975 *R/ellipsis.rdx
 e9fee8fe0682a3c8ebba94a7b7c497d2 *help/AnIndex
 00655b13e96288f37b7a5f2a5e888152 *help/aliases.rds
-54c01db314a01db07f85f796efcb572c *help/ellipsis.rdb
-6ba0c8df6f3921f168832d1a2b210033 *help/ellipsis.rdx
-ef56c82e77da7b580d0e0300befd4f5f *help/paths.rds
+03ca260a1f14d47b14b6468994728acd *help/ellipsis.rdb
+c6323ff3bdc53817ec6f12962dc9bc81 *help/ellipsis.rdx
+0284cb36234d09281683ab8b75007b02 *help/paths.rds
 bff914b471c28eb61da4a6e8949fc65d *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-749cf55ed1106bc4f8ebe99c5fb99e64 *libs/x64/ellipsis.dll
+04daae25ad55df9797747ffaaab7f7fe *libs/x64/ellipsis.dll
 7f050a8e82c201e94f63306688b2e717 *libs/x64/symbols.rds

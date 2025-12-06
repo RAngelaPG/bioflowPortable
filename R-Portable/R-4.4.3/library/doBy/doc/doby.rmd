@@ -2,12 +2,11 @@
 title: "doby: Groupwise computations and miscellaneous utilities"
 author: "Søren Højsgaard"
 output: 
-  html_document:
+  rmarkdown::html_vignette:
     toc: true
     number_sections: true
 vignette: >
   %\VignetteIndexEntry{doby: Groupwise computations and miscellaneous utilities}
-  %\VignettePackage{doBy}
   %\VignetteEngine{knitr::knitr}
   %\VignetteEncoding{UTF-8}
 ---
@@ -312,7 +311,8 @@ lines(run ~ tvar, data=tse, col="red")
 ``` 
 
 
-We may now find times for which time since an event is at most 1 as
+We may now f
+ind times for which time since an event is at most 1 as
 ```{r}
 tse$tvar[tse$abs <= 1]
 ``` 

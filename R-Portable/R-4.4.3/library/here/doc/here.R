@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -11,7 +11,7 @@ project_path <- system.file("demo-project", package = "here")
 fs::dir_tree(project_path)
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  setwd(project_path)
+# setwd(project_path)
 
 ## ----include = FALSE----------------------------------------------------------
 knitr::opts_knit$set(root.dir = project_path)
@@ -57,24 +57,30 @@ dr_here()
 dr_here(show_reason = FALSE)
 
 ## ----error = TRUE-------------------------------------------------------------
+try({
 withr::with_dir(tempdir(), {
   print(getwd())
   here::i_am("prepare/penguins.R")
 })
+})
 
 ## ----error = TRUE-------------------------------------------------------------
+try({
 library(plyr)
 here()
+})
 
 ## -----------------------------------------------------------------------------
 here::here()
 
 ## ----error = TRUE-------------------------------------------------------------
+try({
 library(conflicted)
 here()
 
 conflicted::conflict_prefer("here", "here")
 here()
+})
 
 ## -----------------------------------------------------------------------------
 uuid::UUIDgenerate()
@@ -96,10 +102,12 @@ fs::dir_tree(temp_project_path)
 writeLines(readLines(script_path))
 
 ## ----error = TRUE-------------------------------------------------------------
+try({
 source(script_path, echo = TRUE)
+})
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  setwd(temp_project_path)
+# setwd(temp_project_path)
 
 ## ----include = FALSE----------------------------------------------------------
 knitr::opts_knit$set(root.dir = temp_project_path)

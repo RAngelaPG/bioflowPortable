@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head><title>R: Analysing 'SNP' and 'Silicodart' Data - Basic Functions</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body><div class="container">
+<h1> Analysing 'SNP' and 'Silicodart' Data - Basic Functions
+<img class="toplogo" src="../../../doc/html/Rlogo.svg" alt="[R logo]" />
+</h1>
+<hr/>
+<div style="text-align: center;">
+<a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
+<a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
+</div><h2>Documentation for package &lsquo;dartR.base&rsquo; version 1.0.7</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<p style="text-align: center;">
+<a href="#C">C</a>
+<a href="#G">G</a>
+<a href="#I">I</a>
+<a href="#M">M</a>
+<a href="#R">R</a>
+<a href="#T">T</a>
+<a href="#U">U</a>
+<a href="#Z">Z</a>
+<a href="#misc">misc</a>
+</p>
+
+
+<h2><a id="C">-- C --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="cbind.dartR.html">cbind.dartR</a></td>
+<td>adjust cbind for dartR</td></tr>
+</table>
+
+<h2><a id="G">-- G --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="gl2gi.html">gi2gl</a></td>
+<td>Converts a genind object into a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.add.indmetrics.html">gl.add.indmetrics</a></td>
+<td>Adds metadata into a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.alf.html">gl.alf</a></td>
+<td>Calculates allele frequency of the first and second allele for each locus A very simple function to report allele frequencies</td></tr>
+<tr><td style="width: 25%;"><a href="gl.allele.freq.html">gl.allele.freq</a></td>
+<td>Generates percentage allele frequencies by locus and population</td></tr>
+<tr><td style="width: 25%;"><a href="gl.amova.html">gl.amova</a></td>
+<td>Performs AMOVA using genlight data</td></tr>
+<tr><td style="width: 25%;"><a href="gl.check.verbosity.html">gl.check.verbosity</a></td>
+<td>Checks the current global verbosity</td></tr>
+<tr><td style="width: 25%;"><a href="gl.check.wd.html">gl.check.wd</a></td>
+<td>Checks the global working directory</td></tr>
+<tr><td style="width: 25%;"><a href="gl.colors.html">gl.colors</a></td>
+<td>Returns a list of colors for use in plots</td></tr>
+<tr><td style="width: 25%;"><a href="gl.compliance.check.html">gl.compliance.check</a></td>
+<td>Checks a genlight object to see if it complies with dartR expectations and amends it to comply if necessary @family environment</td></tr>
+<tr><td style="width: 25%;"><a href="gl.define.pop.html">gl.define.pop</a></td>
+<td>Defines a new population in a genlight object for specified individuals</td></tr>
+<tr><td style="width: 25%;"><a href="gl.diagnostics.hwe.html">gl.diagnostics.hwe</a></td>
+<td>Provides descriptive stats and plots to diagnose potential problems with Hardy-Weinberg proportions @family matched report</td></tr>
+<tr><td style="width: 25%;"><a href="gl.dist.ind.html">gl.dist.ind</a></td>
+<td>Calculates a distance matrix for individuals defined in a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.dist.phylo.html">gl.dist.phylo</a></td>
+<td>Generates a distance matrix from a SNP genlight object taking into account a substitution model</td></tr>
+<tr><td style="width: 25%;"><a href="gl.dist.pop.html">gl.dist.pop</a></td>
+<td>Calculates a distance matrix for populations with SNP or Silicodart genotypes in a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.drop.ind.html">gl.drop.ind</a></td>
+<td>Removes specified individuals from a dartR genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.drop.loc.html">gl.drop.loc</a></td>
+<td>Removes specified loci from a dartR genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.drop.pop.html">gl.drop.pop</a></td>
+<td>Removes specified populations from a dartR genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.edit.recode.ind.html">gl.edit.recode.ind</a></td>
+<td>Creates or edits individual (=specimen) names, creates a recode_ind file and applies the changes to a genlight object @family data manipulation</td></tr>
+<tr><td style="width: 25%;"><a href="gl.edit.recode.pop.html">gl.edit.recode.pop</a></td>
+<td>Creates or edits and applies a population re-assignment table</td></tr>
+<tr><td style="width: 25%;"><a href="gl.fdsim.html">gl.fdsim</a></td>
+<td>Estimates the rate of false positives in a fixed difference analysis</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.allna.html">gl.filter.allna</a></td>
+<td>Filters loci that are all NA across individuals and/or populations with all NA across loci</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.callrate.html">gl.filter.callrate</a></td>
+<td>Filters loci or specimens in a genlight {adegenet} object based on call rate</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.excess.het.html">gl.filter.excess.het</a></td>
+<td>Filters excessively-heterozygous loci from a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.factorloadings.html">gl.filter.factorloadings</a></td>
+<td>Filters loci based on factor loadings for a PCA or PCoA</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.hamming.html">gl.filter.hamming</a></td>
+<td>Filters loci based on pairwise Hamming distance between sequence tags</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.heterozygosity.html">gl.filter.heterozygosity</a></td>
+<td>Filters individuals with average heterozygosity greater than a specified upper threshold or less than a specified lower threshold @family matched filter</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.hwe.html">gl.filter.hwe</a></td>
+<td>Filters loci that show significant departure from Hardy-Weinberg Equilibrium @family matched filter</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.ld.html">gl.filter.ld</a></td>
+<td>Filters loci based on linkage disequilibrium (LD)</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.locmetric.html">gl.filter.locmetric</a></td>
+<td>Filters loci on the basis of numeric information stored in other$loc.metrics in a genlight {adegenet} object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.maf.html">gl.filter.maf</a></td>
+<td>Filters loci on the basis of minor allele frequency (MAF) or minor allele count (MAC)</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.monomorphs.html">gl.filter.monomorphs</a></td>
+<td>Filters monomorphic loci, including those with all NAs</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.overshoot.html">gl.filter.overshoot</a></td>
+<td>Filters loci for which the SNP has been trimmed from the sequence tag along with the adaptor</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.pa.html">gl.filter.pa</a></td>
+<td>Filters loci that contain private (and fixed alleles) between two populations</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.rdepth.html">gl.filter.rdepth</a></td>
+<td>Filters loci based on counts of sequence tags scored at a locus (read depth) @family matched filter</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.reproducibility.html">gl.filter.reproducibility</a></td>
+<td>Filters loci in a genlight {adegenet} object based on average repeatability of alleles at a locus @family matched filter</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.secondaries.html">gl.filter.secondaries</a></td>
+<td>Filters loci that represent secondary SNPs in a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.filter.taglength.html">gl.filter.taglength</a></td>
+<td>Filters loci in a genlight {adegenet} object based on sequence tag length @family matched filter</td></tr>
+<tr><td style="width: 25%;"><a href="gl.fixed.diff.html">gl.fixed.diff</a></td>
+<td>Generates a matrix of fixed differences and associated statistics for populations taken pairwise</td></tr>
+<tr><td style="width: 25%;"><a href="gl.fst.pop.html">gl.fst.pop</a></td>
+<td>Calculates a pairwise Fst values for populations in a genlight object This script calculates pairwise Fst values based on the implementation in the StAMPP package (?stamppFst). It allows to run bootstrap to estimate probability of Fst values to be different from zero. For detailed information please check the help pages (?stamppFst).</td></tr>
+<tr><td style="width: 25%;"><a href="gl.He.html">gl.He</a></td>
+<td>Estimates expected Heterozygosity</td></tr>
+<tr><td style="width: 25%;"><a href="gl.Ho.html">gl.Ho</a></td>
+<td>Estimates observed Heterozygosity</td></tr>
+<tr><td style="width: 25%;"><a href="gl.hwe.pop.html">gl.hwe.pop</a></td>
+<td>Performs Hardy-Weinberg tests over loci and populations</td></tr>
+<tr><td style="width: 25%;"><a href="gl.impute.html">gl.impute</a></td>
+<td>Imputes missing data</td></tr>
+<tr><td style="width: 25%;"><a href="gl.join.html">gl.join</a></td>
+<td>Combines two dartR genlight objects</td></tr>
+<tr><td style="width: 25%;"><a href="gl.keep.ind.html">gl.keep.ind</a></td>
+<td>Removes all but the specified individuals from a dartR genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.keep.loc.html">gl.keep.loc</a></td>
+<td>Removes all but the specified loci from a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.keep.pop.html">gl.keep.pop</a></td>
+<td>Removes all but the specified populations from a dartR genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.load.html">gl.load</a></td>
+<td>Loads an object from compressed binary format produced by gl.save()</td></tr>
+<tr><td style="width: 25%;"><a href="gl.mahal.assign.html">gl.mahal.assign</a></td>
+<td>Assigns individuals to populations with an associated probability</td></tr>
+<tr><td style="width: 25%;"><a href="gl.make.recode.ind.html">gl.make.recode.ind</a></td>
+<td>Creates a proforma recode_ind file for reassigning individual (=specimen) names</td></tr>
+<tr><td style="width: 25%;"><a href="gl.make.recode.pop.html">gl.make.recode.pop</a></td>
+<td>Creates a proforma recode_pop_table file for reassigning population names @family data manipulation</td></tr>
+<tr><td style="width: 25%;"><a href="gl.map.interactive.html">gl.map.interactive</a></td>
+<td>Creates an interactive map (based on latlon) from a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.merge.pop.html">gl.merge.pop</a></td>
+<td>Merges two or more populations in a dartR genlight object into one population</td></tr>
+<tr><td style="width: 25%;"><a href="gl.pcoa.html">gl.pcoa</a></td>
+<td>Ordination applied to genotypes in a genlight object (PCA), in an fd object, or to a distance matrix (PCoA)</td></tr>
+<tr><td style="width: 25%;"><a href="gl.pcoa.plot.html">gl.pcoa.plot</a></td>
+<td>Bivariate or trivariate plot of the results of an ordination generated using gl.pcoa()</td></tr>
+<tr><td style="width: 25%;"><a href="gl.plot.heatmap.html">gl.plot.heatmap</a></td>
+<td>Represents a distance matrix as a heatmap</td></tr>
+<tr><td style="width: 25%;"><a href="gl.print.history.html">gl.print.history</a></td>
+<td>Prints history of a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.prop.shared.html">gl.prop.shared</a></td>
+<td>Calculates a similarity (distance) matrix for individuals on the proportion of shared alleles @family distance</td></tr>
+<tr><td style="width: 25%;"><a href="gl.prop.shared.html">gl.propShared</a></td>
+<td>Calculates a similarity (distance) matrix for individuals on the proportion of shared alleles @family distance</td></tr>
+<tr><td style="width: 25%;"><a href="gl.randomize.snps.html">gl.randomize.snps</a></td>
+<td>Randomly changes the allocation of 0's and 2's in a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.read.csv.html">gl.read.csv</a></td>
+<td>Reads SNP data from a csv file into a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.read.dart.html">gl.read.dart</a></td>
+<td>Imports DArT data into dartR and converts it into a dartR genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.read.fasta.html">gl.read.fasta</a></td>
+<td>Reads FASTA files and converts them to genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.read.PLINK.html">gl.read.PLINK</a></td>
+<td>Reads PLINK data file into a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.read.silicodart.html">gl.read.silicodart</a></td>
+<td>Imports presence/absence data from SilicoDArT to genlight {agegenet} format (ploidy=1)</td></tr>
+<tr><td style="width: 25%;"><a href="gl.read.vcf.html">gl.read.vcf</a></td>
+<td>Converts a vcf file into a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.reassign.pop.html">gl.reassign.pop</a></td>
+<td>Assigns an individual metric as pop in a genlight {adegenet} object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.recalc.metrics.html">gl.recalc.metrics</a></td>
+<td>Recalculates locus metrics when individuals or populations are deleted from a genlight {adegenet} object @family environment</td></tr>
+<tr><td style="width: 25%;"><a href="gl.recode.ind.html">gl.recode.ind</a></td>
+<td>Recodes individual (=specimen = sample) labels in a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.recode.pop.html">gl.recode.pop</a></td>
+<td>Recodes population assignments in a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.rename.pop.html">gl.rename.pop</a></td>
+<td>Renames a population in a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.allelerich.html">gl.report.allelerich</a></td>
+<td>Report allelic richness per population from a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.allna.html">gl.report.allna</a></td>
+<td>Reports loci that are all NA across individuals and/or populations with all NA across loci</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.bases.html">gl.report.bases</a></td>
+<td>Reports summary of base pair frequencies</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.basics.html">gl.report.basics</a></td>
+<td>Basic statistics for a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.callrate.html">gl.report.callrate</a></td>
+<td>Reports summary of Call Rate for loci or individuals</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.diversity.html">gl.report.diversity</a></td>
+<td>Calculates diversity indexes for SNPs</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.excess.het.html">gl.report.excess.het</a></td>
+<td>Report loci with excess of heterozygosity</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.factorloadings.html">gl.report.factorloadings</a></td>
+<td>Reports factor loadings for a PCA or PCoA</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.fstat.html">gl.report.fstat</a></td>
+<td>Reports various statistics of genetic differentiation between populations with confidence intervals</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.hamming.html">gl.report.hamming</a></td>
+<td>Calculates the pairwise Hamming distance between DArT trimmed DNA sequences</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.heterozygosity.html">gl.report.heterozygosity</a></td>
+<td>Reports observed, expected and unbiased heterozygosities and FIS (inbreeding coefficient) by population or by individual from SNP data</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.hwe.html">gl.report.hwe</a></td>
+<td>Reports departure from Hardy-Weinberg proportions</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.ld.html">gl.report.ld</a></td>
+<td>Calculates pairwise population based Linkage Disequilibrium across all loci using the specified number of cores @family matched report</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.ld.map.html">gl.report.ld.map</a></td>
+<td>Calculates pairwise linkage disequilibrium by population</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.locmetric.html">gl.report.locmetric</a></td>
+<td>Reports summary of the slot $other$loc.metrics</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.maf.html">gl.report.maf</a></td>
+<td>Reports minor allele frequency (MAF) for each locus in a SNP dataset</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.monomorphs.html">gl.report.monomorphs</a></td>
+<td>Reports monomorphic loci</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.overshoot.html">gl.report.overshoot</a></td>
+<td>Reports loci for which the SNP has been trimmed from the sequence tag along with the adaptor</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.pa.html">gl.report.pa</a></td>
+<td>Reports private alleles (and fixed alleles) per pair of populations</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.polyploid_heterozygosity.html">gl.report.polyploid_heterozygosity</a></td>
+<td>Reports observed, expected and unbiased heterozygosities and FIS (inbreeding coefficient) by population or by individual from SNP data</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.rdepth.html">gl.report.rdepth</a></td>
+<td>Reports summary of Read Depth for each locus</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.replicates.html">gl.report.replicates</a></td>
+<td>Identify replicated individuals</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.reproducibility.html">gl.report.reproducibility</a></td>
+<td>Reports summary of RepAvg (repeatability averaged over both alleles for each locus) or reproducibility (repeatability of the scores for fragment presence/absence)</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.secondaries.html">gl.report.secondaries</a></td>
+<td>Reports loci containing secondary SNPs in sequence tags and calculates number of invariant sites</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.shannon.html">gl.report.shannon</a></td>
+<td>Report SNP diversity from a genlight object, with reference to Ma, Z., Li, L., &amp; Zhang, Y. P. (2020). Defining individual-level genetic diversity and similarity profiles. Scientific reports, 10(1), 5805.</td></tr>
+<tr><td style="width: 25%;"><a href="gl.report.taglength.html">gl.report.taglength</a></td>
+<td>Reports summary of sequence tag length across loci</td></tr>
+<tr><td style="width: 25%;"><a href="gl.sample.html">gl.sample</a></td>
+<td>Samples individuals from populations</td></tr>
+<tr><td style="width: 25%;"><a href="gl.save.html">gl.save</a></td>
+<td>Saves an object in compressed binary format for later rapid retrieval</td></tr>
+<tr><td style="width: 25%;"><a href="gl.select.colors.html">gl.select.colors</a></td>
+<td>Selects colors from one of several palettes and outputs as a vector</td></tr>
+<tr><td style="width: 25%;"><a href="gl.select.shapes.html">gl.select.shapes</a></td>
+<td>Selects shapes from the base R shape palette and outputs as a vector</td></tr>
+<tr><td style="width: 25%;"><a href="gl.set.verbosity.html">gl.set.verbosity</a></td>
+<td>Sets the default verbosity level</td></tr>
+<tr><td style="width: 25%;"><a href="gl.set.wd.html">gl.set.wd</a></td>
+<td>Sets the default working directory</td></tr>
+<tr><td style="width: 25%;"><a href="gl.sim.cross.html">gl.sim.cross</a></td>
+<td>Generates random crosses between fathers and mothers</td></tr>
+<tr><td style="width: 25%;"><a href="gl.sim.cross.html">gl.sim.crosses</a></td>
+<td>Generates random crosses between fathers and mothers</td></tr>
+<tr><td style="width: 25%;"><a href="gl.sim.genotypes.html">gl.sim.genotypes</a></td>
+<td>Generate random genotypes</td></tr>
+<tr><td style="width: 25%;"><a href="gl.smearplot.html">gl.smearplot</a></td>
+<td>Smear plot</td></tr>
+<tr><td style="width: 25%;"><a href="gl.sort.html">gl.sort</a></td>
+<td>Sorts genlight objects</td></tr>
+<tr><td style="width: 25%;"><a href="gl.subsample.ind.html">gl.subsample.ind</a></td>
+<td>Subsample individuals from a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.subsample.loc.html">gl.subsample.loc</a></td>
+<td>Subsample loci from a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.subsample.loci.html">gl.subsample.loci</a></td>
+<td>Subsamples n loci from a genlight object and return it as a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl.test.heterozygosity.html">gl.test.heterozygosity</a></td>
+<td>Tests the difference in heterozygosity between populations taken pairwise</td></tr>
+<tr><td style="width: 25%;"><a href="gl.tree.fitch.html">gl.tree.fitch</a></td>
+<td>Generates a distance phylogeny</td></tr>
+<tr><td style="width: 25%;"><a href="gl.tree.nj.html">gl.tree.nj</a></td>
+<td>Outputs a tree to summarize genetic similarity among populations (e.g. phenogram)</td></tr>
+<tr><td style="width: 25%;"><a href="gl.write.csv.html">gl.write.csv</a></td>
+<td>Writes out data from a genlight object to csv file</td></tr>
+<tr><td style="width: 25%;"><a href="gl2bayesAss.html">gl2bayesAss</a></td>
+<td>Converts a genlight object into bayesAss (BA3) input format</td></tr>
+<tr><td style="width: 25%;"><a href="gl2bayescan.html">gl2bayescan</a></td>
+<td>Converts a genlight object into a format suitable for input to Bayescan</td></tr>
+<tr><td style="width: 25%;"><a href="gl2bpp.html">gl2bpp</a></td>
+<td>Converts a genlight object into a format suitable for input to the BPP program</td></tr>
+<tr><td style="width: 25%;"><a href="gl2demerelate.html">gl2demerelate</a></td>
+<td>Creates a dataframe suitable for input to package {Demerelate} from a genlight {adegenet} object</td></tr>
+<tr><td style="width: 25%;"><a href="gl2eigenstrat.html">gl2eigenstrat</a></td>
+<td>Converts a genlight object into eigenstrat format</td></tr>
+<tr><td style="width: 25%;"><a href="gl2fasta.html">gl2fasta</a></td>
+<td>Concatenates DArT trimmed sequences and outputs a FASTA file</td></tr>
+<tr><td style="width: 25%;"><a href="gl2faststructure.html">gl2faststructure</a></td>
+<td>Converts a genlight object into faststructure format (to run faststructure elsewhere)</td></tr>
+<tr><td style="width: 25%;"><a href="gl2geno.html">gl2gapit</a></td>
+<td>Converts a genlight object to geno format from package LEA</td></tr>
+<tr><td style="width: 25%;"><a href="gl2gds.html">gl2gds</a></td>
+<td>Converts a genlight object into gds format</td></tr>
+<tr><td style="width: 25%;"><a href="gl2genalex.html">gl2genalex</a></td>
+<td>Converts a genlight object into a format suitable for input to genalex</td></tr>
+<tr><td style="width: 25%;"><a href="gl2genepop.html">gl2genepop</a></td>
+<td>Converts a genlight object into genepop format (and file)</td></tr>
+<tr><td style="width: 25%;"><a href="gl2geno.html">gl2geno</a></td>
+<td>Converts a genlight object to geno format from package LEA</td></tr>
+<tr><td style="width: 25%;"><a href="gl2gi.html">gl2gi</a></td>
+<td>Converts a genind object into a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="gl2hiphop.html">gl2hiphop</a></td>
+<td>Converts a genlight objects into hiphop format</td></tr>
+<tr><td style="width: 25%;"><a href="gl2paup.parsimony.html">gl2paup.parsimony</a></td>
+<td>Converts a genlight object to nexus format for parsimony phylogeny analysis in PAUP and, optionally produces accompanying files for parallel processing.</td></tr>
+<tr><td style="width: 25%;"><a href="gl2paup.svdquartets.html">gl2paup.svdquartets</a></td>
+<td>Converts a genlight object to nexus format PAUP SVDquartets</td></tr>
+<tr><td style="width: 25%;"><a href="gl2phylip.html">gl2phylip</a></td>
+<td>Creates a Phylip input distance matrix from a genlight (SNP) {adegenet} object</td></tr>
+<tr><td style="width: 25%;"><a href="gl2plink.html">gl2plink</a></td>
+<td>Converts a genlight object into PLINK format</td></tr>
+<tr><td style="width: 25%;"><a href="gl2related.html">gl2related</a></td>
+<td>Converts a genlight object to format suitable to be run with Coancestry</td></tr>
+<tr><td style="width: 25%;"><a href="gl2sa.html">gl2sa</a></td>
+<td>Converts genlight objects to the format used in the SNPassoc package</td></tr>
+<tr><td style="width: 25%;"><a href="gl2snapper.html">gl2snapper</a></td>
+<td>Converts a genlight object to nexus format suitable for phylogenetic analysis by Snapper (via BEAUti) @family linker</td></tr>
+<tr><td style="width: 25%;"><a href="gl2structure.html">gl2structure</a></td>
+<td>Converts a genlight object to STRUCTURE formatted files</td></tr>
+<tr><td style="width: 25%;"><a href="gl2treemix.html">gl2treemix</a></td>
+<td>Converts a genlight object to a treemix input file</td></tr>
+<tr><td style="width: 25%;"><a href="gl2vcf.html">gl2vcf</a></td>
+<td>Converts a genlight object into vcf format</td></tr>
+</table>
+
+<h2><a id="I">-- I --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="utils.het.pop.html">ind.count</a></td>
+<td>An internal function that calculates expected mean heterozygosity per population</td></tr>
+</table>
+
+<h2><a id="M">-- M --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="utils.impute.html">matrix2gen</a></td>
+<td>An internal script [Custodian to provide a title]</td></tr>
+</table>
+
+<h2><a id="R">-- R --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="rbind.dartR.html">rbind.dartR</a></td>
+<td>adjust rbind for dartR</td></tr>
+</table>
+
+<h2><a id="T">-- T --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="theme_dartR.html">theme_dartR</a></td>
+<td>Default theme for dartR plots</td></tr>
+</table>
+
+<h2><a id="U">-- U --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="utils.basic.stats.html">utils.basic.stats</a></td>
+<td>Calculates mean observed heterozygosity, mean expected heterozygosity and FIS per locus, per population and various population differentiation measures @family utilities</td></tr>
+<tr><td style="width: 25%;"><a href="utils.check.datatype.html">utils.check.datatype</a></td>
+<td>Utility function to check the class of an object passed to a function</td></tr>
+<tr><td style="width: 25%;"><a href="utils.collapse.matrix.html">utils.collapse.matrix</a></td>
+<td>Collapses a distance matrix calculated for individuals to a distance matrix for populations defined in a dartR genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="utils.dart2genlight.html">utils.dart2genlight</a></td>
+<td>An internal function to converts DarT to genlight.</td></tr>
+<tr><td style="width: 25%;"><a href="utils.dist.binary.html">utils.dist.binary</a></td>
+<td>Calculates a distance matrix for individuals defined in a dartR genlight object using binary P/A data (SilicoDArT)</td></tr>
+<tr><td style="width: 25%;"><a href="utils.dist.ind.snp.html">utils.dist.ind.snp</a></td>
+<td>Calculates a distance matrix for individuals defined in a genlight object using SNP data (DArTseq)</td></tr>
+<tr><td style="width: 25%;"><a href="utils.flag.start.html">utils.flag.start</a></td>
+<td>A utility script to flag the start of a script</td></tr>
+<tr><td style="width: 25%;"><a href="utils.hamming.html">utils.hamming</a></td>
+<td>Calculates the Hamming distance between two DArT trimmed DNA sequences</td></tr>
+<tr><td style="width: 25%;"><a href="utils.het.pop.html">utils.het.pop</a></td>
+<td>An internal function that calculates expected mean heterozygosity per population</td></tr>
+<tr><td style="width: 25%;"><a href="utils.impute.html">utils.impute</a></td>
+<td>An internal script [Custodian to provide a title]</td></tr>
+<tr><td style="width: 25%;"><a href="utils.is.fixed.html">utils.is.fixed</a></td>
+<td>An internal function to tests if two populations are fixed at a given locus</td></tr>
+<tr><td style="width: 25%;"><a href="utils.jackknife.html">utils.jackknife</a></td>
+<td>An internal function to conducts jackknife resampling using a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="utils.n.var.invariant.html">utils.n.var.invariant</a></td>
+<td>An internal utility function to calculate the number of variant and invariant sites by locus</td></tr>
+<tr><td style="width: 25%;"><a href="utils.plink.run.html">utils.plink.run</a></td>
+<td>Runs PLINK from within R</td></tr>
+<tr><td style="width: 25%;"><a href="utils.plot.save.html">utils.plot.save</a></td>
+<td>An internal function to save a ggplot object to disk in RDS binary format</td></tr>
+<tr><td style="width: 25%;"><a href="utils.read.dart.html">utils.read.dart</a></td>
+<td>Utility to import DarT data to R</td></tr>
+<tr><td style="width: 25%;"><a href="utils.read.fasta.html">utils.read.fasta</a></td>
+<td>An internal script to read a fastA file into a genlight object</td></tr>
+<tr><td style="width: 25%;"><a href="utils.read.ped.html">utils.read.ped</a></td>
+<td>An internal script [Custodian to provide a title]</td></tr>
+<tr><td style="width: 25%;"><a href="utils.recalc.avgpic.html">utils.recalc.avgpic</a></td>
+<td>A utility function to recalculate intermediate locus metrics</td></tr>
+<tr><td style="width: 25%;"><a href="utils.recalc.callrate.html">utils.recalc.callrate</a></td>
+<td>A utility script to recalculate the callrate by locus after some populations have been deleted</td></tr>
+<tr><td style="width: 25%;"><a href="utils.recalc.freqhets.html">utils.recalc.freqhets</a></td>
+<td>A utility script to recalculate the frequency of the heterozygous SNPs by locus after some populations have been deleted</td></tr>
+<tr><td style="width: 25%;"><a href="utils.recalc.freqhomref.html">utils.recalc.freqhomref</a></td>
+<td>#' An internal utility function to recalculate the frequency of the homozygous reference SNP by locus after some populations have been deleted</td></tr>
+<tr><td style="width: 25%;"><a href="utils.recalc.freqhomsnp.html">utils.recalc.freqhomsnp</a></td>
+<td>A utility function to recalculate the frequency of the homozygous alternate SNP by locus after some populations have been deleted</td></tr>
+<tr><td style="width: 25%;"><a href="utils.recalc.maf.html">utils.recalc.maf</a></td>
+<td>A utility function to recalculate the minor allele frequency by locus, typically after some populations have been deleted</td></tr>
+<tr><td style="width: 25%;"><a href="utils.reset.flags.html">utils.reset.flags</a></td>
+<td>#' An internal utility function to reset to FALSE (or TRUE) the locus metric flags after some individuals or populations have been deleted.</td></tr>
+<tr><td style="width: 25%;"><a href="utils.transpose.html">utils.transpose</a></td>
+<td>An internal utility function to transpose a genlight object.</td></tr>
+<tr><td style="width: 25%;"><a href="utils.vcfr2genlight.polyploid.html">utils.vcfr2genlight.polyploid</a></td>
+<td>Utility function to convert polyploid vcfR object as genlight</td></tr>
+</table>
+
+<h2><a id="Z">-- Z --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="zzz.html">zzz</a></td>
+<td>Setting up the package Setting theme, colors and verbosity</td></tr>
+</table>
+
+<h2><a id="misc">-- misc --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="sub-dartR-ANY-ANY-ANY-method.html">[-method</a></td>
+<td>indexing dartR objects correctly...</td></tr>
+</table>
+</div></body></html>

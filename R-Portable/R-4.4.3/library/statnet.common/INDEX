@@ -1,12 +1,13 @@
-ERRVL                   Return the first argument passed (out of any
-                        number) that is not a 'try-error' (result of
-                        'try' encountering an error.
+ERRVL                   Attempt a series of statements and return the
+                        first one that is not an error.
 NVL                     Convenience functions for handling 'NULL'
                         objects.
 Welford                 A Welford accumulator for sample mean and
                         variance
 all_identical           Test if all items in a vector or a list are
                         identical.
+arr_from_coo            Conveniently covert between coordinate-value
+                        and array representations
 as.control.list         Convert to a control list.
 attr                    A wrapper for base::attr which defaults to
                         exact matching.
@@ -42,6 +43,8 @@ locate_function         Locate a function with a given name and return
                         it and its environment.
 logspace.utils          Utilities for performing calculations on
                         logarithmic scale.
+match_names             Construct a named vector with semantics useful
+                        for parameter vectors
 mcmc-utilities          Utility operations for 'mcmc.list' objects
 message_print           'print' objects to the 'message' output.
 modify_in_place         Modify the argument in the calling environment
@@ -58,7 +61,11 @@ paste.and               Concatenates the elements of a vector
                         conjunctions.
 persistEval             Evaluate an expression, restarting on error
 print.control.list      Pretty print the control list
+replace                 Replace values in a vector according to
+                        functions
 set.control.class       Set the class of the control list
+set_diag                Return the matrix with diagonal set to a
+                        specified value
 simplify_simple         Convert a list to an atomic vector if it
                         consists solely of atomic elements of length 1.
 snctrl                  Statnet Control

@@ -1,11 +1,11 @@
-59014842d32f565ea75178451090ff6f *DESCRIPTION
+d730a2e092cc6689a6e08bcd57f7e1e2 *DESCRIPTION
 426f9a3a564174b4069c0a3bd1a54c68 *INDEX
 1ac9ad91f790bdf41842e2708a43866f *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 1cbacefb1481388eb2d56c0d8e06834d *Meta/hsearch.rds
 bb14b4369ebef1d3a408287249ac84ef *Meta/links.rds
 e951aa335ccf425d7c96c59509747458 *Meta/nsInfo.rds
-1e6b5befc07bc7599ebf278ae6e3007e *Meta/package.rds
+78eebf3a7567537b02acac583b31ad37 *Meta/package.rds
 8f14b2ffa82648dcf1a860b26e2c64bb *NAMESPACE
 d6c68f1fe41ced6e98a766a3757313da *R/shinyBS
 75fc1ce106e803bba5d4b1cee6adc6d9 *R/shinyBS.rdb
@@ -22,9 +22,9 @@ f10236e851d0dd7b3668cb3900280cec *examples/Buttons/server.R
 1a364656bb71c9c213d15418e04e1557 *examples/TooltipsandPopovers/ui.R
 a6aefecb8d7da8b3aa5f5fb114135423 *help/AnIndex
 d5e7dc3655ae35464a561c18e0928445 *help/aliases.rds
-9a7f82c2cd5a558490d3572ecff902c4 *help/paths.rds
-66a91e566cecc0d1e4c339487b3d3f22 *help/shinyBS.rdb
-a6fd7d3a53d80fe166f943f36a8890cb *help/shinyBS.rdx
+1bbb9496c5c7045fb0705a17cd91268d *help/paths.rds
+6785826fabed44fa665fb997a9909623 *help/shinyBS.rdb
+a39eee5058c1e31092b74df4f4aba0f2 *help/shinyBS.rdx
 57d66cbf3883838127eb43601b8c3967 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 2fd7d2a3902ad5a80cff43a9d9f2263b *tests/tipify_test.R

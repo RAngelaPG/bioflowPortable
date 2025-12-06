@@ -18,13 +18,18 @@ geominT	rotations
 GPArotation	00.GPArotation
 GPArotation.Intro	00.GPArotation
 GPFoblq	GPA
+GPFoblq.lp	lp
 GPForth	GPA
+GPForth.lp	lp
 GPFRSoblq	GPA
 GPFRSorth	GPA
 Harman	Harman
 Harman8	Harman
 infomaxQ	rotations
 infomaxT	rotations
+Lp rotation	lp
+lpQ	rotations
+lpT	rotations
 mccammon	rotations
 NetherlandsTV	WansbeekMeijer
 NormalizingWeight	NormalizingWeight
@@ -56,6 +61,7 @@ vgQ.cf	vgQ
 vgQ.entropy	vgQ
 vgQ.geomin	vgQ
 vgQ.infomax	vgQ
+vgQ.lp.wls	vgQ
 vgQ.mccammon	vgQ
 vgQ.oblimax	vgQ
 vgQ.oblimin	vgQ

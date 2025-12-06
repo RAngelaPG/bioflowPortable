@@ -40,14 +40,14 @@ ggplot(data = dat1, aes(x = x, y = y)) +
   theme_bw()
 
 ## ----nonlinearFun-------------------------------------------------------------
-f2 <- function(x) { 0.3 + 0.4*x + 0.2*sin(20*x) }
+g <- function(x) { 0.3 + 0.4*x + 0.2*sin(20*x) }
 
 ## ----simDat2------------------------------------------------------------------
 set.seed(12)
 n <- 150
 x <- seq(0, 1, length = n)
 sigma2e <- 0.04
-y <- f2(x) + rnorm(n, sd = sqrt(sigma2e))
+y <- g(x) + rnorm(n, sd = sqrt(sigma2e))
 dat2 <- data.frame(x, y)
 
 ## ----nonlinearFit-------------------------------------------------------------
@@ -61,7 +61,7 @@ summary(obj2)
 ## ----predict_non--------------------------------------------------------------
 newdat <- data.frame(x = seq(0, 1, length = 300))
 pred2 <- predict(obj2, newdata = newdat, se.fit = TRUE)
-pred2$y_true <- f2(pred2$x)
+pred2$y_true <- g(pred2$x)
 
 ggplot(data = dat2, aes(x = x, y = y)) +
   geom_point(col = "black", size = 1.5) +
@@ -70,6 +70,20 @@ ggplot(data = dat2, aes(x = x, y = y)) +
   geom_line(data = pred2, aes(y = ypred), color = "blue", linewidth = 1) +
   geom_ribbon(data= pred2, aes(x=x, ymin = ypred-2*se, ymax = ypred+2*se),
               alpha=0.2, inherit.aes = FALSE) +
+  theme_bw() 
+
+## ----predict_non_derivative---------------------------------------------------
+dg_dx <- function(x) { 0.4 + 4*cos(20*x) }
+pred2_dx <- predict(obj2, newdata = newdat, se.fit = TRUE, deriv="x")
+pred2_dx$y_true <- dg_dx(pred2_dx$x)
+
+ggplot(data = pred2_dx) +
+  geom_line(aes(x=x, y = y_true), color = "red", 
+            linewidth = 1, linetype ="dashed") +
+  geom_line(aes(x = x, y = ypred), color = "blue", linewidth = 1) +
+  geom_ribbon(aes(x=x, ymin = ypred-2*se, ymax = ypred+2*se),
+              alpha=0.2, inherit.aes = FALSE) +
+  geom_hline(yintercept=0.0, linetype = "dashed") + ylab('dy/dx') + 
   theme_bw() 
 
 ## ----twoExperiments-----------------------------------------------------------
@@ -83,8 +97,8 @@ sigma2e_B <- 0.10
 
 x1 <- runif(n = nA)
 x2 <- runif(n = nB)
-y1 <- f2(x1) + rnorm(nA, sd = sqrt(sigma2e_A)) + mu_A
-y2 <- f2(x2) + rnorm(nB, sd = sqrt(sigma2e_B)) + mu_B
+y1 <- g(x1) + rnorm(nA, sd = sqrt(sigma2e_A)) + mu_A
+y2 <- g(x2) + rnorm(nB, sd = sqrt(sigma2e_B)) + mu_B
 Experiment <- as.factor(c(rep("A", nA), rep("B", nB)))
 dat4 <- data.frame(x = c(x1, x2), y = c(y1,y2), Experiment = Experiment)
 
@@ -106,7 +120,7 @@ summary(obj4)
 ## ----twoExpPredict------------------------------------------------------------
 newdat <- data.frame(x=seq(0, 1, length = 300))
 pred4 <- predict(obj4, newdata = newdat, se.fit = TRUE)
-pred4$y_true <- f2(pred4$x)
+pred4$y_true <- g(pred4$x)
 ggplot(data = dat4, aes(x = x, y = y, colour = Experiment)) +
   geom_point(size = 1.5) +
   geom_line(data = pred4, aes(y = y_true), color="red", 
@@ -163,7 +177,7 @@ ggplot(usa) +
 
 ## ----SeaSurfaceTemp-----------------------------------------------------------
 data(SeaSurfaceTemp)
-head(SeaSurfaceTemp, 5)
+head(SeaSurfaceTemp, 3)
 table(SeaSurfaceTemp$type)
 
 ## ----convert_and_split--------------------------------------------------------
@@ -293,7 +307,7 @@ nsucces <- sapply(x, FUN=function(x) {
                 })
 dat <- data.frame(x = x, succes = nsucces, 
                          failure= sz - nsucces)
-head(dat, 5)
+head(dat, 3)
 
 ## ----binomial_solve-----------------------------------------------------------
 obj3 <- LMMsolve(fixed = cbind(succes, failure) ~ 1,
@@ -340,7 +354,7 @@ multiNom <- t(sapply(x, FUN=
                       } ))
 colnames(multiNom) <- names(mu)
 dat <- data.frame(x, multiNom)
-head(dat, 4)
+head(dat, 3)
 
 ## ----multinomialfit-----------------------------------------------------------
 obj <- LMMsolve(fixed = cbind(A,B,C,D) ~ 1,
@@ -357,7 +371,7 @@ dat_fr <- data.frame(x, fr)
 x0 <- seq(0, 1, by = 0.01)
 newdat <- data.frame(x = x0)
 pred <- predict(obj, newdata = newdat)
-head(pred)
+head(pred, 3)
 
 ## ----makePlot-----------------------------------------------------------------
 library(tidyr)
@@ -376,14 +390,14 @@ p1
 
 ## ----oatsdata-----------------------------------------------------------------
 ## Load data.
-data(john.alpha, package = "agridat")
-head(john.alpha)
+data(oats.data)
+head(oats.data, 3)
 
 ## ----define LVmodel-----------------------------------------------------------
 ## Add plot as factor.
-john.alpha$plotF <- as.factor(john.alpha$plot)
+oats.data$plotF <- as.factor(oats.data$plot)
 ## Define the precision matrix, see eqn (A2) in Boer et al (2020).
-N <- nrow(john.alpha)
+N <- nrow(oats.data)
 cN <- c(1 / sqrt(N - 1), rep(0, N - 2), 1 / sqrt(N - 1))
 D <- diff(diag(N), diff = 1)
 Delta <- 0.5 * crossprod(D)
@@ -395,15 +409,27 @@ lGinv <- list(plotF = LVinv)
 obj7 <- LMMsolve(fixed = yield ~ rep + gen,
                  random = ~plotF, 
                  ginverse = lGinv, 
-                 data = john.alpha)
+                 data = oats.data)
 
 ## ----summary_dev_VAR----------------------------------------------------------
 round(deviance(obj7, relative = FALSE), 2)
 summary(obj7, which = "variances")
 
+## ----schmidtmodeloats---------------------------------------------------------
+obj7b <- LMMsolve(fixed = yield ~ rep,
+                 random = ~gen + rep:block, 
+                 data = oats.data)
+
+## ----effdim-------------------------------------------------------------------
+EDdf <- effDim(obj7b)
+EDdf
+
+## ----genh2--------------------------------------------------------------------
+round(subset(EDdf, Term == "gen")$Ratio, 3)
+
 ## ----APSIMdat-----------------------------------------------------------------
 data(APSIMdat)
-head(APSIMdat)
+head(APSIMdat, 3)
 
 ## ----APSIMmodel---------------------------------------------------------------
 obj8 <- LMMsolve(fixed = biomass ~ 1,
@@ -427,10 +453,12 @@ ggplot(data = APSIMdat, aes(x = das, y = biomass)) +
   theme_bw()
 
 ## ----APSIMDeriv---------------------------------------------------------------
-plotDatDt <- obtainSmoothTrend(obj8, grid = 1000, deriv = 1)
+plotDatDt <- predict(obj8, newdata = newdat, se.fit=TRUE, deriv="das")
 
 ggplot(data = plotDatDt, aes(x = das, y = ypred)) +
-  geom_line(color = "red", linewidth = 1) +
+  geom_line(color = "blue", linewidth = 1) +
+  geom_ribbon(aes(x=das, ymin = ypred-2*se, ymax = ypred+2*se),
+              alpha=0.2, inherit.aes = FALSE) +  
   labs(title = "APSIM growth rate as function of time", 
        x = "days after sowing", y = "growth rate (kg/day)") +
   theme_bw()
@@ -438,7 +466,7 @@ ggplot(data = plotDatDt, aes(x = das, y = ypred)) +
 ## ----multipop-----------------------------------------------------------------
 ## Load data for multiparental population.
 data(multipop)
-head(multipop)
+head(multipop, 3)
 
 ## ----residualARG--------------------------------------------------------------
 ## Fit null model.

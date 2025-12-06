@@ -177,8 +177,8 @@ factor2cluster          Extract cluster definitions from factor
                         loadings
 fisherz                 Transformations of r, d, and t including Fisher
                         r to z and z to r and confidence intervals
-fparse                  Parse and exten formula input from a model and
-                        return the DV, IV, and associated terms.
+fparse                  Parse and extend formula input from a model and
+                        return the DV(s), IV(s), and associated terms.
 geometric.mean          Find the geometric mean of a vector or columns
                         of a data.frame.
 glb.algebraic           Find the greatest lower bound to reliability.

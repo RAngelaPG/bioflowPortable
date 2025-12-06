@@ -1,0 +1,12 @@
+eventbridge             Amazon EventBridge
+eventbridgepipes        Amazon EventBridge Pipes
+eventbridgescheduler    Amazon EventBridge Scheduler
+locationservice         Amazon Location Service
+mq                      AmazonMQ
+mwaa                    AmazonMWAA
+resourceexplorer        AWS Resource Explorer
+schemas                 Schemas
+sfn                     AWS Step Functions
+sns                     Amazon Simple Notification Service
+sqs                     Amazon Simple Queue Service
+swf                     Amazon Simple Workflow Service

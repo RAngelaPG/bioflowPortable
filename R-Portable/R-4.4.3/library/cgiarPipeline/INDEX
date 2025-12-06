@@ -1,11 +1,16 @@
 baseIndex               Base selection index pipeline
 cgiarPipeline           cgiarPipeline
 equalizeTraits          Trait Equalizing
+funchunt                subset of a population
+gpcp                    Genomic Prediction of Cross Performance
+                        Pipeline
 indexDesire             Desire selection index pipeline
 individualVerification
                         Verification of a cross using markers
 markerAssistedSelection
                         Apply Marker Assisted Selection
+metASREML               Multi-environmental trial analysis pipeline
+                        using ASReml package
 metLMM                  Multi-environmental trial analysis pipeline
                         using LMM
 metLMMsolver            Multi-environmental trial analysis pipeline

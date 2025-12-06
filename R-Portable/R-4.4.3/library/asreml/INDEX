@@ -1,0 +1,83 @@
+Levels                  Combine factor levels
+Subset                  Subset a factor
+Units                   Unit level numbers
+ainverse                Calculate an inverse relationship matrix
+asr_varioGram           Empirical variogram
+asreml                  Mixed effects linear models
+asreml.license.activate
+                        Activates an 'asreml' license
+asreml.license.deactivate
+                        Deactivates the current 'asreml' license
+asreml.license.offline
+                        Request an 'asreml' license to be used offline
+asreml.license.online   Request an 'asreml' license to be used online
+asreml.license.status   Check the status of the 'asreml' license
+asreml.object           This (S3) class object contains a fitted linear
+                        mixed model from the 'asreml()' function
+asreml.options          Set less frequently used 'asreml()' options
+asreml.read.table       Read in a data frame
+asuv                    Univariate data frame
+asv.asreml              Approximate stratum variances
+binnor                  Footrot scores on lambs
+chkPed                  Check a pedigree
+coef.asreml             Extract model coefficients
+complex_vs              Variance structure spanning several model terms
+coop                    Coopworth lamb data
+ebay                    Ebay bids
+fa.init                 Factor analytic initial values
+family_dist             GLM (and GLMM) family objects for 'asreml'
+fitted.asreml           Extract fitted values
+general_vs              General structure variance models
+grass                   Plant height disease study (multivariate form)
+grassUV                 Plant height disease study (univariate form)
+harvey                  Weights of Hereford cattle
+harvey.ped              Pedigree of Hereford cattle
+harveyg.ped             Pedigree of Hereford cattle (with genetic
+                        groups)
+indep_vs                Default identity variance models
+known_vs                Known variance structures
+lamb                    Footrot counts on lambs
+lrt.asreml              REML likelihood ratio test (REMLRT)
+matern_vs               Matern variance structure
+meff.asreml             Calculate marker effects
+met                     Multi-environmental wheat data from 8 locations
+                        with spatial coordinates
+metric-1D_vs            Metric-based variance models in one dimension.
+metric-2D_vs            Metric-based variance models in two dimensions
+model_functions         Model term constructor functions
+na.method               Missing value action for 'asreml' data frames
+naf                     Barley study (naf)
+naf31H                  Marker scores barley study (naf)
+naf32H                  Marker scores barley study (naf)
+nassau                  Loblolly pine clone trial
+nassau.grm              Loblolly genetic relationship matrix (GRM)
+nassau.snp              Loblolly genetic marker scores
+nin89                   Wheat advanced breeding trial
+oats                    Oats variety-nitrogen factorial study
+orange                  Orange tree circumference
+owt                     Orange wether wool trial
+pixel                   Repeated CT scans on dogs
+plot.asreml             Plot diagnostics for an 'asreml' object
+plot.varioGram          Plot an empirical variogram
+plot_coef.asreml        Plot model coefficients
+predict.asreml          Predict linear functions of model effects
+rats                    Reproductive study on rats
+residuals.asreml        Extract model residuals
+rice                    Rice resistance to bloodworms (univariate form)
+riceMV                  Rice resistance to bloodworms (multivariate
+                        form)
+shf                     Slate Hall farm wheat variety trial
+splinek                 Spline knot points
+summary.asreml          Summarize an 'asreml' object
+time_series_vs          Time series type correlation and variance
+                        structures.
+tr.asreml               REML convergence trace for 'asreml' objects.
+update.asreml           Update an 'asreml' model fit
+user_vs                 User-defined variance models or structures
+varioGram.asreml        Empirical variogram constructor method
+vcm.lm                  Specify constraints among variance components
+voltage                 Voltage regulators
+vpredict                Functions of variance components
+wald.asreml             Wald test statistics constructor
+wheat                   Wheat variety trial
+wolfinger               Growth curve study on rats

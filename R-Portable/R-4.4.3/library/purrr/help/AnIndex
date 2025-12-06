@@ -1,10 +1,8 @@
 purrr-package	purrr-package
 %>%	pipe
-%@%	get-attr
 %||%	reexports
 accumulate	accumulate
 accumulate2	accumulate
-accumulate_right	reduce_right
 along	along
 array-coercion	array-coercion
 array_branch	array-coercion
@@ -16,7 +14,6 @@ as_mapper.list	as_mapper
 as_mapper.numeric	as_mapper
 as_vector	as_vector
 attr_getter	attr_getter
-at_depth	at_depth
 auto_browse	auto_browse
 chuck	chuck
 compact	keep
@@ -24,9 +21,7 @@ compose	compose
 cross	cross
 cross2	cross
 cross3	cross
-cross_d	cross
 cross_df	cross
-cross_n	cross
 detect	detect
 detect_index	detect
 discard	keep
@@ -44,7 +39,6 @@ flatten_dfr	flatten
 flatten_int	flatten
 flatten_lgl	flatten
 flatten_raw	map_raw
-get-attr	get-attr
 has_element	has_element
 head_while	head_while
 imap	imap
@@ -68,6 +62,7 @@ invoke_map_dfr	invoke
 invoke_map_int	invoke
 invoke_map_lgl	invoke
 invoke_map_raw	invoke
+in_parallel	in_parallel
 is_atomic	reexports
 is_bare_atomic	reexports
 is_bare_character	reexports
@@ -150,6 +145,7 @@ modify_in	modify_in
 modify_tree	modify_tree
 negate	negate
 none	every
+parallelization	in_parallel
 partial	partial
 pluck	pluck
 pluck<-	pluck
@@ -181,8 +177,6 @@ rbernoulli	rbernoulli
 rdunif	rdunif
 reduce	reduce
 reduce2	reduce
-reduce2_right	reduce_right
-reduce_right	reduce_right
 reexports	reexports
 rep_along	reexports
 rerun	rerun

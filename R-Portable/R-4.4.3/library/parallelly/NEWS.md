@@ -1,3 +1,127 @@
+# Version 1.45.1 [2025-07-24]
+
+## Miscellaneous
+
+ * Now `print()` for `RichSOCKcluster` outputs a more concise summary,
+   which is also grammatically correct for single-node clusters.
+
+## Deprecated and Defunct
+
+ * In previous version, `makeClusterPSOCK()` started to collect
+   session information on each parallel worker, which included
+   `capabilities()`. However, for unknown reasons, `capabilities()`
+   caused the cluster creation to fail GitHub Actions running
+   macOS. The problem could be reproduced neither locally, on the
+   mac-builder, nor on the CRAN macOS servers. Because this feature is
+   non-critical and only introduced in the previous version, I decided
+   to remove the collection of `capabilities()` again.
+ 
+
+# Version 1.45.0 [2025-06-02]
+
+## New Features
+
+ * `availableCores()` gained argument `max`, which limits the maximum
+   number of cores returned after everything else is applied, i.e.
+   `availableCores(..., max = n)` is short for `min(n,
+   availableCores(...), na.rm = TRUE)`.
+
+ * `availableWorkers()` gained argument `...`, which passes any
+   additional arguments to `availableCores()`, if specified.
+
+ * If `killNode(..., signal = tools::SIGTERM)` successfully signaled
+   the cluster node, it will now close any existing socket connection
+   to the node. If the node is running on the local host, it will also
+   remove its temporary directory, because the the node's R process
+   might not have been exited gracefully.
+   
+ * The session information collected by `makeClusterPSOCK()` now
+   contains more details on each worker, e.g. the `tempdir()` folder,
+   `capabilities()`, and `extSoftVersion()`.
+
+ * Cluster nodes created by `makeClusterPSOCK()` gained attribute
+   `calls`, which records the `sys.calls()`. This can be useful when
+   troubleshooting from where a cluster was created. Analogously,
+   setting R option `parallelly.makeNodePSOCK.calls` to TRUE will
+   relay the call stack in the system call that launched the cluster
+   node.
+ 
+## Bug Fixes
+
+ * `availableCores()` would not respect `method = "fallback"` if
+   `constraints` specified `"connections"` or `"connections-N"`.
+
+ * `availableCores()` would produce an error on `Error in scan(file =
+   file, what = what, ...)` on systems that have a `/proc/self/mounts`
+   file with syntax errors. Such files have been reported on Windows
+   Subsystem for Linux version 2 (WSL 2), where spaces in Windows path
+   have not been properly escaped for some entries. Now such invalid
+   entries are skipped, before parsing the mount table.
+
+
+# Version 1.44.0 [2025-05-07]
+
+## New Features
+
+ * Add support to `availableCores()` and `availableWorkers()` to
+   specify `constraints = "connections-N"`, where `N` specifies the
+   number of connections to leave free after launching a PSOCK cluster
+   with this number of cores.
+
+ * Add `all.equal()` for `connection`, which can distinguish between
+   two connections that share the same connection index, but are not
+   the same connection, e.g. when one was created, then closed, and
+   another one of the same kind is created.
+
+## Bug Fixes
+
+ * `availableCores()` would not respect `method = "fallback"`, since
+   v1.41.0 (2024-12-18), on system with a value for `method =
+   "/proc/self/status"`.
+
+
+# Version 1.43.0 [2025-03-24]
+
+## Significant Changes
+
+ * Now `availableCores()` memoizes the values of all its components.
+   This means that as soon as it has been called, environment variables 
+   such as `NSLOTS` will no longer be queried.
+
+ * Starting with R 4.5.0, one can use `parallel::makeCluster(n, type =
+   parallelly::RPSOCK)` as an alternative to
+   `parallelly::makeClusterPSOCK(n)`.  Similarly, `type =
+   parallelly::RMPI` creates a cluster using
+   `parallelly::makeClusterMPI()`, and `type = parallelly::SEQ`
+   creates a cluster using `parallelly::makeClusterSequential()`.
+   This was first introduced in **parallelly** 1.38.0, but here we
+   rename `PSOCK` to `RPSOCK` and `MPI` to `RMPI` to minimize the risk
+   for mistaking them from the built-in types in the **parallel**
+   package. The `R` stands for "Rich".
+
+## Documentation
+
+ * Add more help on the R option `parallelly.maxWorkers.localhost`
+   limits. Improved the warning and error messages that are produced
+   when these settings are exceeded.
+
+## Miscellaneous
+
+ * R option `future.debug` is no longer used as a fallback for option
+   `parallelly.debug`.
+
+## Bug Fixes
+
+ * `isNodeAlive()` could produce warnings on `doTryCatch(return(expr),
+   name, parentenv, handler) : NAs introduced by coercion` on MS
+   Windows. Improved the internal `tasklist` parses used to test
+   whether a process is alive.
+ 
+ * `availableCores()` could produce `Error: Error in
+   cache_controller[[field]] : subscript out of bounds` in
+   `... getCGroups1CpuQuota -> getCGroups1CpuPeriodMicroseconds`.
+
+
 # Version 1.42.0 [2025-01-30]
 
 ## New Features
@@ -23,7 +147,7 @@
    (2022-04-07).
 
 
-# Version 1.41.0 [2024-12-17]
+# Version 1.41.0 [2024-12-18]
 
 ## New Features
 
@@ -49,7 +173,7 @@
    richer support for the `rscript_sh` argument.
 
 
-# Version 1.40.1 [2024-12-03]
+# Version 1.40.1 [2024-12-04]
 
 ## Bug Fixes
 

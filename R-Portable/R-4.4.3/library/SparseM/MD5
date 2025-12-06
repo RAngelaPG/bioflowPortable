@@ -1,5 +1,5 @@
 627b11a78382bad1db20abfcb9c3f0bd *ChangeLog
-0a349a2dbae30855a0499aadec439b24 *DESCRIPTION
+415120d9190cd467d77f70c8b2235194 *DESCRIPTION
 465a182ae57c2d2ecb0a979f3da656bb *INDEX
 bc954c61220e0a69611c4777c572e852 *Meta/Rd.rds
 bc72aeeb88c0591479c2c58df467cbbb *Meta/data.rds
@@ -8,7 +8,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 9dbb041ac8ce1d37f08187540d06e76c *Meta/hsearch.rds
 a65741985eb174829adb45ad714f21ed *Meta/links.rds
 d6521edb1275e1dc0eb01ccd92e1bfa1 *Meta/nsInfo.rds
-96bb248bf392922e81267e57ba18959e *Meta/package.rds
+75a45126bccaf9df53293cc815ba940f *Meta/package.rds
 5c224fe923aabc00937d673b5f62e081 *Meta/vignette.rds
 9aeb9d8babba8fdc6c6e1a354c8ac335 *NAMESPACE
 d6c68f1fe41ced6e98a766a3757313da *R/SparseM
@@ -30,11 +30,11 @@ e8d9f263e02b45d7ee944197b34779ba *doc/index.html
 79ffa8d4a3ea5633c9e89b259a079e8d *extdata/lsq.rra
 453c119e83ff6d1b28941938c2c13f90 *extdata/rua_32_ax.rua
 caf84cae60e49228d351d44667548310 *help/AnIndex
-2f80c4f25e21c8d78f691cc63d84aac0 *help/SparseM.rdb
-5dc7834c8a91530c2920c76acd7ad2c7 *help/SparseM.rdx
+7525d5c03858b4691eaad1b192da0448 *help/SparseM.rdb
+10867aa6d5e8a3eef23b4ed7bd838a5f *help/SparseM.rdx
 7673f411e28ef4e32af4bbabdbf74317 *help/aliases.rds
-6d99d1088057c7e4d522428a92d8f995 *help/paths.rds
+62030f7afb95e2d82ac469fca93feda8 *help/paths.rds
 fdc442cc1c77f6141f116bee260d60da *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-c20aa77321b926ea4d272a3a9534a502 *libs/x64/SparseM.dll
+f658a558a6cb36615bfb7390aa23313c *libs/x64/SparseM.dll
 b22b100fa4e20af4b2444c9e51198d6f *libs/x64/symbols.rds

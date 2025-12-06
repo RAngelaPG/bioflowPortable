@@ -1,4 +1,4 @@
-6816979d317be6969131cbf1128cb053 *DESCRIPTION
+62a4336e01dbd8b5628747b3c2890344 *DESCRIPTION
 8444e54e712a6716c02a7221bc601066 *INDEX
 2e77d2bbfa8fccf8440f750190bbeef4 *LICENSE
 69b0c5bb94a28c7e4ee5b47624098763 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 fc525c34ca899d64e64cae88fe9c007b *Meta/hsearch.rds
 edc69ec3948f272366df158cea094cc4 *Meta/links.rds
 a1ecbbe7e46d1e24f528018f9d0fd1a6 *Meta/nsInfo.rds
-9d3d6d40c76a703d59e4b6bee9b6c6ca *Meta/package.rds
+f4f6c2802738beca914b28990de3df3b *Meta/package.rds
 da588613b2cb6a0cdc563e58f352a84e *Meta/vignette.rds
 ebbedb9fe22435c2b6af6266451a2da4 *NAMESPACE
 53279a21e17f81955fad63b4b08517e1 *NEWS.md
@@ -18,8 +18,8 @@ f6c61f76e6e49bcb4dcecc27f9604a9b *doc/cell-references.html
 bf338e07ea37811b4840ee6aa21fee43 *doc/index.html
 a26a23befa59c8921927725968691061 *help/AnIndex
 5f8da03fac2320fccd64aded254d8ce5 *help/aliases.rds
-d4e6e7add55b072784b188ab0e55d5d3 *help/cellranger.rdb
-d3308a279a1988e9f27d4ca70f90105b *help/cellranger.rdx
-a828d6a84e8ff7fc00c1a6ab2deb406b *help/paths.rds
+78db63cc51949217d1b5b1b8073a9cbb *help/cellranger.rdb
+3efcbc5452c92d60ae01127f97ce3ee3 *help/cellranger.rdx
+5535f5040d0067e4be5ec0b3f8d30664 *help/paths.rds
 77d797efa2f7a74c5963a3d73550ab93 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

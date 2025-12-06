@@ -1,4 +1,4 @@
-0c4a6f419b6ba10721dedec98674f0b1 *DESCRIPTION
+f01e027dfeb4da17408239249174b4b1 *DESCRIPTION
 512e2fef7dde85cc00bb86a99ffae835 *INDEX
 bc0477fac4bc9cf92272c1b419f2582b *LICENSE
 cc73224f59417d75b004cce1a2ffca54 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 5237e872e2c04d3fd10637836d24490a *Meta/hsearch.rds
 ffff3ffee1aac5e6a66d2216131b6534 *Meta/links.rds
 1a6037ab41ddcf9b5484e46b8a010442 *Meta/nsInfo.rds
-3db0ebdc9409a74d0cd749d158e72ddf *Meta/package.rds
+1e2746ff431818c4a6ce1946a6d809d3 *Meta/package.rds
 b59058e11cf3673a86ff2034651a344b *NAMESPACE
 f95a2eed910e304d2ed794dbe5eb09d2 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/jquerylib
@@ -14,9 +14,9 @@ f1b61567bfb07f02602a8566a771f1ab *R/jquerylib.rdb
 6caf414f139ba7b4ba26e271d181917a *R/jquerylib.rdx
 79b2b1352255d60cf8d3ef6559ffa78e *help/AnIndex
 91263e15917f3b6538375547c7f0cf4c *help/aliases.rds
-dee1a4edd4837a24b00077cbe3a71406 *help/jquerylib.rdb
-56d50e5b8c5d6ad61ccc05aa25b1c62e *help/jquerylib.rdx
-9f42053545a67038b93f6312c14c092a *help/paths.rds
+ea069395540d81e80086f6bd39c06cbf *help/jquerylib.rdb
+0118b2cb0cb2c9d7047427ef33932c75 *help/jquerylib.rdx
+fd79c8830965762f34529fbe0bf3c924 *help/paths.rds
 25a131d31719356e06ce19bc94617861 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 fb2d334dabf4902825df4fe6c2298b4b *lib/1.12.4/jquery-1.12.4.js

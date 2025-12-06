@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -11,7 +11,7 @@ project_path <- system.file("demo-project", package = "here")
 fs::dir_tree(project_path)
 
 ## ----eval = FALSE-------------------------------------------------------------
-#  setwd(file.path(project_path, "analysis"))
+# setwd(file.path(project_path, "analysis"))
 
 ## ----include = FALSE----------------------------------------------------------
 knitr::opts_knit$set(root.dir = file.path(project_path, "analysis"))

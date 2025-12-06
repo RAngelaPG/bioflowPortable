@@ -1,0 +1,39 @@
+augmentedairuntime      Amazon Augmented AI Runtime
+bedrock                 Amazon Bedrock
+bedrockagent            Agents for Amazon Bedrock
+bedrockagentruntime     Agents for Amazon Bedrock Runtime
+bedrockdataautomation   Data Automation for Amazon Bedrock
+bedrockdataautomationruntime
+                        Runtime for Amazon Bedrock Data Automation
+bedrockruntime          Amazon Bedrock Runtime
+comprehend              Amazon Comprehend
+comprehendmedical       AWS Comprehend Medical
+forecastqueryservice    Amazon Forecast Query Service
+forecastservice         Amazon Forecast Service
+frauddetector           Amazon Fraud Detector
+lexmodelbuildingservice
+                        Amazon Lex Model Building Service
+lexmodelsv2             Amazon Lex Model Building V2
+lexruntimeservice       Amazon Lex Runtime Service
+lexruntimev2            Amazon Lex Runtime V2
+lookoutequipment        Amazon Lookout for Equipment
+lookoutmetrics          Amazon Lookout for Metrics
+machinelearning         Amazon Machine Learning
+panorama                AWS Panorama
+personalize             Amazon Personalize
+personalizeevents       Amazon Personalize Events
+personalizeruntime      Amazon Personalize Runtime
+polly                   Amazon Polly
+rekognition             Amazon Rekognition
+sagemaker               Amazon SageMaker Service
+sagemakeredgemanager    Amazon Sagemaker Edge Manager
+sagemakerfeaturestoreruntime
+                        Amazon SageMaker Feature Store Runtime
+sagemakergeospatialcapabilities
+                        Amazon SageMaker geospatial capabilities
+sagemakermetrics        Amazon SageMaker Metrics Service
+sagemakerruntime        Amazon SageMaker Runtime
+textract                Amazon Textract
+transcribeservice       Amazon Transcribe Service
+translate               Amazon Translate
+voiceid                 Amazon Voice ID

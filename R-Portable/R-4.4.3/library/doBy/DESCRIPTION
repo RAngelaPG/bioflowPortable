@@ -1,5 +1,5 @@
 Package: doBy
-Version: 4.6.25
+Version: 4.7.1
 Title: Groupwise Statistics, LSmeans, Linear Estimates, Utilities
 Authors@R: c(
     person(given = "Ulrich", family = "Halekoh",
@@ -7,13 +7,7 @@ Authors@R: c(
     person(given = "Søren", family = "Højsgaard",
         email = "sorenh@math.aau.dk", role = c("aut", "cre", "cph"))
   )
-Maintainer: Søren Højsgaard <sorenh@math.aau.dk>
-Description: Utility package containing:
-    1) Facilities for working with grouped data: 'do' something to data
-    stratified 'by' some variables.
-    2) LSmeans (least-squares means), general linear estimates.
-    3) Restrict functions to a smaller domain.
-    4) Miscellaneous other utilities.
+Description: Utility package containing: Main categories: Working with grouped data: 'do' something to data when  stratified 'by' some variables.  General linear estimates. Data handling utilities. Functional programming, in particular restrict functions to a smaller domain. Miscellaneous functions for data handling. Model stability in connection with model selection. Miscellaneous other tools. 
 Encoding: UTF-8
 VignetteBuilder: knitr
 LazyData: true
@@ -21,15 +15,16 @@ LazyDataCompression: xz
 URL: https://github.com/hojsgaard/doBy
 License: GPL (>= 2)
 Depends: R (>= 4.2.0), methods
-Imports: boot, broom, cowplot, Deriv, dplyr, ggplot2, MASS, Matrix,
-        modelr, microbenchmark, rlang, tibble, tidyr,
-Suggests: geepack, knitr, lme4, markdown, multcomp, pbkrtest (>=
-        0.5.2), survival, testthat (>= 2.1.0)
-RoxygenNote: 7.3.2
+Imports: boot, broom, cowplot, Deriv, dplyr, forecast, ggplot2, MASS,
+        Matrix, modelr, microbenchmark, rlang, purrr, tibble, tidyr,
+Suggests: geepack, knitr, lme4, markdown, rmarkdown, multcomp, pbkrtest
+        (>= 0.5.2), survival, testthat (>= 2.1.0)
+RoxygenNote: 7.3.3
 NeedsCompilation: no
-Packaged: 2025-01-30 07:41:25 UTC; sorenh
+Packaged: 2025-12-01 22:47:07 UTC; sorenh
 Author: Ulrich Halekoh [aut, cph],
   Søren Højsgaard [aut, cre, cph]
+Maintainer: Søren Højsgaard <sorenh@math.aau.dk>
 Repository: CRAN
-Date/Publication: 2025-01-30 13:00:02 UTC
-Built: R 4.4.3; ; 2025-03-04 04:09:11 UTC; windows
+Date/Publication: 2025-12-02 06:10:39 UTC
+Built: R 4.4.3; ; 2025-12-05 05:35:14 UTC; windows

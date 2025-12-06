@@ -1,0 +1,38 @@
+accessanalyzer          Access Analyzer
+account                 AWS Account
+acm                     AWS Certificate Manager
+acmpca                  AWS Certificate Manager Private Certificate
+                        Authority
+cleanroomsml            AWS Clean Rooms ML
+clouddirectory          Amazon CloudDirectory
+cloudhsm                Amazon CloudHSM
+cloudhsmv2              AWS CloudHSM V2
+cognitoidentity         Amazon Cognito Identity
+cognitoidentityprovider
+                        Amazon Cognito Identity Provider
+cognitosync             Amazon Cognito Sync
+detective               Amazon Detective
+directoryservice        AWS Directory Service
+fms                     Firewall Management Service
+guardduty               Amazon GuardDuty
+iam                     AWS Identity and Access Management
+iamrolesanywhere        IAM Roles Anywhere
+identitystore           AWS SSO Identity Store
+inspector               Amazon Inspector
+inspector2              Inspector2
+kms                     AWS Key Management Service
+macie2                  Amazon Macie 2
+pcaconnectorad          PcaConnectorAd
+ram                     AWS Resource Access Manager
+secretsmanager          AWS Secrets Manager
+securityhub             AWS SecurityHub
+securitylake            Amazon Security Lake
+shield                  AWS Shield
+sso                     AWS Single Sign-On
+ssoadmin                AWS Single Sign-On Admin
+ssooidc                 AWS SSO OIDC
+sts                     AWS Security Token Service
+verifiedpermissions     Amazon Verified Permissions
+waf                     AWS WAF
+wafregional             AWS WAF Regional
+wafv2                   AWS WAFV2

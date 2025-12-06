@@ -1,0 +1,23 @@
+Package: asreml
+Title: Fits Linear Mixed Models using REML
+Version: 4.2.0.332
+Date: 2023-4-01
+Authors@R: person("The VSNi Team", email = "asreml@vsni.co.uk",
+           role = c("aut", "cre"))
+Author: The VSNi Team
+Maintainer: The VSNi Team <asreml@vsni.co.uk>
+Description: ASReml-R is a statistical package that fits linear mixed models using Residual Maximum Likelihood (REML). The features of ASReml-R include: 1) a flexible syntax for specifying variance models for the random effects, and 2) the REML routines use the Average Information (AI) algorithm, and sparse matrix methods for fitting the mixed model. These enable ASReml-R to fit many types of models and efficiently analyse large and complex data sets.
+Depends: R (>= 4.0.0), stats, utils, Matrix
+Imports: data.table (>= 1.14), ggplot2, grid, methods, jsonlite
+Suggests: lattice, grDevices
+Encoding: UTF-8
+License: file LICENSE
+URL: www.vsni.co.uk
+LazyData: true
+LazyDataCompression: bzip2
+ByteCompile: yes
+RoxygenNote: 6.0.1
+Language: en-GB
+NeedsCompilation: no
+Packaged: 2024-06-11 07:58:08 UTC; ci
+Built: R 4.4.0; ; 2024-06-11 08:26:11 UTC; windows

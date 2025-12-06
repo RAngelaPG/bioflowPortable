@@ -1,0 +1,14 @@
+backup                  AWS Backup
+dlm                     Amazon Data Lifecycle Manager
+ebs                     Amazon Elastic Block Store
+efs                     Amazon Elastic File System
+finspacedata            FinSpace Public API
+fsx                     Amazon FSx
+glacier                 Amazon Glacier
+omics                   Amazon Omics
+recyclebin              Amazon Recycle Bin
+s3                      Amazon Simple Storage Service
+s3control               AWS S3 Control
+s3outposts              Amazon S3 on Outposts
+s3tables                Amazon S3 Tables
+storagegateway          AWS Storage Gateway

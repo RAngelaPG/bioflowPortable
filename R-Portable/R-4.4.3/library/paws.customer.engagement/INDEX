@@ -1,0 +1,16 @@
+connect                 Amazon Connect Service
+connectcampaignservice
+                        AmazonConnectCampaignService
+connectcampaignservicev2
+                        AmazonConnectCampaignServiceV2
+connectcases            Amazon Connect Cases
+connectcontactlens      Amazon Connect Contact Lens
+connectparticipant      Amazon Connect Participant Service
+connectwisdomservice    Amazon Connect Wisdom Service
+customerprofiles        Amazon Connect Customer Profiles
+pinpoint                Amazon Pinpoint
+pinpointemail           Amazon Pinpoint Email Service
+pinpointsmsvoice        Amazon Pinpoint SMS and Voice Service
+pinpointsmsvoicev2      Amazon Pinpoint SMS Voice V2
+ses                     Amazon Simple Email Service
+sesv2                   Amazon Simple Email Service

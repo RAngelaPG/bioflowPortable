@@ -3,14 +3,14 @@ library(ggplot2)
 library(ggnetwork)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  install.packages("ggnetwork")
+# install.packages("ggnetwork")
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  remotes::install_github("briatte/ggnetwork")
+# remotes::install_github("briatte/ggnetwork")
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  install.packages("ggplot2")
-#  library(ggplot2)
+# install.packages("ggplot2")
+# library(ggplot2)
 
 ## ----message=FALSE------------------------------------------------------------
 library(network)
@@ -30,8 +30,8 @@ set.edge.attribute(n, "day", sample(1:3, e, replace = TRUE))
 theme_blank
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  ggnetwork(n, layout = "fruchtermanreingold", cell.jitter = 0.75)
-#  ggnetwork(n, layout = "target", niter = 100)
+# ggnetwork(n, layout = "fruchtermanreingold", cell.jitter = 0.75)
+# ggnetwork(n, layout = "target", niter = 100)
 
 ## -----------------------------------------------------------------------------
 head(ggnetwork(n))
@@ -40,10 +40,10 @@ head(ggnetwork(n))
 tail(ggnetwork(n))
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  ggplot(n)
+# ggplot(n)
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  ggplot(ggnetwork(n))
+# ggplot(ggnetwork(n))
 
 ## -----------------------------------------------------------------------------
 ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
@@ -62,10 +62,10 @@ ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
   theme_blank()
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
-#    geom_edges(aes(color = type)) +
-#    geom_nodes(aes(color = family)) +
-#    theme_blank()
+# ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
+#   geom_edges(aes(color = type)) +
+#   geom_nodes(aes(color = family)) +
+#   theme_blank()
 
 ## -----------------------------------------------------------------------------
 ggplot(n, aes(x = x, y = y, xend = xend, yend = yend)) +
@@ -132,7 +132,7 @@ ggplot(emon[[1]], aes(x = x, y = y, xend = xend, yend = yend)) +
   theme_blank()
 
 ## ----eval=FALSE---------------------------------------------------------------
-#  ggnetwork(emon[[1]], weights = "Frequency")
+# ggnetwork(emon[[1]], weights = "Frequency")
 
 ## -----------------------------------------------------------------------------
 ggplot(ggnetwork(emon[[1]], arrow.gap = 0.04, by = "Frequency"),

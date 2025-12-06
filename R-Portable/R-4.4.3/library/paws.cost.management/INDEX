@@ -1,0 +1,18 @@
+billing                 AWS Billing
+billingconductor        AWSBillingConductor
+budgets                 AWS Budgets
+costandusagereportservice
+                        AWS Cost and Usage Report Service
+costexplorer            AWS Cost Explorer Service
+marketplacecatalog      AWS Marketplace Catalog Service
+marketplacecommerceanalytics
+                        AWS Marketplace Commerce Analytics
+marketplaceentitlementservice
+                        AWS Marketplace Entitlement Service
+marketplacemetering     AWSMarketplace Metering
+paymentcryptographycontrolplane
+                        Payment Cryptography Control Plane
+paymentcryptographydataplane
+                        Payment Cryptography Data Plane
+pricing                 AWS Price List Service
+savingsplans            AWS Savings Plans

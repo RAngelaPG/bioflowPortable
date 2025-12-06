@@ -1,0 +1,22 @@
+dax                     Amazon DynamoDB Accelerator (DAX)
+docdb                   Amazon DocumentDB with MongoDB compatibility
+docdbelastic            Amazon DocumentDB Elastic Clusters
+dynamodb                Amazon DynamoDB
+dynamodbstreams         Amazon DynamoDB Streams
+elasticache             Amazon ElastiCache
+keyspaces               Amazon Keyspaces
+lakeformation           AWS Lake Formation
+memorydb                Amazon MemoryDB
+neptune                 Amazon Neptune
+neptunedata             Amazon NeptuneData
+qldb                    Amazon QLDB
+qldbsession             Amazon QLDB Session
+rds                     Amazon Relational Database Service
+rdsdataservice          AWS RDS DataService
+redshift                Amazon Redshift
+redshiftdataapiservice
+                        Redshift Data API Service
+redshiftserverless      Redshift Serverless
+simpledb                Amazon SimpleDB
+timestreamquery         Amazon Timestream Query
+timestreamwrite         Amazon Timestream Write

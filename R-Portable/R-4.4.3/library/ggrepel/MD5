@@ -1,4 +1,4 @@
-2feba7de4a7789bbd01bff0fc882e73a *DESCRIPTION
+d05e4daf7683e334a44c93dfab4ea1fe *DESCRIPTION
 395df2d81a8daa3f180f73f958cbd6a2 *INDEX
 84dcc94da3adb52b53ae4fa38fe49e5d *LICENSE
 c8648842cf69693b412209a6fbd94aa4 *Meta/Rd.rds
@@ -6,13 +6,13 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 96a68b5c224ba9f67c82a0309c12ecf2 *Meta/hsearch.rds
 c6ed25d707794dbf726473e3c414a0f8 *Meta/links.rds
 8595ce41105aac81096c74e43dbd3685 *Meta/nsInfo.rds
-ac8ad9a36a525d1415a4f486fa35d904 *Meta/package.rds
+d470ab18fbf71c0e7ac0721ea64beb04 *Meta/package.rds
 e5760f584b1b60dcb0862c654d247be6 *Meta/vignette.rds
 d14880a452b1bb93682d67c28cf99c5d *NAMESPACE
 7a6eaa029c50822895407f6f1ca88f8e *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/ggrepel
-d9d4dcc742380eed760eb9f360587493 *R/ggrepel.rdb
-55190b7c7cab67f8901b93b789ec9c97 *R/ggrepel.rdx
+aa88b8630afe14c03c4b28a7cbf6d386 *R/ggrepel.rdb
+9caf31d93612a1da2bbc24262a6a6115 *R/ggrepel.rdx
 69c6a92302a50c1289cb387ecd963755 *doc/ggrepel.R
 3973a0d3ae7bcbea90321ec228ab198c *doc/ggrepel.Rmd
 4439c8676bf1f81c065fdc9126727813 *doc/ggrepel.html
@@ -20,10 +20,10 @@ f5bf34b410256046068a62329a5cec81 *doc/index.html
 be5b2e8a28e40567d58041aad9e5b686 *help/AnIndex
 fb90b464a945b516b84f446d3c3c4fe7 *help/aliases.rds
 494d18435e71ba56c7e9c752c4757b4d *help/figures/logo.svg
-9f4ebb93a3d718e0ad8eeafc0b4c6c7a *help/ggrepel.rdb
-e03146ef459f8bde6a22c0d36f01e9d6 *help/ggrepel.rdx
-1c20636cf2cae7e98932f9930cb8b157 *help/paths.rds
+7368abbc1bad1bdfd656c1d9e1252acb *help/ggrepel.rdb
+58e9db6f0ea602b426c4f9e3d773aab0 *help/ggrepel.rdx
+b38b9770d3be450bbc986f50dbc972ba *help/paths.rds
 b8fff8107d426fb81996b21ac459a38c *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-e93e3982f2f7beb1b4fe1124cb6924d7 *libs/x64/ggrepel.dll
+4c3ea75ad1127d8c9865c34a23880ec5 *libs/x64/ggrepel.dll
 0f4654d7952291bd5e481a12df196730 *libs/x64/symbols.rds

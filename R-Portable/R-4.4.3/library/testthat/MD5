@@ -1,5 +1,5 @@
 91d41ec6a869397e58ba791bc56645ef *CITATION
-3ec3c54a4b87981cce2644ca94bb5b3a *DESCRIPTION
+e299d9d9b15573d3e719cb09aa4750f5 *DESCRIPTION
 bff293b8f16c5cb34bd4375aba2f70dd *INDEX
 d0b909bd833cd58ea0430eda333b6447 *LICENSE
 e7b3f10ac656290d6afb68e0af2c6808 *Meta/Rd.rds
@@ -7,7 +7,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 156ca18bf1d3e06d9771a0b6d4ae68c4 *Meta/hsearch.rds
 3ba3b2e8e6f5d596096b514fd2dbd141 *Meta/links.rds
 1464624b8de1aa218d7ea6edd73f76b2 *Meta/nsInfo.rds
-797cdd28b9f1aa87fa58d8fcc67177ca *Meta/package.rds
+be4b56165a4a7cdded588d12f094fc0f *Meta/package.rds
 8e686a62599cdaef046c467986f093c2 *Meta/vignette.rds
 354ffe0cd16788aad01cc903d690e3a7 *NAMESPACE
 b9c1232d52cd86e8f0d663204525d9da *NEWS.md
@@ -50,16 +50,16 @@ c3978703d8f40f2679795335715e98f4 *help/figures/lifecycle-experimental.svg
 53b3f893324260b737b3c46ed2a0e643 *help/figures/lifecycle-stable.svg
 1c1fe7a759b86dc6dbcbe7797ab8246c *help/figures/lifecycle-superseded.svg
 3c2e51376e674c859e42e70bc95b2b9c *help/figures/logo.png
-2d69e96e731402dee6e8042729eb44e4 *help/paths.rds
-7c0ad782844d98371c91f28eb2cc980c *help/testthat.rdb
-97afec22dd3b96190bdb279100a01cd8 *help/testthat.rdx
+0d5497ef0b3dde9da89cdbdc063ddd1a *help/paths.rds
+0244895614621741b6d6e495c0065b09 *help/testthat.rdb
+6db05cca74a002baa277a633d2eeaf13 *help/testthat.rdx
 2242099176a3615cc0bccbe559b5ebb7 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 543392950ccc39ed50ebf26c75de0910 *include/testthat.h
 05f098fedb1fe85ee85de806f711779f *include/testthat/testthat.h
 b5816f117a5460c67e3e08b1c23dacbc *include/testthat/vendor/catch.h
 c26f8fa46468ce29d86a8949a5d18ba5 *libs/x64/symbols.rds
-5e78b40eb41331b1a42827c7b2276f6a *libs/x64/testthat.dll
+d5105d84913cc42f6490402a2dbadc56 *libs/x64/testthat.dll
 f481e7613929d4968a4a4c73031f7967 *resources/catch-routine-registration.R
 f35a879e88834e75aee99fc9817547a0 *resources/test-cpp.R
 3332a4affe5b211b37b65a3d3311d9ba *resources/test-example.cpp

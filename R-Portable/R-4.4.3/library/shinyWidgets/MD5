@@ -1,4 +1,4 @@
-4d62119c973e49334f8b149ec617e8dc *DESCRIPTION
+208cf66f36c9c1b3076c41664fe87b6e *DESCRIPTION
 435aac50893dceb4b2217c66d4f0b0e7 *INDEX
 a2a2bab33490ebf3a539c94e0ecfcbca *Meta/Rd.rds
 c951508cb8a40823e592e2a7d4cd493e *Meta/data.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 541f7253fd77fbb1de334b590bc6da81 *Meta/hsearch.rds
 935d9e8885862dc1a09cad8fcdf62cee *Meta/links.rds
 0690808ce477f0afe74976c4972a5d35 *Meta/nsInfo.rds
-fdae9c5b5a7c4c89bc9d237c979bc2f2 *Meta/package.rds
+f50bb794ec0ee9cc2f07749217f1398e *Meta/package.rds
 5b9bf50f2d0297d8e959ecbc527a9d3e *NAMESPACE
 4fec5ff669cad1a7a8bbd1cd1da230f5 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/shinyWidgets
@@ -431,9 +431,9 @@ db5f98edc127bce7bf078f9a9f056aad *help/figures/pretty.png
 de3e7d5660cc3d77b2a23a18ece9d387 *help/figures/switchInput.png
 6e89b667ffe9ebf5becdf68cb55dca07 *help/figures/treeinput.png
 e04f91e7005a6522c05fbe13b7a4d753 *help/figures/virtual-select.png
-251b07623555de8e77c0f7e0f65ca7fe *help/paths.rds
-203aa2ce9c07fb3944b46431c8bd228b *help/shinyWidgets.rdb
-773abad3602e548323cc1592f73f4453 *help/shinyWidgets.rdx
+b2a1776e6da2583bbdd52d47fdf17291 *help/paths.rds
+2df3aa412c420f9f0fce0ab8db29f620 *help/shinyWidgets.rdb
+bd1ada7c25ae5ead3d52df59dad7d9c7 *help/shinyWidgets.rdx
 03b7e6d3ee4d81a284f1c587ac4efe11 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 098e751d4bb434847a9489597fa4b605 *packer/WinBox.js

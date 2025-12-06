@@ -1,4 +1,4 @@
-fdf50d63b21d6d9b2d5b231e2a6394e3 *DESCRIPTION
+dd751c0a55b1fa7d2193dd86087c4a52 *DESCRIPTION
 4afcba807dbe3ac044e626952117c0e2 *INDEX
 0389f40b0dca57a3ba2e728563655fa2 *Meta/Rd.rds
 3c194dcb94f956134f8b7e94609eeb9a *Meta/data.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 dc1915400df9bbb13969bdfe3e96a86d *Meta/hsearch.rds
 a33dbfbe7358962d2e40badcde8ad3c1 *Meta/links.rds
 fb231b629118921cf065122bda40cf8d *Meta/nsInfo.rds
-1bce6e6953943c733b1184ba1e8538b8 *Meta/package.rds
+5ac8209a7c6982a757d1488cbebb2fef *Meta/package.rds
 98acd659dc2a3896479842d132ce04b5 *NAMESPACE
 d6c68f1fe41ced6e98a766a3757313da *R/sna
 0b2ea3fde7573fbc2310974959a6fee1 *R/sna.rdb
@@ -14,10 +14,10 @@ d6c68f1fe41ced6e98a766a3757313da *R/sna
 417b3ab638faeb3dcffecab3b7592f55 *data/coleman.RData
 7fbf431463b611c225d81586887a1185 *help/AnIndex
 cfbacca02e77798db4aa787276811713 *help/aliases.rds
-2d9f525461a6044a276bb8ca2669d7eb *help/paths.rds
-de1c081ba55ae43ab06d216daf22f63a *help/sna.rdb
-e53e41e8dae1bc2f441ddb5c4dec1f0e *help/sna.rdx
+aa16569324351508eb1b8c308f3ea08b *help/paths.rds
+9e19332cdbc1c8619033053f836dd1e2 *help/sna.rdb
+25eef29e5e7e0897a411d8027b756916 *help/sna.rdx
 4bb413e03be9287005dc2169c2a72227 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-c44fdc991c687dbfc3fb85350ab812f6 *libs/x64/sna.dll
+ed5d83793a1ee64a33f15f721be9d449 *libs/x64/sna.dll
 9b0456db65b9e0d8c54806ea2813554f *libs/x64/symbols.rds

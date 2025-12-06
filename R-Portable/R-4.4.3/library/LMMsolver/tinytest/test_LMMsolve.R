@@ -5,6 +5,12 @@ load("testdata.rda")
 expect_error(LMMsolve(fixed = pheno ~ cross, data = "testDat"),
              "data should be a data.frame")
 
+expect_error(LMMsolve(fixed= pheno~ cross, data=testDat, theta=c(1,1,1)),
+             "Argument theta has wrong length")
+
+expect_error(LMMsolve(fixed= pheno~ cross, data=testDat, grpTheta=c(1,1,1)),
+             "Argument grpTheta has wrong length")
+
 ## Test fixed, random and residual formulas (spline part is tested in spl checks).
 
 expect_error(LMMsolve(fixed = ~ cross, data = testDat),
@@ -22,6 +28,17 @@ expect_error(LMMsolve(fixed = pheno ~ cross, random = ~tst, data = testDat),
              "The following variables in the random part of the model are not")
 expect_error(LMMsolve(fixed = pheno ~ cross, residual = ~tst, data = testDat),
              "The following variables in the residual part of the model are not")
+
+## Test weights
+testDat2 <- testDat
+testDat2$w <- 1.0
+expect_error(LMMsolve(fixed = pheno ~ cross,
+                      data = testDat2, weights="x"),
+             "weights not defined in dataframe data")
+testDat2$w[1] <- -1
+expect_error(LMMsolve(fixed = pheno ~ cross,
+                      data = testDat2, weights="w"),
+             "weights should be a numeric vector with non-negative values")
 
 ## Test ginverse.
 
@@ -63,6 +80,46 @@ expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL2),
 expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL),
                       group = list(QTL = 3:7), data = testDat),
              "All columns specified in group should be columns in data")
+
+## Tests for argument theta
+
+expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL),
+                      group = list(QTL = 3:5), theta=c("a","b"), data = testDat),
+             "theta should be numeric")
+
+expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL),
+                      group = list(QTL = 3:5), theta=c(NA,1), data = testDat),
+             "theta has missing values.")
+
+expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL),
+                      group = list(QTL = 3:5), theta=c(-1,1), data = testDat),
+             "theta should have positive values.")
+
+# Test for grpTheta
+expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL),
+         group = list(QTL = 3:5), grpTheta=c("a","b"), data = testDat),
+         "grpTheta should be integers 1,2,...nGrp")
+
+# Test for offset to be numeric
+expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL),
+                      group = list(QTL = 3:5), offset = "cross", data = testDat),
+             "offset should be numeric")
+
+# Test for family argument
+tst_fam <- function() {return(0) }
+expect_error(LMMsolve(fixed = pheno ~ cross, random = ~grp(QTL),
+                      group = list(QTL = 3:5), data = testDat,
+                      family = tst_fam()),
+             "argument family not correct")
+
+## Test for syntax names:
+dat <- data.frame(x = 1:3, `a-b` = 3:1, `a+b` = 1:3, ab = 3:1, check.names = FALSE)
+
+expect_error(LMMsolve(x~`a-b`, data = dat),
+             "Syntactically invalid name(s): a-b", fixed = TRUE)
+
+expect_error(LMMsolve(x~1, random=~`a+b`, data=dat),
+             "Syntactically invalid name(s): a+b", fixed=TRUE)
 
 ## Fit models with different components.
 

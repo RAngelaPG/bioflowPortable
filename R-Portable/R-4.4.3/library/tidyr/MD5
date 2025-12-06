@@ -1,4 +1,4 @@
-8d4ab4524ba8d1d1cc9cab300d637b4f *DESCRIPTION
+09eeac97057db6c932ed0d0b66cfe849 *DESCRIPTION
 650e405139516898f6828b0cb795bf1f *INDEX
 8ab1fac1816676ee4ca51609142cacda *LICENSE
 15d4378c4e44e57d3e0a9a4713be2902 *Meta/Rd.rds
@@ -7,13 +7,13 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 f7fe2b606f9ce139911c463a498c1f37 *Meta/hsearch.rds
 731218046f61c3944f06e419c4f9d781 *Meta/links.rds
 c5118641da08584393da12deb460b940 *Meta/nsInfo.rds
-b72773661073e453679ec9c675eeb2b4 *Meta/package.rds
+d2b8ffa0e7fdfd2506a8a466e4c0442e *Meta/package.rds
 421342b1b315edf7f21bc71c245425e1 *Meta/vignette.rds
 d139351f87716aba649f7fa3ddde41c7 *NAMESPACE
 c60e1eb4edbda781b1a72dcaa23ba34e *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/tidyr
-882634344838c78a049778a9dc1e1bd4 *R/tidyr.rdb
-ba66b32ed6f054f3890de7fc12a8b0ba *R/tidyr.rdx
+b4a5b89516b67680a82be3fb8751c3f2 *R/tidyr.rdb
+b581a695929b963205686c0d4b4be40f *R/tidyr.rdx
 8c3a6bbf2e060d4253eee0a57f1362cf *data/Rdata.rdb
 11a87a47035d891cba1f6954330b5e30 *data/Rdata.rds
 59a2fe2c58d2204cb81c0ac804f75097 *data/Rdata.rdx
@@ -48,10 +48,10 @@ c3978703d8f40f2679795335715e98f4 *help/figures/lifecycle-experimental.svg
 53b3f893324260b737b3c46ed2a0e643 *help/figures/lifecycle-stable.svg
 1c1fe7a759b86dc6dbcbe7797ab8246c *help/figures/lifecycle-superseded.svg
 81baba887ee2226360f3bac4f99c6679 *help/figures/logo.png
-0479af34914195342c109c7f9322984f *help/paths.rds
-c53888f00caabe66468ce64b6067600e *help/tidyr.rdb
-a4eac6e92cf55d18785b5e72b269be42 *help/tidyr.rdx
+e8d9f47b984fd67fa946a025f39685d2 *help/paths.rds
+91e8a9b584de06d58f3d030571828c2e *help/tidyr.rdb
+3c89bd1d52ac71bde0ff22ef2c36a6dd *help/tidyr.rdx
 494109c6042ceb8e066fa2fcb232967e *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 f597246453ea62f20eb67c9fe60701b9 *libs/x64/symbols.rds
-311dee64c7a7ae0abcef084cf2ad269b *libs/x64/tidyr.dll
+0d1442617b41de7dfd41e9696f0bc08c *libs/x64/tidyr.dll

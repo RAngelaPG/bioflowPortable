@@ -1,0 +1,50 @@
+applicationautoscaling
+                        Application Auto Scaling
+applicationcostprofiler
+                        AWS Application Cost Profiler
+applicationinsights     Amazon CloudWatch Application Insights
+appregistry             AWS Service Catalog App Registry
+auditmanager            AWS Audit Manager
+autoscaling             Auto Scaling
+autoscalingplans        AWS Auto Scaling Plans
+cloudformation          AWS CloudFormation
+cloudtrail              AWS CloudTrail
+cloudtraildataservice   AWS CloudTrail Data Service
+cloudwatch              Amazon CloudWatch
+cloudwatchapplicationsignals
+                        Amazon CloudWatch Application Signals
+cloudwatchevidently     Amazon CloudWatch Evidently
+cloudwatchinternetmonitor
+                        Amazon CloudWatch Internet Monitor
+cloudwatchlogs          Amazon CloudWatch Logs
+cloudwatchobservabilityaccessmanager
+                        CloudWatch Observability Access Manager
+cloudwatchrum           CloudWatch RUM
+configservice           AWS Config
+controltower            AWS Control Tower
+finspace                FinSpace User Environment Management service
+health                  AWS Health APIs and Notifications
+licensemanager          AWS License Manager
+licensemanagerlinuxsubscriptions
+                        AWS License Manager Linux Subscriptions
+licensemanagerusersubscriptions
+                        AWS License Manager User Subscriptions
+managedgrafana          Amazon Managed Grafana
+opsworks                AWS OpsWorks
+opsworkscm              AWS OpsWorks CM
+organizations           AWS Organizations
+pi                      AWS Performance Insights
+prometheusservice       Amazon Prometheus Service
+resiliencehub           AWS Resilience Hub
+resourcegroups          AWS Resource Groups
+resourcegroupstaggingapi
+                        AWS Resource Groups Tagging API
+servicecatalog          AWS Service Catalog
+servicequotas           Service Quotas
+ssm                     Amazon Simple Systems Manager (SSM)
+ssmcontacts             AWS Systems Manager Incident Manager Contacts
+ssmincidents            AWS Systems Manager Incident Manager
+ssmsap                  AWS Systems Manager for SAP
+support                 AWS Support
+supportapp              AWS Support App
+synthetics              Synthetics

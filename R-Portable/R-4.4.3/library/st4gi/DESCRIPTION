@@ -1,8 +1,8 @@
 Package: st4gi
 Type: Package
 Title: Statistical tools for genetic improvement
-Version: 3.3.2
-Date: 2025-02-27
+Version: 25.12.05
+Date: 2025-12-05
 Author: Raul Eyzaguirre
 Maintainer: Raul Eyzaguirre <R.EYZAGUIRRE@CGIAR.ORG>
 Description: Statistical tools for the analysis of experimental data for crop genetic improvement.
@@ -14,17 +14,17 @@ Copyright: International Potato Center (2015)
 LazyData: true
 Suggests: testthat
 Encoding: UTF-8
-RoxygenNote: 7.3.2
+RoxygenNote: 7.3.3
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: st4gi
 RemoteUsername: reyzaguirre
 RemoteRef: HEAD
-RemoteSha: bc8c2610e88400ecce82d6d823bd29b4f07d5e47
+RemoteSha: d5a1e4ea92878ef846465f98b05c04e2693055bf
 GithubRepo: st4gi
 GithubUsername: reyzaguirre
 GithubRef: HEAD
-GithubSHA1: bc8c2610e88400ecce82d6d823bd29b4f07d5e47
+GithubSHA1: d5a1e4ea92878ef846465f98b05c04e2693055bf
 NeedsCompilation: no
-Packaged: 2025-03-06 17:05:33 UTC; RAPACHECO
-Built: R 4.4.3; ; 2025-03-06 17:05:34 UTC; windows
+Packaged: 2025-12-06 17:41:50 UTC; RAPACHECO
+Built: R 4.4.3; ; 2025-12-06 17:41:52 UTC; windows

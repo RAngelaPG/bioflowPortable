@@ -1,4 +1,4 @@
-004baad73ed8db25dc237fb4a833f3bf *DESCRIPTION
+ca813da489b6a7e58f8424c0333e1d20 *DESCRIPTION
 860c9679331064fb070117fb10eaa224 *INDEX
 0f96498a14a6bbc679a7a43fef4decb2 *LICENSE
 3af48a1004702c2205c732effe709647 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 d72d15b7050360ec07086691ca165f84 *Meta/hsearch.rds
 93a9a35f761c7df7dec1e8330af8a2b0 *Meta/links.rds
 8c0f463fbe2ba0503a5e4264c69ae6a0 *Meta/nsInfo.rds
-742b5d6fe21d78f4e23883454c8fb884 *Meta/package.rds
+f384917d5de65fe71355f9f491ca293c *Meta/package.rds
 befb316ef6acfdae93b6fd200338ab2c *NAMESPACE
 5bb8427bb23aa880fb5809cc12c5e653 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/shinycssloaders
@@ -21,9 +21,9 @@ fcc579749fc1bae38abf3310a96156ab *examples/demo/ui.R
 795f5b9a2f053ce0f3a9982990b4cf7f *examples/demo/www/style.css
 e8d5fa0fb654e9cabe3c008cdab3f9b6 *help/AnIndex
 dcd8f091c0dea47261b2e1a49438bd06 *help/aliases.rds
-ed427f3173a3c7ad30567cef2c33d164 *help/paths.rds
-5bb89e33ebc363396dacb1a9253783db *help/shinycssloaders.rdb
-2f20c74a86855549302358ba1253306a *help/shinycssloaders.rdx
+59001f4f3b70f6388dc5fe79331d878b *help/paths.rds
+e5f0b39701b041f3a1be287f3a1d6d2c *help/shinycssloaders.rdb
+8d5ea83728effeb3d0d9707931da33fa *help/shinycssloaders.rdx
 0497f23eb40fe346696f6205ce77cc1b *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 0d0345f662a757ef17eef497fa8e83fc *img/custom.gif

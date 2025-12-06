@@ -5,7 +5,6 @@ emmeans-package	emmeans-package
 .cmpMM	extending-emmeans
 .combine.terms	extending-emmeans
 .diag	extending-emmeans
-.emm_basis	extending-emmeans
 .emm_register	extending-emmeans
 .emm_vignette	extending-emmeans
 .get.excl	extending-emmeans
@@ -13,7 +12,6 @@ emmeans-package	emmeans-package
 .hurdle.support	extending-emmeans
 .my.vcov	extending-emmeans
 .num.key	extending-emmeans
-.recover_data	extending-emmeans
 .std.link.labels	extending-emmeans
 .zi.support	extending-emmeans
 add_grouping	manip-factors
@@ -72,11 +70,15 @@ glht-support	glht-support
 glht.emmGrid	glht-support
 glht.emmlf	glht-support
 head.emmGrid	rbind.emmGrid
+helmert.emmc	emmc-functions
 hpd.summary	hpd.summary
 identity.emmc	emmc-functions
 inverse	make.tran
 joint_tests	joint_tests
 levels<-.emmGrid	update.emmGrid
+linfct	emmGrid-methods
+linfct.default	emmGrid-methods
+linfct.emm_list	emm_list-object
 lsm	wrappers
 lsm.options	wrappers
 lsmeans	wrappers
@@ -95,7 +97,9 @@ models	models
 mvcontrast	mvcontrast
 mvregrid	mvregrid
 neuralgia	neuralgia
+nrmlz.emmc	emmc-functions
 nutrition	nutrition
+opoly.emmc	emmc-functions
 oranges	oranges
 pairs.emmGrid	contrast
 pairs.emm_list	emm_list-object
@@ -113,6 +117,7 @@ print.xtable_emm	xtable.emmGrid
 pwpm	pwpm
 pwpp	pwpp
 qdrg	qdrg
+qdrg.default	qdrg
 rbind.emmGrid	rbind.emmGrid
 rbind.emm_list	rbind.emmGrid
 rbind.summary_emm	rbind.emmGrid

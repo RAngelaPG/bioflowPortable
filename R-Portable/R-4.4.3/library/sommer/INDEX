@@ -1,121 +1,43 @@
 A.mat                   Additive relationship matrix
-AI                      Average Information Algorithm
 AR1                     Autocorrelation matrix of order 1.
 ARMA                    Autocorrelation Moving average.
 CS                      Compound symmetry matrix
 D.mat                   Dominance relationship matrix
-DT_augment              DT_augment design example.
-DT_btdata               Blue Tit Data for a Quantitative Genetic
-                        Experiment
-DT_cornhybrids          Corn crosses and markers
-DT_cpdata               Genotypic and Phenotypic data for a CP
-                        population
-DT_example              Broad sense heritability calculation.
-DT_expdesigns           Data for different experimental designs
-DT_fulldiallel          Full diallel data for corn hybrids
-DT_gryphon              Gryphon data from the Journal of Animal Ecology
-DT_h2                   Broad sense heritability calculation.
-DT_halfdiallel          half diallel data for corn hybrids
-DT_ige                  Data to fit indirect genetic effects.
-DT_legendre             Simulated data for random regression
-DT_mohring              Full diallel data for corn hybrids
-DT_polyploid            Genotypic and Phenotypic data for a potato
-                        polyploid population
-DT_rice                 Rice lines dataset
-DT_sleepstudy           Reaction times in a sleep deprivation study
-DT_technow              Genotypic and Phenotypic data from single cross
-                        hybrids (Technow et al.,2014)
-DT_wheat                wheat lines dataset
-DT_yatesoats            Yield of oats in a split-block experiment
 E.mat                   Epistatic relationship matrix
-EM                      Expectation Maximization Algorithm
 GWAS                    Genome wide association study analysis
-H                       Two-way id by features table
 H.mat                   Combined relationship matrix H
-LD.decay                Calculation of linkage disequilibrium decay
-MEMMA                   Multivariate Efficient Mixed Model Association
-                        Algorithm
-add.diallel.vars        add.diallel.vars
-adiag1                  Binds arrays corner-to-corner
-anova.mmec              anova form a GLMM fitted with mmec
-anova.mmer              anova form a GLMM fitted with mmer
-atc                     atc covariance structure
-atcg1234                Letter to number converter
-atcg1234BackTransform   Letter to number converter
-atr                     atr covariance structure
-bathy.colors            Generate a sequence of colors for plotting
-                        bathymetric data.
-bbasis                  Function for creating B-spline basis functions
-                        (Eilers & Marx, 2010)
-bivariateRun            bivariateRun functionality
-build.HMM               Build a hybrid marker matrix using parental
-                        genotypes from inbred individuals
-coef.mmec               coef form a GLMM fitted with mmec
-coef.mmer               coef form a GLMM fitted with mmer
+MNR                     Multivariate Newton-Raphson algorithm
+anova.mmes              anova form a GLMM fitted with mmes
+atm                     atm covariance structure
+coef.mmes               coef form a GLMM fitted with mmes
 corImputation           Imputing a matrix using correlations
-covc                    covariance between random effects
-csc                     customized covariance structure
-csr                     customized covariance structure
+covm                    covariance between random effects
+csm                     customized covariance structure
 dfToMatrix              data frame to matrix
-dsc                     diagonal covariance structure
-dsr                     diagonal covariance structure
-fcm                     fixed effect constraint indication matrix
-fitted.mmec             fitted form a LMM fitted with mmec
-fitted.mmer             fitted form a LMM fitted with mmer
+dsm                     diagonal covariance structure
+fitted.mmes             fitted form a LMM fitted with mmes
 fixm                    fixed indication matrix
-gvsr                    general variance structure specification
-imputev                 Imputing a numeric or character vector
-isc                     identity covariance structure
-jet.colors              Generate a sequence of colors alog the jet
-                        colormap.
-leg                     Legendre polynomial matrix
-list2usmat              list or vector to unstructured matrix
-logspace                Decreasing logarithmic trend
-manhattan               Creating a manhattan plot
-map.plot                Creating a genetic map plot
-mmec                    *m*ixed *m*odel *e*quations for *c*
-                        coefficients
+ism                     identity covariance structure
 mmer                    *m*ixed *m*odel *e*quations for *r* records
-neMarker                Effective population size based on marker
-                        matrix
-overlay                 Overlay Matrix
-plot.mmec               plot form a LMM plot with mmec
-plot.mmer               plot form a LMM plot with mmer
+mmes                    *m*ixed *m*odel *e*quations *s*olver
+plot.mmes               plot form a LMM plot with mmes
 pmonitor                plot the change of VC across iterations
-predict.mmec            Predict form of a LMM fitted with mmec
-predict.mmer            Predict form of a LMM fitted with mmer
-propMissing             Proportion of missing data
+predict.mmes            Predict form of a LMM fitted with mmes
 r2                      Reliability
 randef                  extracting random effects
-redmm                   Reduced Model Matrix
-residuals.mmec          Residuals form a GLMM fitted with mmec
-residuals.mmer          Residuals form a GLMM fitted with mmer
-rrc                     reduced rank covariance structure
-simGECorMat             Create a GE correlation matrix for simulation
-                        purposes.
+residuals.mmes          Residuals form a GLMM fitted with mmes
 sommer                  *So*lving *M*ixed *M*odel *E*quations in *R*
-spl2Da                  Two-dimensional penalised tensor-product of
-                        marginal B-Spline basis.
-spl2Db                  Two-dimensional penalised tensor-product of
-                        marginal B-Spline basis.
 spl2Dc                  Two-dimensional penalised tensor-product of
                         marginal B-Spline basis.
 spl2Dmats               Get Tensor Product Spline Mixed Model Incidence
                         Matrices
-stackTrait              Stacking traits in a dataset
-summary.mmec            summary form a GLMM fitted with mmec
 summary.mmer            summary form a GLMM fitted with mmer
-tps                     Get Tensor Product Spline Mixed Model Incidence
-                        Matrices
+summary.mmes            summary form a GLMM fitted with mmes
 tpsmmbwrapper           Get Tensor Product Spline Mixed Model Incidence
                         Matrices
-transformConstraints    transformConstraints
-transp                  Creating color with transparency
 unsm                    unstructured indication matrix
-usc                     unstructured covariance structure
-usr                     unstructured covariance structure
-vpredict                vpredict form of a LMM fitted with mmer
+usm                     unstructured covariance structure
+vpredict                vpredict form of a LMM fitted with mmes
 vs                      variance structure specification
-vsc                     variance structure specification
+vsm                     variance structure specification
 vsr                     variance structure specification
-wald.test               Wald Test for Model Coefficients

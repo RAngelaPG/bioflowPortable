@@ -1,12 +1,45 @@
 Package: urltools
 Type: Package
 Title: Vectorised Tools for URL Handling and Parsing
-Version: 1.7.3
+Version: 1.7.3.1
 Date: 2019-04-14
-Author: Os Keyes [aut, cre], Jay Jacobs [aut, cre], Drew Schmidt [aut],
-    Mark Greenaway [ctb], Bob Rudis [ctb], Alex Pinto [ctb], Maryam Khezrzadeh [ctb], Peter Meilstrup [ctb],
-    Adam M. Costello [cph], Jeff Bezanson [cph], Peter Meilstrup [ctb], Xueyuan Jiang [ctb]
-Maintainer: Os Keyes <ironholds@gmail.com>
+Authors@R: c(person(given = "Os",
+                    family = "Keyes",
+                    role = c("aut", "cre"),
+                    email = "ironholds@gmail.com"),
+             person(given = "Jay",
+                    family = "Jacobs",
+                    role = "aut"),
+             person(given = "Drew",
+                    family = "Schmidt",
+                    role = "aut"),
+             person(given = "Mark",
+                    family = "Greenaway",
+                    role = "ctb"),
+             person(given = "Bob",
+                    family = "Rudis",
+                    role = "ctb"),
+             person(given = "Alex",
+                    family = "Pinto",
+                    role = "ctb"),
+             person(given = "Maryam",
+                    family = "Khezrzadeh",
+                    role = "ctb"),
+             person(given = "Peter",
+                    family = "Meilstrup",
+                    role = "ctb"),
+             person(given = c("Adam", "M."),
+                    family = "Costello",
+                    role = "cph"),
+             person(given = "Jeff",
+                    family = "Bezanson",
+                    role = "cph"),
+             person(given = "Peter",
+                    family = "Meilstrup",
+                    role = "ctb"),
+             person(given = "Xueyuan",
+                    family = "Jiang",
+                    role = "ctb"))
 Description: A toolkit for all URL-handling needs, including encoding and decoding,
     parsing, parameter extraction and modification. All functions are
     designed to be both fast and entirely vectorised. It is intended to be
@@ -25,8 +58,21 @@ RoxygenNote: 6.1.1
 Encoding: UTF-8
 Depends: R (>= 2.10)
 NeedsCompilation: yes
-Packaged: 2019-04-14 22:25:08 UTC; ironholds
+Packaged: 2025-06-12 07:48:37 UTC; hornik
 Repository: CRAN
-Date/Publication: 2019-04-14 23:02:47 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-03-04 02:22:28 UTC; windows
+Date/Publication: 2025-06-12 08:37:42 UTC
+Author: Os Keyes [aut, cre],
+  Jay Jacobs [aut],
+  Drew Schmidt [aut],
+  Mark Greenaway [ctb],
+  Bob Rudis [ctb],
+  Alex Pinto [ctb],
+  Maryam Khezrzadeh [ctb],
+  Peter Meilstrup [ctb],
+  Adam M. Costello [cph],
+  Jeff Bezanson [cph],
+  Peter Meilstrup [ctb],
+  Xueyuan Jiang [ctb]
+Maintainer: Os Keyes <ironholds@gmail.com>
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-12-05 02:47:09 UTC; windows
 Archs: x64

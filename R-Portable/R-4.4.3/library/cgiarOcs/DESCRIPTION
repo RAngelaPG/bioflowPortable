@@ -14,12 +14,12 @@ RemoteHost: api.github.com
 RemoteRepo: cgiarOcs
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: afd29d32478a2a46048dcf9399516f697996a9a8
+RemoteSha: ae7742de08d974222b92c7eccaae7b932a28b43c
 GithubRepo: cgiarOcs
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: afd29d32478a2a46048dcf9399516f697996a9a8
+GithubSHA1: ae7742de08d974222b92c7eccaae7b932a28b43c
 NeedsCompilation: yes
-Packaged: 2025-03-06 17:04:57 UTC; RAPACHECO
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-03-06 17:04:58 UTC; windows
+Packaged: 2025-12-06 17:02:52 UTC; RAPACHECO
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-12-06 17:02:54 UTC; windows
 Archs: x64

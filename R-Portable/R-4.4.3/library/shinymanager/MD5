@@ -1,11 +1,11 @@
-8ff033c385a06e0236c4c7524b74a9d5 *DESCRIPTION
+f2eb171b4dae9bf18a071033ae1c5803 *DESCRIPTION
 98b784f28f827b334c7f8a9ff00e005b *INDEX
 92778f8a0e1a36161c10c02170f9a603 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 0a39027fa73f29c66e5dc3cee9eca3e1 *Meta/hsearch.rds
 c5957ec74aca238e5bc12dc398b2515e *Meta/links.rds
 25bb2ad9ebebec04f68c06fef793860a *Meta/nsInfo.rds
-d7d7ed1ff7ae647994e506a1b03ebf02 *Meta/package.rds
+1d4b3af395d6e5a7c42f2a6ca3e2eb13 *Meta/package.rds
 00087cd874b496d404b4eb3db800b4ee *Meta/vignette.rds
 e5a78e4a3e9d8ba2258ccc594f87af5c *NAMESPACE
 6f36890b4510e8d154f68d6220d06f79 *NEWS.md
@@ -70,9 +70,9 @@ e6331988253568395d5772d0d1d5e901 *help/figures/shinymanager-login.png
 a404fd0214bd0ad4b48b9064f4136259 *help/figures/shinymanager.png
 20596348c354cebb79d18b32c56f2d37 *help/figures/shinymanager_ds.jpg
 1116c796a0b55b94a43b2731d1c6f9b4 *help/figures/user_table.png
-b093346312131f1827cca840c6a4c92c *help/paths.rds
-9167711ef139214564d7efe298c4cbda *help/shinymanager.rdb
-df6461ae15532a7d29c958173c9f018f *help/shinymanager.rdx
+734ecb0d675a309b450b4f27601a7afc *help/paths.rds
+89155607a03a1482ec9d5d5ef539eb64 *help/shinymanager.rdb
+e0fc3f621f4b73c2fd8699bd81e2dcfc *help/shinymanager.rdx
 e1ffc8291a990b6b4c2003612a5ae22b *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 d15f72a38cd6f3b55fd0b39254be3546 *sticker/build_sticker.R

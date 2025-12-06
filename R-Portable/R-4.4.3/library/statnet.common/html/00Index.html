@@ -14,7 +14,7 @@ Software
 <div style="text-align: center;">
 <a href="../../../doc/html/packages.html"><img class="arrow" src="../../../doc/html/left.jpg" alt="[Up]" /></a>
 <a href="../../../doc/html/index.html"><img class="arrow" src="../../../doc/html/up.jpg" alt="[Top]" /></a>
-</div><h2>Documentation for package &lsquo;statnet.common&rsquo; version 4.11.0</h2>
+</div><h2>Documentation for package &lsquo;statnet.common&rsquo; version 4.12.0</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 <li><a href="../NEWS">Package NEWS</a>.</li>
@@ -38,6 +38,7 @@ Software
 <a href="#N">N</a>
 <a href="#O">O</a>
 <a href="#P">P</a>
+<a href="#Q">Q</a>
 <a href="#R">R</a>
 <a href="#S">S</a>
 <a href="#T">T</a>
@@ -58,6 +59,10 @@ Software
 <td>Functions for Querying, Validating and Extracting from Formulas</td></tr>
 <tr><td style="width: 25%;"><a href="formula.utilities.html">append_rhs.formula</a></td>
 <td>Functions for Querying, Validating and Extracting from Formulas</td></tr>
+<tr><td style="width: 25%;"><a href="arr_from_coo.html">arr_from_coo</a></td>
+<td>Conveniently covert between coordinate-value and array representations</td></tr>
+<tr><td style="width: 25%;"><a href="arr_from_coo.html">arr_to_coo</a></td>
+<td>Conveniently covert between coordinate-value and array representations</td></tr>
 <tr><td style="width: 25%;"><a href="as.control.list.html">as.control.list</a></td>
 <td>Convert to a control list.</td></tr>
 <tr><td style="width: 25%;"><a href="as.control.list.html">as.control.list.control.list</a></td>
@@ -151,7 +156,11 @@ Software
 <tr><td style="width: 25%;"><a href="empty_env.html">empty_env</a></td>
 <td>Replace an object's environment with a simple, static environment.</td></tr>
 <tr><td style="width: 25%;"><a href="ERRVL.html">ERRVL</a></td>
-<td>Return the first argument passed (out of any number) that is not a 'try-error' (result of 'try' encountering an error.</td></tr>
+<td>Attempt a series of statements and return the first one that is not an error.</td></tr>
+<tr><td style="width: 25%;"><a href="ERRVL.html">ERRVL2</a></td>
+<td>Attempt a series of statements and return the first one that is not an error.</td></tr>
+<tr><td style="width: 25%;"><a href="ERRVL.html">ERRVL3</a></td>
+<td>Attempt a series of statements and return the first one that is not an error.</td></tr>
 <tr><td style="width: 25%;"><a href="formula.utilities.html">eval_lhs.formula</a></td>
 <td>Functions for Querying, Validating and Extracting from Formulas</td></tr>
 <tr><td style="width: 25%;"><a href="NVL.html">EVL</a></td>
@@ -254,6 +263,8 @@ Software
 <h2><a id="M">-- M --</a></h2>
 
 <table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="match_names.html">match_names</a></td>
+<td>Construct a named vector with semantics useful for parameter vectors</td></tr>
 <tr><td style="width: 25%;"><a href="mcmc-utilities.html">mcmc-utilities</a></td>
 <td>Utility operations for 'mcmc.list' objects</td></tr>
 <tr><td style="width: 25%;"><a href="message_print.html">message_print</a></td>
@@ -319,9 +330,22 @@ Software
 <td>A data matrix with row weights</td></tr>
 </table>
 
+<h2><a id="Q">-- Q --</a></h2>
+
+<table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="ssolve.html">qrsolve</a></td>
+<td>Wrappers around matrix algebra functions that pre-_s_cale their arguments</td></tr>
+<tr><td style="width: 25%;"><a href="ssolve.html">qrssolve</a></td>
+<td>Wrappers around matrix algebra functions that pre-_s_cale their arguments</td></tr>
+</table>
+
 <h2><a id="R">-- R --</a></h2>
 
 <table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="replace.html">replace</a></td>
+<td>Replace values in a vector according to functions</td></tr>
+<tr><td style="width: 25%;"><a href="replace.html">replace&lt;-</a></td>
+<td>Replace values in a vector according to functions</td></tr>
 <tr><td style="width: 25%;"><a href="wmatrix_weights.html">rowweights</a></td>
 <td>Set or extract weighted matrix row weights</td></tr>
 <tr><td style="width: 25%;"><a href="wmatrix_weights.html">rowweights.linwmatrix</a></td>
@@ -341,12 +365,22 @@ Software
 <h2><a id="S">-- S --</a></h2>
 
 <table style="width: 100%;">
+<tr><td style="width: 25%;"><a href="xTAx.html">sandwich_ginv</a></td>
+<td>Common quadratic forms</td></tr>
+<tr><td style="width: 25%;"><a href="ssolve.html">sandwich_qrsolve</a></td>
+<td>Wrappers around matrix algebra functions that pre-_s_cale their arguments</td></tr>
+<tr><td style="width: 25%;"><a href="ssolve.html">sandwich_qrssolve</a></td>
+<td>Wrappers around matrix algebra functions that pre-_s_cale their arguments</td></tr>
+<tr><td style="width: 25%;"><a href="xTAx.html">sandwich_sginv</a></td>
+<td>Common quadratic forms</td></tr>
 <tr><td style="width: 25%;"><a href="xTAx.html">sandwich_solve</a></td>
 <td>Common quadratic forms</td></tr>
 <tr><td style="width: 25%;"><a href="ssolve.html">sandwich_ssolve</a></td>
 <td>Wrappers around matrix algebra functions that pre-_s_cale their arguments</td></tr>
 <tr><td style="width: 25%;"><a href="set.control.class.html">set.control.class</a></td>
 <td>Set the class of the control list</td></tr>
+<tr><td style="width: 25%;"><a href="set_diag.html">set_diag</a></td>
+<td>Return the matrix with diagonal set to a specified value</td></tr>
 <tr><td style="width: 25%;"><a href="ssolve.html">sginv</a></td>
 <td>Wrappers around matrix algebra functions that pre-_s_cale their arguments</td></tr>
 <tr><td style="width: 25%;"><a href="simplify_simple.html">simplify_simple</a></td>

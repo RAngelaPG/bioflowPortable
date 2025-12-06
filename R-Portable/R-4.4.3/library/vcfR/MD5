@@ -1,5 +1,5 @@
 26249d842b228521d51376f10f541056 *CITATION
-d219ad4e00e9163c87307e79f6c73b70 *DESCRIPTION
+5a743547531108509b72c240845015b2 *DESCRIPTION
 6dfd23308db2bbdd9db16fd5c94a5b3a *INDEX
 9227aafd96142c35415be05af473d3e8 *Meta/Rd.rds
 359859916dc6fbc5ce60cd419b7d6724 *Meta/data.rds
@@ -7,12 +7,12 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 8e8b5d798390bd069a573589ba21ea1e *Meta/hsearch.rds
 a7f965232775a3628a02623de13117cf *Meta/links.rds
 fdf1e8c210a4a2ed43d58bdd39d495e2 *Meta/nsInfo.rds
-bc22996238a85e7e5bfeb27b91086232 *Meta/package.rds
+f2a4f5d1ac322b8560f8d2f2faff9009 *Meta/package.rds
 183b28f1621285d5bae08a54890dc967 *Meta/vignette.rds
 9c579aa55f3a3b16b285b67b181881f7 *NAMESPACE
 d6c68f1fe41ced6e98a766a3757313da *R/vcfR
-3b5f19f6e53f74752e4d14e784876b01 *R/vcfR.rdb
-6e078b4cb968a15384ead2cde40fefed *R/vcfR.rdx
+5072dffebbb42dd3daeaa0a0c6c8f294 *R/vcfR.rdb
+f0813929d7615d6f6d13b57a9ad03f39 *R/vcfR.rdx
 3e1dc69efcc95f2c81204810e78b3697 *data/chromR_example.RData
 a59634d93a55f32fec23400329223c18 *data/vcfR_example.rdata
 f7ca2c9958e18863824a4ed43473f546 *data/vcfR_test.RData
@@ -31,10 +31,10 @@ de6ac78b28979034ca11e38c14c061c2 *doc/workflow.Rmd
 b53b8082252173379b43333b08abe748 *doc/workflow.html
 2b6d7eae3c19f7f90015f9ae5d0a1409 *help/AnIndex
 fb738f0245e3f86bb8ca5a36ca7456ab *help/aliases.rds
-91e1cf389bf9c1aace2663bd41f7e33a *help/paths.rds
-3e82b6bf25a863bc15299e92da13d1a6 *help/vcfR.rdb
-7e41e965acd97c80e35e46300451183e *help/vcfR.rdx
+bca96824eb66e69d7995405451e8fee0 *help/paths.rds
+78456f01fab939aaaa7e1eafc2231f46 *help/vcfR.rdb
+06ee2d902533ec6b5371f8613001afd2 *help/vcfR.rdx
 bfe8c5f5f8924a96e01a2093850d77d2 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 c42e56e278d29fac35d85414051a562c *libs/x64/symbols.rds
-162a849306174c9480686ea4ffa32404 *libs/x64/vcfR.dll
+e25916425fc9ad9c7f05a9b77ea9baa7 *libs/x64/vcfR.dll

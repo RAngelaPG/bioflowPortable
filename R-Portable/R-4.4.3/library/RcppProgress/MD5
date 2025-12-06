@@ -1,11 +1,11 @@
-51335972d51883e56c0332ae8af73cb0 *DESCRIPTION
+3a5a80633b56b20fea139ea93e00c558 *DESCRIPTION
 960e40c4e4119e54dc9644477665c3ca *INDEX
 ae7180c62455888de92ee9b3ea71a3b8 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 537950a54e87d361d56084a5a8cd5f47 *Meta/hsearch.rds
 1adafdd3111390f2e4fb248ab3239ed5 *Meta/links.rds
 e0eda7b29764be9b2dfa79c5962469b8 *Meta/nsInfo.rds
-f6fef78ebe419b93f5fbb2bc088cdd9c *Meta/package.rds
+cf5d35057ac66cae8f585bde57088c91 *Meta/package.rds
 d41d8cd98f00b204e9800998ecf8427e *NAMESPACE
 ed85ae455fd74c65cf56d14906f19fb2 *examples/RcppProgressArmadillo/DESCRIPTION
 fc0bd5a713423c04f38afa1f19739501 *examples/RcppProgressArmadillo/NAMESPACE
@@ -31,10 +31,10 @@ f3544be12aeb659d48214aa2cd8bcc9a *examples/RcppProgressExample/man/test_sequenti
 ce8d73330c86439fcae88bf5a549dda4 *examples/RcppProgressExample/src/dummy.cpp
 1f258902c354004953e0f7dc974c8c23 *examples/RcppProgressExample/src/example.cpp
 f80392f243370ea242e91a5c2ba42444 *help/AnIndex
-f8ae636ebe375b0401538ed440567f80 *help/RcppProgress.rdb
-2fc4d2dd43a98a742034f144b2252a9e *help/RcppProgress.rdx
+686137ba9c10728c792d26c9a2bc80ee *help/RcppProgress.rdb
+adb68cc22b530b3404d96b7ed1142f48 *help/RcppProgress.rdx
 69e9085ca02ffef1ad21ecb482f1267c *help/aliases.rds
-3339854229556ea97b1a3fd303c3e4da *help/paths.rds
+65ba14e43107f20268a54b2c5b48c354 *help/paths.rds
 be5c8a700bc6d5bb889ef2539c24a4f9 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 9a7f25b31a2089a94eb1c208fe9a9a2b *include/interruptable_progress_monitor.hpp

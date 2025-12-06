@@ -1,7 +1,7 @@
 Type: Package
 Package: ragg
 Title: Graphic Devices Based on AGG
-Version: 1.3.3
+Version: 1.4.0
 Authors@R: c(
     person("Thomas Lin", "Pedersen", , "thomas.pedersen@posit.co", role = c("cre", "aut"),
            comment = c(ORCID = "0000-0002-5147-4711")),
@@ -29,11 +29,12 @@ LinkingTo: systemfonts, textshaping
 Config/Needs/website: ggplot2, devoid, magick, bench, tidyr, ggridges,
         hexbin, sessioninfo, pkgdown, tidyverse/tidytemplate
 Encoding: UTF-8
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.2
 SystemRequirements: freetype2, libpng, libtiff, libjpeg
 Config/testthat/edition: 3
+Config/build/compilation-database: true
 NeedsCompilation: yes
-Packaged: 2024-09-11 08:03:16 UTC; thomas
+Packaged: 2025-04-10 06:35:56 UTC; thomas
 Author: Thomas Lin Pedersen [cre, aut]
     (<https://orcid.org/0000-0002-5147-4711>),
   Maxim Shemanarev [aut, cph] (Author of AGG),
@@ -42,6 +43,6 @@ Author: Thomas Lin Pedersen [cre, aut]
   Spencer Garrett [ctb] (Contributor to AGG),
   Posit, PBC [cph, fnd]
 Repository: CRAN
-Date/Publication: 2024-09-11 17:50:02 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-03-04 02:38:43 UTC; windows
+Date/Publication: 2025-04-10 08:30:02 UTC
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-05-04 02:14:17 UTC; windows
 Archs: x64

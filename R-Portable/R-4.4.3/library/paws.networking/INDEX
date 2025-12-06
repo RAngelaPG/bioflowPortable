@@ -1,0 +1,30 @@
+apigateway              Amazon API Gateway
+apigatewaymanagementapi
+                        AmazonApiGatewayManagementApi
+apigatewayv2            AmazonApiGatewayV2
+appfabric               AppFabric
+appmesh                 AWS App Mesh
+arczonalshift           AWS ARC - Zonal Shift
+backupgateway           AWS Backup Gateway
+cloudfront              Amazon CloudFront
+cloudfrontkeyvaluestore
+                        Amazon CloudFront KeyValueStore
+directconnect           AWS Direct Connect
+elb                     Elastic Load Balancing
+elbv2                   Elastic Load Balancing
+globalaccelerator       AWS Global Accelerator
+networkfirewall         AWS Network Firewall
+networkmanager          AWS Network Manager
+route53                 Amazon Route 53
+route53domains          Amazon Route 53 Domains
+route53profiles         Route 53 Profiles
+route53recoverycluster
+                        Route53 Recovery Cluster
+route53recoverycontrolconfig
+                        AWS Route53 Recovery Control Config
+route53recoveryreadiness
+                        AWS Route53 Recovery Readiness
+route53resolver         Amazon Route 53 Resolver
+servicediscovery        AWS Cloud Map
+telconetworkbuilder     AWS Telco Network Builder
+vpclattice              Amazon VPC Lattice

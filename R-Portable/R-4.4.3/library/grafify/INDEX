@@ -87,6 +87,8 @@ plot_scatterviolin      Plot a scatter plot on a violin plot with two
                         variables.
 plot_xy_CatGroup        Plot points on a quantitative X - Y plot & a
                         categorical grouping variable.
+plot_xy_Group           Plot points on a quantitative X - Y plot & a
+                        grouping variable.
 plot_xy_NumGroup        Plot points on a quantitative X - Y plot & a
                         numeric grouping variable.
 posthoc_Levelwise       Level-wise post-hoc comparisons from a linear

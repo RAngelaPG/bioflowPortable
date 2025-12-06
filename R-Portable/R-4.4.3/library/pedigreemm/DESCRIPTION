@@ -27,5 +27,5 @@ NeedsCompilation: yes
 Packaged: 2024-10-11 21:02:39 UTC; pperez
 Repository: CRAN
 Date/Publication: 2024-10-14 14:40:02 UTC
-Built: R 4.4.3; x86_64-w64-mingw32; 2025-03-04 02:46:03 UTC; windows
+Built: R 4.4.3; x86_64-w64-mingw32; 2025-05-04 02:01:27 UTC; windows
 Archs: x64

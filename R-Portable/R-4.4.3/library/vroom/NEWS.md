@@ -1,3 +1,17 @@
+# vroom 1.6.7
+
+* `locale(encoding =)` now warns, instead of errors, when the encoding cannot be found in `iconvlist()` return value. This removes an unnecessary blocker on platforms like Alpine Linux where the output doesn't reflect actual capabilities.
+
+* vroom no longer uses `STDVEC_DATAPTR()` and takes the recommended approach for phasing out usage of `DATAPTR()` (#561).
+
+* `problems()` works normally for vroom-produced objects, even if readr is attached (#534, #554).
+
+* `problems()` are no longer corrupted if the offending data frame is partially materialized, e.g. by viewing a subset, before calling `problems()` (#535).
+
+# vroom 1.6.6
+
+* Fixed a bad URL in the README at CRAN's request.
+
 # vroom 1.6.5
 
 * Internal changes requested by CRAN around format specification (#524).

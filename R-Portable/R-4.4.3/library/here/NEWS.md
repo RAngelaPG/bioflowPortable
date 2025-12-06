@@ -1,3 +1,22 @@
+<!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
+
+# here 1.0.2 (2025-09-14)
+
+## Features
+
+- Discover VS Code, Quarto and renv projects (#128, #130).
+
+## Chore
+
+- Change maintainer e-mail.
+
+## Documentation
+
+- Fix link to "What they forgot" chapter (@Masterxilo, #101).
+
+- Fixed "heuristics" typo (@t-gummer, #91).
+
+
 # here 1.0.1 (2020-12-13)
 
 - Adapt to testthat 3.0.1.

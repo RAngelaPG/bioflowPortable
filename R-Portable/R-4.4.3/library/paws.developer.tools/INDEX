@@ -1,0 +1,19 @@
+cloud9                  AWS Cloud9
+cloudcontrolapi         AWS Cloud Control API
+codeartifact            CodeArtifact
+codebuild               AWS CodeBuild
+codecatalyst            Amazon CodeCatalyst
+codecommit              AWS CodeCommit
+codeconnections         AWS CodeConnections
+codedeploy              AWS CodeDeploy
+codeguruprofiler        Amazon CodeGuru Profiler
+codegurureviewer        Amazon CodeGuru Reviewer
+codegurusecurity        Amazon CodeGuru Security
+codepipeline            AWS CodePipeline
+codestarconnections     AWS CodeStar connections
+codestarnotifications   AWS CodeStar Notifications
+devopsguru              Amazon DevOps Guru
+drs                     Elastic Disaster Recovery Service
+fis                     AWS Fault Injection Simulator
+wellarchitected         AWS Well-Architected Tool
+xray                    AWS X-Ray

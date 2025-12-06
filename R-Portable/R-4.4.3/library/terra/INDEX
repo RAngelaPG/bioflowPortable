@@ -20,6 +20,8 @@ activeCat               Active category
 add<-                   Add (in place) a SpatRaster to another
                         SpatRaster or to a SpatRasterDataset or
                         SpatRasterCollection
+add_abline              add vertical and/or horizontal lines to a map
+                        made with terra
 add_box                 draw a box
 add_grid                add a grid to a map made with terra
 add_legend              add a custom legend
@@ -27,11 +29,13 @@ add_mtext               draw a box
 adjacent                Adjacent cells or polygons
 aggregate               Aggregate raster or vector data
 align                   Align a SpatExtent
-all.equal               Compare two SpatRasters for equality
+all.equal               Compare two SpatRaster, SpatVector, or
+                        SpatExtent objects for equality
 animate                 Animate a SpatRaster
 app                     Apply a function to the cells of a SpatRaster
 approximate             Estimate values for cell values that are 'NA'
                         by interpolating between layers
+ar_info                 ar_info
 as.character,SpatExtent-method
                         Create a text representation of (the skeleton
                         of) an object
@@ -56,6 +60,7 @@ catalyze                Factors to numeric
 cellSize                Area covered by each raster cell
 cells                   Get cell numbers
 centroids               Centroids
+chunk                   Make a SpatRaster method memory-safe
 clamp                   Clamp values
 clamp_ts                clamp time series data
 classify                Classify (or reclassify) cell values
@@ -95,7 +100,8 @@ extract                 Extract values from a SpatRaster
 extractAlong            extract values along lines
 extractRange            Extract values for a range of layers from a
                         SpatRaster
-fillHoles               Remove holes from polygons
+fillHoles               Remove or extract holes from polygons, or fill
+                        holes in raster data
 fillTime                Fill time gaps in a SpatRaster
 flip                    Flip or reverse a raster
 flowAccumulation        Flow accumulation
@@ -123,7 +129,8 @@ has.colors              Color table
 head                    head and tail of a SpatRaster or SpatVector
 hist                    Histogram
 hull                    Convex, concave, rectangular and circular hulls
-identical               Compare two SpatRasters for equality
+identical               Compare two SpatRaster, SpatVector or
+                        SpatExtent objects for equality
 ifel                    ifelse for SpatRasters
 image                   SpatRaster image method
 impose                  Impose the geometry of a SpatRaster to those in
@@ -136,7 +143,7 @@ interpolate             Spatial interpolation
 intersect               Intersection
 is.bool                 Raster value types
 is.empty                Check if a SpatExtent or SpatVector is empty
-is.flipped              Check for rotation
+is.flipped              Is a SpatRaster is flipped
 is.lonlat               Check for longitude/latitude crs
 is.rotated              Check for rotation
 is.valid                Check or fix polygon or extent validity
@@ -290,7 +297,7 @@ writeRaster             Write raster data to a file
 writeVector             Write SpatVector data to a file
 xFromCol                Coordinates from a row, column or cell number
                         and vice versa
-xapp                    Apply a function to the cells of a two
+xapp                    Apply a function to the cells of two
                         SpatRasters
 xmin                    Get or set single values of an extent
 zonal                   Zonal statistics

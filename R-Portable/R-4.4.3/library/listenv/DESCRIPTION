@@ -1,5 +1,5 @@
 Package: listenv
-Version: 0.9.1
+Version: 0.10.0
 Depends: R (>= 3.1.2)
 Suggests: R.utils, R.rsp, markdown
 VignetteBuilder: R.rsp
@@ -10,13 +10,13 @@ Description: List environments are environments that have list-like properties. 
 License: LGPL (>= 2.1)
 LazyLoad: TRUE
 URL: https://listenv.futureverse.org,
-        https://github.com/HenrikBengtsson/listenv
-BugReports: https://github.com/HenrikBengtsson/listenv/issues
-RoxygenNote: 7.3.1
+        https://github.com/futureverse/listenv
+BugReports: https://github.com/futureverse/listenv/issues
+RoxygenNote: 7.3.3
 NeedsCompilation: no
-Packaged: 2024-01-28 20:40:45 UTC; henrik
+Packaged: 2025-11-02 02:21:56 UTC; hb
 Author: Henrik Bengtsson [aut, cre, cph]
 Maintainer: Henrik Bengtsson <henrikb@braju.com>
 Repository: CRAN
-Date/Publication: 2024-01-29 13:10:06 UTC
-Built: R 4.4.3; ; 2025-03-04 01:28:39 UTC; windows
+Date/Publication: 2025-11-02 06:40:02 UTC
+Built: R 4.4.3; ; 2025-12-05 02:01:50 UTC; windows

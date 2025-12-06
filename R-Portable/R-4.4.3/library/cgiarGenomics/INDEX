@@ -1,0 +1,25 @@
+cgiarGenomics           cgiarGenomics
+convert_gt_to_dosage    Given a list of genotype calls, get the dosage
+                        of each one
+extract_dart_gt         extract_dart_gt
+genocall_to_allelic_dosage
+                        Genotype call to allelic dosage of alternative
+                        allele
+get_all_gt_calls        Get all possible genotype calls given a unique
+                        set of alleles
+get_allelic_dosage      From locus genotype call data, get the allelic
+                        dosage given the alleles and ploidity
+get_ind_missing         Get Individual Missingness
+get_loc_missing         Get Locus Missingness
+get_overall_missingness
+                        Get Overall Missingness
+read_DArTSeq_SNP        read_DArTSeq_SNP
+read_hapmap             read_hapmap
+read_one_row_dart_gt_data
+                        read_one_row_dart_gt_data
+read_tabular_geno       Read a text table and use common na
+                        representations for convert to NA
+read_vcf                read_vcf
+replace_strings_with_integers
+                        Replace a list of strings with their
+                        corresponding integer values

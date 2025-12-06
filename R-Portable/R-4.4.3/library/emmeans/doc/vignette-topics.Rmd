@@ -10,10 +10,9 @@ vignette: >
 <div class="vigindex" id="Index follows this line">
 
 
-
 ### Jump to:  [A](#a) [B](#b) [C](#c) [D](#d) [E](#e) [F](#f) [G](#g) [H](#h) [I](#i) [J](#j) [K](#k) [L](#l) [M](#m) [N](#n) [O](#o) [P](#p) [Q](#q) [R](#r) [S](#s) [T](#t) [U](#u) [V](#v) [W](#w) [X](#x) [Z](#z)  {#topnav}
 
-
+</div>
 
 
 ### A {#a}
@@ -125,6 +124,7 @@ vignette: >
       * [Custom](comparisons.html#linfcns)
       * [Formula](comparisons.html#formulas)
       * [Multivariate](interactions.html#multiv)
+      * [Normalized](comparisons.html#nrmlze)
       * [Pairwise](comparisons.html#pairwise)
       * [Polynomial](comparisons.html#contrasts)
       * Tests of
@@ -464,7 +464,9 @@ vignette: >
   * [Non-estimability](messy-data.html#nonest)
   * [`non.nuisance`](messy-data.html#nuisance)
   * [`NonEst` values](FAQs.html#NAs)
+  * [Normalized contrasts](comparisons.html#nrmlze)
   * [`(nothing)` in output](FAQs.html#nopairs)
+  * [`nrmlz.emmc`](comparisons.html#nrmlze)
   * [`nuisance`](messy-data.html#nuisance)
   * [Nuisance factors](messy-data.html#nuisance)
 
@@ -555,6 +557,7 @@ vignette: >
 
 
   * [`qdrg()`](FAQs.html#qdrg)
+      * [S3 methods](xtending.html#qdrg)
   * [Quadratic terms](basics.html#depcovs)
   * [Quick-start guide](AQuickStart.html)
 
@@ -603,6 +606,7 @@ vignette: >
   * Reference grids
       * [Prediction on](predictions.html#ref-grid)
   * [Region of practical equivalence](sophisticated.html#bayesxtra)
+  * [Registering `qdrg` methods](xtending.html#exporting)
   * [Registering `recover_data` and `emm_basis` methods](xtending.html#exporting)
   * [`regrid` argument](transformations.html#stdize)
   * [`regrid()`](transformations.html#regrid)
@@ -618,6 +622,7 @@ vignette: >
   * [`rg.limit` option](messy-data.html#rg.limit)
   * [Risk ratios](transformations.html#riskrats)
   * [RMarkdown](basics.html#formatting)
+  * [**robmixglm** example](xtending.html#qdrg)
   * [ROPE](sophisticated.html#bayesxtra)
   * [**rsm** package](xtending.html#rsm)
   * [`rstanarm`](sophisticated.html#mcmc)

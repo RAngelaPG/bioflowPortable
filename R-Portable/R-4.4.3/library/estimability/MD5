@@ -1,11 +1,11 @@
-58432955d33b910b3f35bf1b0a4260c3 *DESCRIPTION
+5fe88779369c66d376b2e5cb42c27ea7 *DESCRIPTION
 8f39619dddd8cead5be230bd48907e7d *INDEX
 25e6c8bd4d6cf2b1426eeaeb1a04c7a4 *Meta/Rd.rds
 a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 c7bb9d5381795583f2ac479ca3180658 *Meta/hsearch.rds
 eed62f480f9c422aaffae95fdb9ee57e *Meta/links.rds
 48932e90207275670d1911bc9bff861e *Meta/nsInfo.rds
-52ee35956227563c4f1bc7da1bce0448 *Meta/package.rds
+b41bbb4fa00d7bc28c9f4ddd644047c7 *Meta/package.rds
 b64ed29a0159e42c26d2c84f684832d2 *Meta/vignette.rds
 e49efd927ce07e4456fc7bf07e2dc84c *NAMESPACE
 0cb9a3aa044ef0c12b1fa425d8b60b2c *NEWS
@@ -18,8 +18,8 @@ fd01718151b4f3df6ac97c1ccea4bca1 *R/estimability.rdx
 b1049f7af8b2956116b29dd16f0cefe3 *doc/index.html
 abc14304e58c97db722e6be5a3f91415 *help/AnIndex
 20ce8a003607badf9ba3d1b1baffb45e *help/aliases.rds
-82bafaa0522c1e2ea5422faa007b6df6 *help/estimability.rdb
-dfdc6563edc83bfe7d335b5529ca453d *help/estimability.rdx
-507f1b2eb4b71c48bc0e1328204be2c9 *help/paths.rds
+9fddbb17ac46963da2a9cc49a5edfce8 *help/estimability.rdb
+e268f325bbd0da5d72240fd3a71f8121 *help/estimability.rdx
+47104d91ca9c6c403387f85befd4283c *help/paths.rds
 845abe5b99aa7ae3022978b5f5e03652 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

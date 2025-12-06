@@ -1,3 +1,11 @@
+# ragg 1.4.0
+
+* Added `agg_record()` for optimised plot recording
+* Added support for hold and flushing, mainly in service of Positron
+* Added support for `saturate` composition operator
+* Sanitise file name before plotting (#176)
+* Tiff files can now include unicode characters on all platforms (#87)
+
 # ragg 1.3.3
 
 * Fixed a regression from upstream changes in Freetype (#172)

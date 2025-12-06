@@ -3,6 +3,212 @@
 \newcommand{\ghpr}{\href{https://github.com/RcppCore/RcppArmadillo/pull/#1}{##1}}
 \newcommand{\ghit}{\href{https://github.com/RcppCore/RcppArmadillo/issues/#1}{##1}}
 
+\section{Changes in RcppArmadillo version 15.2.2-1 (2025-11-21)}{
+  \itemize{
+    \item Upgraded to Armadillo release 15.2.2 (Medium Roast Deluxe)
+    \itemize{
+      \item Improved reproducibility of random number generation when using OpenMP
+    }
+    \item Skip a unit test file under macOS as complex algebra seems to fail
+    under newer macOS LAPACK setting
+    \item Further OpenMP detection rework for macOS (Dirk in \ghpr{497}, \ghpr{499})
+    \item Define ARMA_CRIPPLED_LAPACK on Windows only if 'LEGACY' Armadillo selected
+  }
+}
+
+\section{Changes in RcppArmadillo version 15.2.1-0 (2025-10-28) (GitHub Only)}{
+  \itemize{
+    \item Upgraded to Armadillo release 15.2.1 (Medium Roast Deluxe)
+    \itemize{
+      \item Faster handling of submatrices with one row
+    }
+    \item Improve OpenMP detection (Dirk in \ghpr{495} fixing \ghit{493})
+  }
+}
+
+\section{Changes in RcppArmadillo version 15.2.0-0 (2025-10-20) (GitHub Only)}{
+  \itemize{
+    \item Upgraded to Armadillo release 15.2.0 (Medium Roast Deluxe)
+    \itemize{
+      \item Added \code{rande()} for generating matrices with elements from
+      exponential distributions
+      \item \code{shift()} has been deprecated in favour of
+      \code{circshift()}, for consistency with Matlab/Octave
+      \item Reworked detection of aliasing, leading to more efficient
+      compiled code
+    }
+    \item OpenMP detection in \code{configure} has been simplified
+  }
+}
+
+\section{Changes in RcppArmadillo version 15.0.2-2 (2025-09-18)}{
+  \itemize{
+    \item Minor update to skeleton \code{Makevars},\code{Makevars.win}
+    \item Update README.md to mention ldlasb2 repository
+    \item Minor documentation update (\ghpr{487})
+    \item Synchronized with Armadillo upstream (\ghpr{488})
+    \item Refine Armadillo version selection in coordination with CRAN
+    maintainers to support transition towards Armadillo 15.0.*
+  }
+}
+
+\section{Changes in RcppArmadillo version 15.0.2-1 (2025-09-08)}{
+  \itemize{
+    \item Upgraded to Armadillo release 15.0.2-1 (Medium Roast)
+    \itemize{
+      \item Optionally use OpenMP parallelisation for fp16 matrix multiplication
+      \item Faster vectorisation of cube tubes
+    }
+    \item Provide a top-level include file \code{armadillo} as fallback
+    (\ghpr{480})
+    \item Retire the no-longer-needed check for insufficient LAPACK as R
+    now should supply a sufficient libRlapack (when used) (\ghpr{483})
+    \item Two potential narrowing warnings are avoided via cast
+  }
+}
+
+\section{Changes in RcppArmadillo version 15.0.1-1 (2025-09-01)}{
+  \itemize{
+    \item Upgraded to Armadillo release 15.0.1-1 (Medium Roast)
+    \itemize{
+      \item Workaround for GCC compiler bug involving misoptimisation of
+      complex number multiplication
+    }
+    \item This version contains both 'legacy' and 'current' version of
+    Armadillo (see also below). Package authors should set a '#define' to
+    select the 'current' version, or select the 'legacy' version (also chosen
+    as default) if they must. See 'GitHub issue #475' for more details.
+    \item Updated DESCRIPTION and README.md
+  }
+}
+
+\section{Changes in RcppArmadillo version 15.0.0-1 (2025-08-21) (GitHub Only)}{
+  \itemize{
+    \item Upgraded to Armadillo release 15.0.0-1 (Medium Roast)
+    \itemize{
+      \item C++14 is now the minimum required C++ standard
+      \item Aded preliminary support for matrices with half-precision fp16
+      element type
+      \item Added second form of \code{cond()} to allow detection of failures
+      \item Added \code{repcube()}
+      \item Added \code{.freeze()} and \code{.unfreeze()} member functions to
+      \code{wall_clock}
+      \item Extended \code{conv()} and \code{conv2()} to accept the "valid"
+      shape argument
+    }
+    \item Also includes Armadillo 14.6.3 as fallback for C++11 compilations
+    \item This new 'dual' setup had been rigorously tested with five interim
+    pre-releases of which several received full reverse-dependency checks
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.6.3-1 (2025-08-14)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.6.3 (Caffe Mocha)
+    \itemize{
+      \item Fix OpenMP related crashes in \code{Cube::slice()} on Arm64 CPUs
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.6.2-1 (2025-08-09) (GitHub Only)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.6.2 (Caffe Mocha)
+    \itemize{
+      \item Fix for corner-case speed regression in \code{sum()}
+      \item Better handling of OpenMP in \code{omit_nan()} and
+      \code{omit_nonfinite()}
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.6.1-1 (2025-07-21) (GitHub Only)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.6.1 (Caffe Mocha)
+    \itemize{
+      \item Fix for speed regression in \code{mean()}
+      \item Fix for detection of compiler configuration
+      \item Use of \code{pow} optimization now optional
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.6.0-1 (2025-07-02)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.6.0 (Caffe Mocha)
+    \itemize{
+      \item Added \code{balance()} to transform matrices so that column and
+      row norms are roughly the same
+      \item Added \code{omit_nan()} and \code{omit_nonfinite()} to extract
+      elements while omitting NaN and non-finite values
+      \item Added \code{find_nonnan()} for finding indices of non-NaN elements
+      \item Added standalone \code{replace()} function
+    }
+    \item The \code{fastLm()} help page now mentions that options to
+    \code{solve()} can control its behavior.
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.4.3-1 (2025-05-21)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.4.3 (Filtered Espresso)
+    \itemize{
+      \item Fix for several corner cases involving handling of non-finite
+      elements by sparse matrices
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.4.2-1 (2025-04-25)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.4.2 (Filtered Espresso)
+    \itemize{
+      \item Fix for \code{expmat()}
+      \item Workaround for bugs in clang 20 compiler
+    }
+    \item Micro-cleanup in one test file
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.4.1-1 (2025-03-27)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.4.1 (Filtered Espresso)
+    \itemize{
+      \item Fix for \code{fft()} and \code{ifft()} when using FFTW3 in
+      multi-threaded contexts (such as OpenMP)
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.4.0-1 (2025-03-17)}{
+  \itemize{
+    \item CRAN release having given a few packages time to catch-up to small
+    upstream change as discussed and managed in \ghit{462}
+    \item Updated bibliography, and small edits to sparse matrix vignette
+    \item Switched continuous integration action to r-ci with implicit bootstrap
+  }
+}
+
+\section{Changes in RcppArmadillo version 14.4.0-0 (2025-02-17) (GitHub Only)}{
+  \itemize{
+    \item Upgraded to Armadillo release 14.4.0 (Filtered Espresso)
+    \itemize{
+      \item Faster handling of \code{pow()} and \code{square()} within
+      \code{accu()} and \code{sum()} expressions
+      \item Faster \code{sort()} and \code{sort_index()} for complex matrices
+      \item Expanded the field class with \code{.reshape()} and
+      \code{.resize()} member functions
+      \item More efficient handling of compound expressions by \code{sum()},
+      \code{reshape()}, \code{trans() }
+      \item Better detection of vector expressions by \code{pow()},
+      \code{imag()}, \code{conj()}
+    }
+    \item The package generator helper function now supports additional DESCRIPTIONs
+    \item This release revealed a need for very minor changes for a handful
+    reverse-dependency packages which will be organized via GitHub issue tracking
+  }
+}
+
 \section{Changes in RcppArmadillo version 14.2.3-1 (2025-02-05)}{
   \itemize{
     \item Upgraded to Armadillo release 14.2.3 (Smooth Caffeine)

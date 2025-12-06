@@ -1,7 +1,7 @@
 Package: lme4breeding
-Version: 1.0.50
-Date: 2025-01-16
-Title: Relationship-Based Mixed-Effects Models
+Version: 1.1.0
+Date: 2025-11-18
+Title: Breeding-Related Mixed-Effects Models
 Authors@R: c(
     person("Giovanny","Covarrubias-Pazaran", email="cova_ruber@live.com.mx", role=c("aut","cre"),
 	comment=c(ORCID="0000-0002-7194-3837"))
@@ -9,11 +9,10 @@ Authors@R: c(
 Maintainer: Giovanny Covarrubias-Pazaran <cova_ruber@live.com.mx>
 Description: Fit relationship-based and customized mixed-effects models with complex variance-covariance structures using the 'lme4' machinery. The core computational algorithms are implemented using the
     'Eigen' 'C++' library for numerical linear algebra and 'RcppEigen' 'glue'.
-Depends: R(>= 3.0.0), lme4 (>= 1.0), Matrix (>= 1.0), methods, crayon
+Depends: R(>= 3.5.0), lme4 (>= 1.0), Matrix (>= 1.0), methods, crayon,
+        enhancer
 LazyLoad: yes
-LazyData: yes
 License: GPL (>= 2)
-NeedsCompilation: yes
 Author: Giovanny Covarrubias-Pazaran [aut, cre] (<https://orcid.org/0000-0002-7194-3837>)
 Repository: CRAN
 Suggests: rmarkdown, knitr, orthopolynom, RSpectra
@@ -24,10 +23,11 @@ RemoteHost: api.github.com
 RemoteRepo: lme4breeding
 RemoteUsername: covaruber
 RemoteRef: HEAD
-RemoteSha: aba5d9ab39cce657dab2bfaea689d03abc5f34e3
+RemoteSha: 62432a07eaef63e43c30e04ac06fc210fbce7051
 GithubRepo: lme4breeding
 GithubUsername: covaruber
 GithubRef: HEAD
-GithubSHA1: aba5d9ab39cce657dab2bfaea689d03abc5f34e3
-Packaged: 2025-03-06 17:05:47 UTC; RAPACHECO
-Built: R 4.4.3; ; 2025-03-06 17:05:48 UTC; windows
+GithubSHA1: 62432a07eaef63e43c30e04ac06fc210fbce7051
+NeedsCompilation: no
+Packaged: 2025-12-06 17:42:15 UTC; RAPACHECO
+Built: R 4.4.3; ; 2025-12-06 17:42:17 UTC; windows

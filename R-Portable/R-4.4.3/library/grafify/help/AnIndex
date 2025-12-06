@@ -50,6 +50,7 @@ plot_scatterbar_sd	plot_scatterbar_sd
 plot_scatterbox	plot_scatterbox
 plot_scatterviolin	plot_scatterviolin
 plot_xy_CatGroup	plot_xy_CatGroup
+plot_xy_Group	plot_xy_Group
 plot_xy_NumGroup	plot_xy_NumGroup
 posthoc_Levelwise	posthoc_Levelwise
 posthoc_Pairwise	posthoc_Pairwise

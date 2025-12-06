@@ -1,4 +1,4 @@
-177ae25421951d9b5c73721dee9dce9c *DESCRIPTION
+342bbd6baff1f4b3c84586d8972cda4b *DESCRIPTION
 7d4057a89e4df7e8d723823c3334e4a2 *INDEX
 7be88896a6c4a4461e69c8cb0d82e1f0 *LICENSE
 9b2c3d6a5d36a5636a6fbcf92907d6ee *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 7e5ebf707eef4abca6d90e73ae354755 *Meta/hsearch.rds
 61e690af34de9cb704f84e9e2a2fa998 *Meta/links.rds
 0acdd44c6960720f6cf9ab07e108e253 *Meta/nsInfo.rds
-0152cdd7604b0a62f33231c5c83df74e *Meta/package.rds
+0fdac8582938724c71e5e77bfbc9f0f1 *Meta/package.rds
 6939592a153222dbe5b30bd018a93415 *NAMESPACE
 f9861acf9edca413b735d0aee0f9f9ec *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/waldo
@@ -14,8 +14,8 @@ ec303e50f21e7f47d6cbd8fbc6f026ac *R/waldo.rdb
 d29fda64fe81222b5f473692733b445b *R/waldo.rdx
 6c591721797f2280bed6ecbfef1f9433 *help/AnIndex
 b1d9bba3d952d926d832746cab6b24d0 *help/aliases.rds
-16a12f887da3fedd4c5b276696f64938 *help/paths.rds
-d73f2ae8373221f067974a0598cc2b1a *help/waldo.rdb
-2a98f2998f7c89b9e42522ac7f9e3df9 *help/waldo.rdx
+359119b60768d4e7029f2184d8e76aa1 *help/paths.rds
+124c73e74e561dc14c28a719911c3b36 *help/waldo.rdb
+32580948b9ad5dc3f16fea7073edcf29 *help/waldo.rdx
 04680ecdb1405a22c2f13e73f4484d65 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

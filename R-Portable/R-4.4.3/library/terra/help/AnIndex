@@ -22,6 +22,7 @@ add<-,SpatRasterCollection,SpatRaster-method	add
 add<-,SpatRasterDataset,SpatRaster-method	add
 addCats	factors
 addCats,SpatRaster-method	factors
+add_abline	add_abline
 add_box	box
 add_grid	grid
 add_legend	legend
@@ -38,7 +39,9 @@ align,SpatExtent,SpatRaster-method	align
 all	summarize-generics
 all,SpatRaster-method	summarize-generics
 all.equal	all.equal
+all.equal,SpatExtent,SpatExtent-method	all.equal
 all.equal,SpatRaster,SpatRaster-method	all.equal
+all.equal,SpatVector,SpatVector-method	all.equal
 allNA	summarize-generics
 allNA,SpatRaster-method	summarize-generics
 animate	animate
@@ -69,6 +72,7 @@ Arith,SpatRaster,numeric-method	arith-generic
 Arith,SpatRaster,SpatRaster-method	arith-generic
 Arith,SpatVector,SpatVector-method	arith-generic
 Arith-methods	arith-generic
+ar_info	ar_info
 as.array	coerce
 as.array,SpatRaster-method	coerce
 as.array,SpatRasterDataset-method	coerce
@@ -167,7 +171,10 @@ cells,SpatRaster,SpatVector-method	cells
 cellSize	cellSize
 cellSize,SpatRaster-method	cellSize
 centroids	centroids
+centroids,SpatRaster-method	centroids
 centroids,SpatVector-method	centroids
+chunk	chunk
+chunk,SpatRaster-method	chunk
 clamp	clamp
 clamp,numeric-method	clamp
 clamp,SpatRaster-method	clamp
@@ -274,6 +281,14 @@ depth	depth
 depth,SpatRaster-method	depth
 depth<-	depth
 depth<-,SpatRaster-method	depth
+depthName	depth
+depthName,SpatRaster-method	depth
+depthName<-	depth
+depthName<-,SpatRaster-method	depth
+depthUnit	depth
+depthUnit,SpatRaster-method	depth
+depthUnit<-	depth
+depthUnit<-,SpatRaster-method	depth
 describe	describe
 describe,character-method	describe
 describe,SpatRaster-method	describe
@@ -325,17 +340,21 @@ expanse,SpatRaster-method	expanse
 expanse,SpatVector-method	expanse
 ext	ext
 ext,bbox-method	ext
+ext,data.frame-method	ext
 ext,Extent-method	ext
 ext,matrix-method	ext
 ext,missing-method	ext
 ext,numeric-method	ext
+ext,PackedSpatExtent-method	ext
 ext,Raster-method	ext
 ext,sf-method	ext
 ext,SpatExtent-method	ext
+ext,SpatGraticule-method	ext
 ext,Spatial-method	ext
 ext,SpatRaster-method	ext
 ext,SpatRasterCollection-method	ext
 ext,SpatRasterDataset-method	ext
+ext,SpatRasterGraticule-method	ext
 ext,SpatVector-method	ext
 ext,SpatVectorCollection-method	ext
 ext,SpatVectorProxy-method	ext
@@ -363,6 +382,7 @@ extractRange,SpatRaster,ANY-method	extractRange
 extractRange,SpatRaster-method	extractRange
 fileBlocksize	readwrite
 fillHoles	fill
+fillHoles,SpatRaster-method	fill
 fillHoles,SpatVector-method	fill
 fillTime	fillTime
 fillTime,SpatRaster-method	fillTime
@@ -432,7 +452,9 @@ hist,SpatRaster-method	hist
 hull	convhull
 hull,SpatVector-method	convhull
 identical	identical
+identical,SpatExtent,SpatExtent-method	identical
 identical,SpatRaster,SpatRaster-method	identical
+identical,SpatVector,SpatVector-method	identical
 ifel	ifelse
 ifel,SpatRaster-method	ifelse
 image	image
@@ -486,6 +508,8 @@ is.lonlat,SpatVector-method	is.lonlat
 is.na,SpatRaster-method	compare-generics
 is.na,SpatVector-method	na.omit
 is.nan,SpatRaster-method	compare-generics
+is.num	is.bool
+is.num,SpatRaster-method	is.bool
 is.points	geomtype
 is.points,SpatVector-method	geomtype
 is.polygons	geomtype
@@ -610,12 +634,8 @@ metags<-,SpatRasterCollection-method	metags
 metags<-,SpatRasterDataset-method	metags
 min	summarize-generics
 min,SpatRaster-method	summarize-generics
-minCircle	convhull
-minCircle,SpatVector-method	convhull
 minmax	minmax
 minmax,SpatRaster-method	minmax
-minRect	convhull
-minRect,SpatVector-method	convhull
 modal	modal
 modal,SpatRaster-method	modal
 mosaic	mosaic
@@ -706,6 +726,7 @@ pitfinder,SpatRaster-method	pitfinder
 plet	plet
 plet,missing-method	plet
 plet,SpatRaster-method	plet
+plet,SpatRasterCollection-method	plet
 plet,SpatVector-method	plet
 plet,SpatVectorCollection-method	plet
 plot	plot
@@ -777,6 +798,7 @@ rast,SpatVector-method	rast
 rast,stars-method	rast
 rast,stars_proxy-method	rast
 rasterize	rasterize
+rasterize,data.frame,SpatRaster-method	rasterize
 rasterize,matrix,SpatRaster-method	rasterize
 rasterize,sf,SpatRaster-method	rasterize
 rasterize,SpatVector,SpatRaster-method	rasterize
@@ -834,6 +856,7 @@ res<-	dimensions
 res<-,SpatRaster,numeric-method	dimensions
 res<-,SpatRaster-method	dimensions
 resample	resample
+resample,SpatRaster,numeric-method	resample
 resample,SpatRaster,SpatRaster-method	resample
 rescale	rescale
 rescale,SpatRaster-method	rescale
@@ -950,6 +973,8 @@ sieve	sieve
 sieve,SpatRaster-method	sieve
 simplifyGeom	simplify
 simplifyGeom,SpatVector-method	simplify
+simplifyLevels	factors
+simplifyLevels,SpatRaster-method	factors
 size	dimensions
 size,SpatRaster-method	dimensions
 snap	topology
@@ -1079,6 +1104,7 @@ units,SpatRasterDataset-method	units
 units<-	units
 units<-,SpatRaster-method	units
 units<-,SpatRasterDataset-method	units
+unloadGDALdrivers	gdal
 unserialize	serialize
 unserialize,ANY-method	serialize
 unwrap	wrap

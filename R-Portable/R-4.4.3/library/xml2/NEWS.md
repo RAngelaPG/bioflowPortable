@@ -1,3 +1,31 @@
+# xml2 1.5.1
+
+* Avoid shared libxml2 on MacOS because this reveals bugs in R.app (#471)
+
+# xml2 1.5.0
+
+* Experimental custom myExternalEntityLoader on libxml2 2.15 and up.
+
+# xml2 1.4.1
+
+* Remove a test that broke with libxml2 2.15
+
+# xml2 1.4.0
+
+* read_html() now allows huge elements by default (#455) 
+
+* Workaround for xQuartz/Cocoa on MacOS hitting our global error handler.
+
+* Avoid accessing some struct internals disallowed in libxml2 2.14
+
+# xml2 1.3.8
+
+* Replace new "non-api" call IS_S4_OBJECT with Rf_isS4
+
+* Windows: update fallback libs (for R < 4.3) to libxml2 2.11.5
+
+* Compile with C_VISIBILITY and CXX_VISIBILITY on supported platforms
+
 # xml2 1.3.7
 
 * Windows: use libxml2 from Rtools if found

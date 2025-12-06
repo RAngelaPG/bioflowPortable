@@ -1,4 +1,4 @@
-5f7163d642a322346f7453d75a5b2cf5 *DESCRIPTION
+4475372d6257f155c41ecb4c2a3518ae *DESCRIPTION
 b48becbd5cef443c4587485c5c422e84 *INDEX
 371bde6d0dbcacd6d7b0e203b5425671 *LICENSE
 f73d7334ee0807b05b6f211fa1406dac *Meta/Rd.rds
@@ -7,13 +7,13 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 91d6f41bd5b35081be9014e15835ca9d *Meta/hsearch.rds
 827506268f660c7592ebf1b31cca6e97 *Meta/links.rds
 317fc052fbc579f19e4f07c3d5d8e218 *Meta/nsInfo.rds
-2fa8f435a14ddca5f1a3b9c73d735533 *Meta/package.rds
+99aea454c2f24d3f31e3237de87c74ca *Meta/package.rds
 dde52aa62da304e8c87bf65b95063740 *Meta/vignette.rds
 61dc69480c92fcfed18bf122d5dc458f *NAMESPACE
 dff112d4c7c2f08a57d78618cac185d5 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/dplyr
-8bcf48d4d3974ff7f3e3fc109d00b70a *R/dplyr.rdb
-406753fe1646d88c5516aba3d5bcfa57 *R/dplyr.rdx
+2a7d14aefada7117c3b397b2482ff494 *R/dplyr.rdb
+26689e08d923bdd032c721cb7948fa9b *R/dplyr.rdx
 c7bb6ac7918e1d2a406c951994f44289 *data/Rdata.rdb
 f7c4492475537f49902cc140d4b4dc4e *data/Rdata.rds
 2d2f9eb4d3c741e3a8c8ef05b3c8431f *data/Rdata.rdx
@@ -47,8 +47,8 @@ fdb7682a8f09c1976c19f30eaabc8133 *doc/two-table.Rmd
 918e48a1f96b6f0e4e404e4cb597ef12 *doc/window-functions.html
 46c601b60b87782186ef43ed742d98be *help/AnIndex
 b2a32bf4d9c8bcd7f4643c10b52dd19c *help/aliases.rds
-136604fc0d0155b0bcb8f03571d34f65 *help/dplyr.rdb
-454f7e3f4999bdccdf47734a1e6b8896 *help/dplyr.rdx
+bf71a6c8d6d8789039f898df3d6d5131 *help/dplyr.rdb
+0b2bb4c165a6e757cd5a2877a1029e0f *help/dplyr.rdx
 cb1e46f469cfbbbde29c8b5113e1d789 *help/figures/lifecycle-archived.svg
 c0d2e5a54f1fa4ff02bf9533079dd1f7 *help/figures/lifecycle-defunct.svg
 a1b8c987c676c16af790f563f96cbb1f *help/figures/lifecycle-deprecated.svg
@@ -60,8 +60,8 @@ c3978703d8f40f2679795335715e98f4 *help/figures/lifecycle-experimental.svg
 53b3f893324260b737b3c46ed2a0e643 *help/figures/lifecycle-stable.svg
 1c1fe7a759b86dc6dbcbe7797ab8246c *help/figures/lifecycle-superseded.svg
 1c9275a703baa038ba079452e917859c *help/figures/logo.png
-538be2a8c9ef1844a44d3320cee5beb0 *help/paths.rds
+f368cc63fefca546a02436be468d9171 *help/paths.rds
 9efd93c1ddf93fcd0ecdf50a9f2ce017 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-a7f929de2cf6363f2dbea5de54dfb0b2 *libs/x64/dplyr.dll
+d40c1926263ccf530ec4c85def1be33a *libs/x64/dplyr.dll
 70d3184f1f93714632804f47eeefaf81 *libs/x64/symbols.rds

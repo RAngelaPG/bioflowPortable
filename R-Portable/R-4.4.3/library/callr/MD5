@@ -1,5 +1,5 @@
 f9deeb47aede7111c00b55b87f342942 *COPYRIGHTS
-c8b1898d41a9fde5b96e5793e55ef884 *DESCRIPTION
+fcd15f9148ac16161292dd187b315dd3 *DESCRIPTION
 9c057888c1fbd3809677df2d9b65a078 *INDEX
 309b8cc125bf463af3cd744d0debf1c8 *LICENSE
 5881d0776471f984ddd7519f3cd74c32 *Meta/Rd.rds
@@ -7,7 +7,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 e597c282c6a3e4322d328e0922648e45 *Meta/hsearch.rds
 f555bc766f98481c6a1cadf89a7181d1 *Meta/links.rds
 6817878cc0f712f5da8ea9b235543b94 *Meta/nsInfo.rds
-80425092b5202a132a6e0054315cd9a4 *Meta/package.rds
+64facdc3542959a513073f58e480584c *Meta/package.rds
 fe0e4014d3c079944eebeab7061d3271 *NAMESPACE
 194e2756e1f5e101fa22b95b23b2e110 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/callr
@@ -17,8 +17,8 @@ d6c68f1fe41ced6e98a766a3757313da *R/callr
 f016ae44474fd10d44cef6ccaf294913 *developer-notes.md
 56782eae7a4505b251dad3d7dd52802e *help/AnIndex
 8a3d24481b4cdb49c34640ae334f64e6 *help/aliases.rds
-fc4a07b0d725162843a510dfe1d3e0f9 *help/callr.rdb
-0ab4593e13031656f8cc9d2650e4844a *help/callr.rdx
+74c0d8375b71884d3acc1b476987304a *help/callr.rdb
+fc12626cd52c68e953714c5c01c82d1a *help/callr.rdx
 167c58ceff87da95dbc8a611119ff06d *help/figures/bg-dark.svg
 1606c742beb45a3463692046fd4aed61 *help/figures/bg-methods-dark.svg
 2c0ca808c41f1de6c390f5576821e0db *help/figures/bg-methods.svg
@@ -59,6 +59,6 @@ d751a52fc71142d5aefb00a4bf815253 *help/figures/rcmd.svg
 680da99bc1e94dbd5e35e32991574913 *help/figures/rsession2.svg
 89b82405fed52d9302feb03ff0b64bfb *help/figures/simple-dark.svg
 b6ed673c8f64caa770f92a266901de6b *help/figures/simple.svg
-2257ef7ddee497469ce121a56fa6f1ba *help/paths.rds
+5f1d28197fc539adc2ffe4f938a765b1 *help/paths.rds
 0eb19d7e664db334af364aad04178534 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css

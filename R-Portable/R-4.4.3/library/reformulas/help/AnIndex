@@ -19,6 +19,7 @@ nobars	nobars
 nobars_	nobars
 noSpecials	splitForm
 no_specials	no_specials
+randint	randint
 reOnly	formfuns
 replaceForm	formfuns
 RHSForm	RHSForm

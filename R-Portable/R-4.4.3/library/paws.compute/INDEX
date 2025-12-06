@@ -1,0 +1,19 @@
+apprunner               AWS App Runner
+batch                   AWS Batch
+braket                  Braket
+computeoptimizer        AWS Compute Optimizer
+ec2                     Amazon Elastic Compute Cloud
+ec2instanceconnect      AWS EC2 Instance Connect
+ecr                     Amazon Elastic Container Registry
+ecrpublic               Amazon Elastic Container Registry Public
+ecs                     Amazon EC2 Container Service
+eks                     Amazon Elastic Kubernetes Service
+elasticbeanstalk        AWS Elastic Beanstalk
+emrcontainers           Amazon EMR Containers
+emrserverless           EMR Serverless
+imagebuilder            EC2 Image Builder
+lambda                  AWS Lambda
+lightsail               Amazon Lightsail
+proton                  AWS Proton
+serverlessapplicationrepository
+                        AWSServerlessApplicationRepository

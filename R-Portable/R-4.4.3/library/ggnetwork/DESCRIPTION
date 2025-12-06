@@ -2,8 +2,8 @@ Package: ggnetwork
 Type: Package
 Title: Geometries to Plot Networks with 'ggplot2'
 Description: Geometries to plot network objects with 'ggplot2'.
-Version: 0.5.13
-Date: 2024-02-14
+Version: 0.5.14
+Date: 2025-09-09
 Maintainer: François Briatte <f.briatte@gmail.com>
 Authors@R: c(
   person("François", "Briatte", email = "f.briatte@gmail.com", role = c("aut", "cre"), comment = c(ORCID = "0000-0001-6494-9774")),
@@ -23,17 +23,20 @@ Suggests: knitr, rmarkdown, testthat
 Collate: 'utilities.R' 'fortify-igraph.R' 'fortify-network.R'
         'geom-nodes.R' 'geom-edges.R' 'ggnetwork.R'
 VignetteBuilder: knitr
-RoxygenNote: 7.3.1
+RoxygenNote: 7.3.3
 Encoding: UTF-8
 NeedsCompilation: no
-Packaged: 2024-02-14 10:17:48 UTC; fr
-Author: François Briatte [aut, cre] (<https://orcid.org/0000-0001-6494-9774>),
-  Michał Bojanowski [ctb] (<https://orcid.org/0000-0001-7503-852X>),
-  Mickaël Canouil [ctb] (<https://orcid.org/0000-0002-3396-4549>),
-  Zachary Charlop-Powers [ctb] (<https://orcid.org/0000-0001-8816-4680>),
-  Jacob C. Fisher [ctb] (<https://orcid.org/0000-0003-0299-0346>),
-  Kipp Johnson [ctb] (<https://orcid.org/0000-0002-5102-741X>),
+Packaged: 2025-09-09 12:37:40 UTC; fr
+Author: François Briatte [aut, cre] (ORCID:
+    <https://orcid.org/0000-0001-6494-9774>),
+  Michał Bojanowski [ctb] (ORCID:
+    <https://orcid.org/0000-0001-7503-852X>),
+  Mickaël Canouil [ctb] (ORCID: <https://orcid.org/0000-0002-3396-4549>),
+  Zachary Charlop-Powers [ctb] (ORCID:
+    <https://orcid.org/0000-0001-8816-4680>),
+  Jacob C. Fisher [ctb] (ORCID: <https://orcid.org/0000-0003-0299-0346>),
+  Kipp Johnson [ctb] (ORCID: <https://orcid.org/0000-0002-5102-741X>),
   Tyler Rinker [ctb]
 Repository: CRAN
-Date/Publication: 2024-02-14 11:20:02 UTC
-Built: R 4.4.3; ; 2025-03-04 03:23:17 UTC; windows
+Date/Publication: 2025-09-10 07:50:47 UTC
+Built: R 4.4.3; ; 2025-12-05 04:41:19 UTC; windows

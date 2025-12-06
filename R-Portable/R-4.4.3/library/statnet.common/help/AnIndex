@@ -4,6 +4,8 @@ $.control.list	control.list.accessor
 all_identical	all_identical
 append.rhs.formula	formula.utilities
 append_rhs.formula	formula.utilities
+arr_from_coo	arr_from_coo
+arr_to_coo	arr_from_coo
 as.control.list	as.control.list
 as.control.list.control.list	as.control.list
 as.control.list.list	as.control.list
@@ -41,6 +43,8 @@ despace	despace
 diff.control.list	diff.control.list
 empty_env	empty_env
 ERRVL	ERRVL
+ERRVL2	ERRVL
+ERRVL3	ERRVL
 eval_lhs.formula	formula.utilities
 EVL	NVL
 EVL2	NVL
@@ -77,6 +81,7 @@ lrowweights<-.matrix	wmatrix_weights
 lweighted.cov	logspace.utils
 lweighted.mean	logspace.utils
 lweighted.var	logspace.utils
+match_names	match_names
 mcmc-utilities	mcmc-utilities
 message_print	message_print
 modify_in_place	modify_in_place
@@ -101,6 +106,10 @@ print.linwmatrix	wmatrix
 print.logwmatrix	wmatrix
 print.term_list	term_list
 print.wmatrix	wmatrix
+qrsolve	ssolve
+qrssolve	ssolve
+replace	replace
+replace<-	replace
 rowweights	wmatrix_weights
 rowweights.linwmatrix	wmatrix_weights
 rowweights.logwmatrix	wmatrix_weights
@@ -108,9 +117,14 @@ rowweights<-	wmatrix_weights
 rowweights<-.linwmatrix	wmatrix_weights
 rowweights<-.logwmatrix	wmatrix_weights
 rowweights<-.matrix	wmatrix_weights
+sandwich_ginv	xTAx
+sandwich_qrsolve	ssolve
+sandwich_qrssolve	ssolve
+sandwich_sginv	xTAx
 sandwich_solve	xTAx
 sandwich_ssolve	ssolve
 set.control.class	set.control.class
+set_diag	set_diag
 sginv	ssolve
 simplify_simple	simplify_simple
 snctrl	snctrl

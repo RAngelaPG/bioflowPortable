@@ -1,4 +1,4 @@
-0b7f149ad3c81804fe5dcf7f082c86d8 *DESCRIPTION
+e8c0ab644563a3dcede35bc16a3fca46 *DESCRIPTION
 99befa8f7fe36d0ca4ded7ec0ea480f1 *INDEX
 2179cbf7e2d32af7ca8e124023941673 *LICENSE
 ef95666de1b09cab51e2b22cb6f67480 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 cc2d850e9414e5c49e975312ad4123b4 *Meta/hsearch.rds
 5955f536db7b1f37cc8d56f2836791e2 *Meta/links.rds
 bd156c59270697bcf3cb63d5b4ac191f *Meta/nsInfo.rds
-9b6c2b9f1a2e4c8121d49ee0d5ba5a74 *Meta/package.rds
+976b87aa5a1d79071e4c3d71c41ab310 *Meta/package.rds
 8bfb612cc8ceb18101c62d749976a74e *NAMESPACE
 33dc76334e1a6d0a3d67fba0e739cfdf *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/xopen
@@ -14,9 +14,9 @@ d6c68f1fe41ced6e98a766a3757313da *R/xopen
 93292c2f0985cb9bf279f24bc3413452 *R/xopen.rdx
 ab9f221b076ba2333258d5a06bf7982c *help/AnIndex
 dd58c5c9983d5808c1d8ebdf22872f05 *help/aliases.rds
-86a0bc5aa304edf526fffaf463de59a0 *help/paths.rds
-86e6547db9bba00de0b241e85bd2aa3f *help/xopen.rdb
-cbc760f8ca348e8c91c76f2e14693cb0 *help/xopen.rdx
+47edefdbf7925232e7559f2f6a742cb4 *help/paths.rds
+229f896b3629fa1edb965378a274850c *help/xopen.rdb
+e43f6c463822f0b8c76a8f4d2fcc636e *help/xopen.rdx
 a963317996555f717602898a5f9facb6 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 3ef275c3d99d77b3b311995871e03d14 *xdg-open

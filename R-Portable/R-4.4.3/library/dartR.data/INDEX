@@ -1,0 +1,24 @@
+EYR                     Eastern yellow robin (EYR) DArT data in a
+                        genlight object
+LBP                     Laedbeater's possum (LBP) DArT data in a
+                        genlight object
+YTH                     Yellow-tufted honeyeater (YTH) DArT data in a
+                        genlight object
+bandicoot.gl            A genlight object created via the read.dart
+                        functions
+platy                   Example data set as text file to be imported
+                        into a genlight object
+platypus.gl             A genlight object created via the gl.read.dart
+                        function
+possums.gl              A simulated genlight object created to run a
+                        landscape genetic example
+testset.gl              A genlight object created via the gl.read.dart
+                        function
+testset.gs              A genlight object created via the
+                        gl.read.silicodart function
+testset_SNPs_2Row       Testfile in DArT format (as provided by DArT)
+testset_metadata        Metadata file. Can be integrated via the
+                        dart2genlight function.
+testset_pop_recode      Recode file to be used with the function.
+zzz                     dartR.data Imports data for examples in
+                        dartR.base

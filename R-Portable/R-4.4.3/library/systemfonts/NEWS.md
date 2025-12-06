@@ -1,3 +1,52 @@
+# systemfonts 1.3.1
+
+* Fixed a sanitizer issue with converting variation axis names to tags
+* Avoid spurious build issues on old macOS systems
+* Avoid writing font files to the user directory during test
+
+# systemfonts 1.3.0
+
+* Fixed a bug in the URL generation for Google Font imports
+* Added support for Bunny Fonts imports (#132)
+* Begin deprecation of `bold` argument in favour of `weight` throughout package
+* Improve messaging in `require_font()`
+* Fonts are automatically added to the session when an import is created (#131)
+* Fixed a bug in converting font weights as reported by macOS into ISO-style
+  weight used by systemfonts and FreeType
+* `require_font()` now better handles lack of internet access
+* Added `plot_glyph_stats()` to provide visual explanation for various glyph
+  measures
+* `font_info()` now returns the PostScript name of the font in the `name` column
+* Added support for variable fonts throughout the package. Other packages will
+  need to be upgraded to take advantage of this. A new function
+  `font_variation()` can be used to define coords for the variation axes
+* Fixed a bug in webfont download on Windows where fontfiles would become
+  corrupted (#134)
+* Fixed an issue in textshaping where conflicting DLL names resulted in the R
+  process inability to render text if textshaping was loaded first
+  (textshaping#36)
+* Add a way to test if the freetype version matches between systemfonts and
+  another package match
+* Added a `name` column to the output of `glyph_info()` to report the name of
+  the glyph is provided by the font
+* Added a `charmaps` column to the output of `font_info()` to report the name of
+  the character maps provided by the font
+* Cached faces are now reference counted when they are handed off to another
+  package and it is the other packages' responsibility to decrement the
+  reference by calling `FT_Done_Face()` when finished with it.
+
+# systemfonts 1.2.3
+
+* Added `fonts_as_import()` to create stylesheet urls for embedding of fonts in
+  HTML and SVG
+* Added two C-level functions for getting glyph outline and bitmap information
+
+# systemfonts 1.2.2
+
+* Fix compilation on macOS when the obj-c++ compiler fails to pick up the right
+  obj-c++ version (#122)
+* `add_fonts()` now supports urls as well as file paths (#124)
+
 # systemfonts 1.2.1
 
 * Fix a memory issue when adding new fonts with `add_fonts()`

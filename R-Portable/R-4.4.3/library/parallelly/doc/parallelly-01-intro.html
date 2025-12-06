@@ -288,11 +288,11 @@ In contrast, it is <em>not</em> possible to override what <code>parallel::detect
 <li><input type="checkbox" checked="" disabled="" /> 
 <p>After having validated that there is no negative impact on the future framework, allow for changes in the <strong>parallelly</strong> package, e.g. renaming the R options and environment variable to be <code>parallelly.*</code> and <code>R_PARALLELLY_*</code> while falling back to <code>future.*</code> and <code>R_FUTURE_*</code></p>
 </li>
-<li><input type="checkbox" disabled="" /> 
-<p>Migrate, currently internal, UUID functions and export them, e.g. <code>uuid()</code>, <code>connectionUuid()</code>, and <code>sessionUuid()</code> (https://github.com/HenrikBengtsson/Wishlist-for-R/issues/96).  Because <a href="https://github.com/HenrikBengtsson/Wishlist-for-R/issues/21">R does not have a built-in md5 checksum function that operates on object</a>, these functions require us adding a dependency on the <strong><a href="https://cran.r-project.org/package=digest">digest</a></strong> package.</p>
+<li><input type="checkbox" checked="" disabled="" /> 
+<p>Add vignettes on how to set up cluster running on local or remote machines, including in Linux containers and on popular cloud services, and vignettes on common problems and how to troubleshoot them</p>
 </li>
 <li><input type="checkbox" disabled="" /> 
-<p>Add vignettes on how to set up cluster running on local or remote machines, including in Linux containers and on popular cloud services, and vignettes on common problems and how to troubleshoot them</p>
+<p>Migrate, currently internal, UUID functions and export them, e.g. <code>uuid()</code>, <code>connectionUuid()</code>, and <code>sessionUuid()</code> (https://github.com/HenrikBengtsson/Wishlist-for-R/issues/96).  Because <a href="https://github.com/HenrikBengtsson/Wishlist-for-R/issues/21">R does not have a built-in md5 checksum function that operates on object</a>, these functions require us adding a dependency on the <strong><a href="https://cran.r-project.org/package=digest">digest</a></strong> package.</p>
 </li>
 </ul>
 <p>Initially, backward compatibility for the <strong>future</strong> package is of top priority.</p>

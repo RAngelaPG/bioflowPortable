@@ -1,3 +1,15 @@
+# tzdb 0.5.0
+
+* Updated the time zone database to 2025a (#37).
+
+* Updated the embedded date library
+  (SHA 32ecb2ad24699963f6c58d74d74bcd8bf7e830a9) (#36, #40).
+
+* cpp11 >=0.5.2 is now required.
+
+* R >=4.0.0 is now required. This is consistent with the standards of the
+  tidyverse.
+
 # tzdb 0.4.0
 
 * Updated the embedded date library

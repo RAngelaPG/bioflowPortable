@@ -1,0 +1,9 @@
+potato                  Example genotype input format
+potato.mini             Smaller example genotype input format
+stampp2genlight         Convert StAMPP genotype data to genlight object
+stamppAmova             Analysis of Molecular Variance
+stamppConvert           Import and Convert
+stamppFst               Fst Computation
+stamppGmatrix           Genomic Relationship Calculation
+stamppNeisD             Genetic Distance Calculation
+stamppPhylip            Export to Phylip Format

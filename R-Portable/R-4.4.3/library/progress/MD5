@@ -1,4 +1,4 @@
-59a7c008923886a44876ad70ca4c971d *DESCRIPTION
+21ab083ecd03e58ed73252d88e2fd10d *DESCRIPTION
 533db8aaae350976617a6923900e1fc0 *INDEX
 5a20935193b3a9d7647e38833c1e4e31 *LICENSE
 6654214aacddf689c59e6f6199d9d9d2 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 58f682994e5d3f22dc0576fc92e363bd *Meta/hsearch.rds
 0a7db2927dcf190f37a88321c6a02a99 *Meta/links.rds
 9954d34d5795f1e49686093d72669c87 *Meta/nsInfo.rds
-fb802a5bfc1ab0a0ab90d04862e14996 *Meta/package.rds
+8b1c32bd02668bac4759258aad895f49 *Meta/package.rds
 451fe80009d43151fe0886ae44115397 *NAMESPACE
 6123757dd068aaf865b141f58b854e5a *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/progress
@@ -16,9 +16,9 @@ aaf0679334aaf2597febfe1f0d9bc748 *R/progress.rdb
 b326a74524f8a49ba20aea97d6b299d8 *help/aliases.rds
 76f1f04c00cae388f24f4ff00636c2ae *help/figures/logo.png
 4a607a53806f2e5afe5a834bcace11eb *help/figures/logo.svg
-16e56f35319898466bd1c9bce652f2e0 *help/paths.rds
-7f7c6919b3356b5f57f5c27e359a2aa7 *help/progress.rdb
-61075deebb3870828f59f194c246878a *help/progress.rdx
+bb28a1dde2404c50c3a4383e0d0befe6 *help/paths.rds
+f4dcb9e955fc67a977bc19d569591a9e *help/progress.rdb
+d399762cc72539c6b60ff7a0d5a3790e *help/progress.rdx
 fad77cb4bb0f2917ba7f51f51764f33f *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 a0515fd2f2cc1e1e123e0cf0d98df0b3 *include/RProgress.h

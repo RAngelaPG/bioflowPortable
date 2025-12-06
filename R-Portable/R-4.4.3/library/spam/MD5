@@ -1,6 +1,6 @@
 a8073fc0e9c667b814bcf0e5ea35cf96 *0LICENSE
 ef6783b8da76253f3d08a25fab7f2dc6 *CITATION
-80060e7e4fd796c42f1406ade623d5aa *DESCRIPTION
+987a6c49db706229495946f558b270f6 *DESCRIPTION
 65fe8b023bac1b371d1658a73c5022c8 *INDEX
 832b94371b361d542c170b3a2b17cc61 *LICENSE
 84e6a8b87afcd6020eb825d0d3a22782 *Meta/Rd.rds
@@ -10,7 +10,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 1ce1b4ce920a08577f6fc3205a594d4d *Meta/hsearch.rds
 3586d2b56832260ce63d67582b35edc8 *Meta/links.rds
 474915240ca9cb1c2d77efd0932076cc *Meta/nsInfo.rds
-b951c5e96cefe8ad547100730520e1b9 *Meta/package.rds
+2c9da6357636777908d8416dc4c23f79 *Meta/package.rds
 9415a271b7d37e6edc2b4090b31784d8 *Meta/vignette.rds
 465576c9a5f7f4a5d83e8b6462b66d4e *NAMESPACE
 9e7f989ed32016b1fb44224ed77b9acf *NEWS.md
@@ -37,10 +37,10 @@ a7c5ef77317080c84b29a264740b02b9 *doc/spam.R
 cc627152fb8b63bd891587d0ed916742 *help/AnIndex
 fe3c2725f31831ea87aaba7aa0533731 *help/aliases.rds
 f11cdea677d24df35899d48661629f78 *help/figures/germanyadjacency.png
-f15fcb6e2f13952ea258acfeae0513e7 *help/paths.rds
-fb49ee9170a0a87eb362dcdf57f3ba4b *help/spam.rdb
-74773259e1e4d414541f354d8d956379 *help/spam.rdx
+ac309a05c1cd3fc6d4f5267dbdeeb1a4 *help/paths.rds
+a283171b2cc6f5586cea4327f6bfccc0 *help/spam.rdb
+69015146e73f655e353b50343f385559 *help/spam.rdx
 cbf4dd12d313947bcc495c96796605cb *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-f450ede242b75f31daeeb9f12faba5d6 *libs/x64/spam.dll
+c3b4d9cf0a789ecb7e7d88ff9b0134ac *libs/x64/spam.dll
 67de49abdcb52be5f589c778d02a38c5 *libs/x64/symbols.rds

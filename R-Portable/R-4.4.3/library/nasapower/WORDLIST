@@ -5,7 +5,7 @@ CMD
 CRAN's
 Curtin
 DESCRIPTION's
-DOI
+DOY
 DSSAT
 DWN
 ICASA
@@ -49,6 +49,7 @@ metFile
 metres
 modelling
 needleleaf
+notin
 pre
 rOpenSci
 radn
@@ -58,6 +59,7 @@ rda
 rds
 rlang
 ropensci
+rops
 sb
 terra
 tibble

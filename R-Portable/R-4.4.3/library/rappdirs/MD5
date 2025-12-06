@@ -1,4 +1,4 @@
-c673a4ce053c7efa530ca30ff5d3f073 *DESCRIPTION
+27cbe022fbe11bee8d63a30c271cc059 *DESCRIPTION
 56ddbed9b7b1cb0754bd656790a8609b *INDEX
 d913e1265e23e90746f1d93e3a5e8d42 *LICENSE
 b5e33ca5a3288897713f83afc5d41812 *Meta/Rd.rds
@@ -6,7 +6,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 026984fd2913bd26bce77eab786a4c93 *Meta/hsearch.rds
 bb41ad063a4ed276eec72b6f501f7d93 *Meta/links.rds
 f64bbfaff5cf5581caf6f725df7d9994 *Meta/nsInfo.rds
-a19d0db3cf2a0b7fd1fa8c89e3d29812 *Meta/package.rds
+ac734004edcb16e56b8e2e55c82f7db0 *Meta/package.rds
 26aa9fe918c0839a3102c6999fb17556 *NAMESPACE
 5a9aa06f5a5b913cb3249476c5cc2d76 *NEWS.md
 d6c68f1fe41ced6e98a766a3757313da *R/rappdirs
@@ -14,10 +14,10 @@ b766e09841eb4da1acac1f477bf2866c *R/rappdirs.rdb
 aeae10e308c940f3bb970659d29dedc4 *R/rappdirs.rdx
 e557240fe27279b6234bbc3bde89159c *help/AnIndex
 86776704aa10b1babcefd2f1cab6c817 *help/aliases.rds
-8bca81d89624117ccefa08d6d3536e1a *help/paths.rds
-87f923f3a734be6bffde2b0473124133 *help/rappdirs.rdb
-6407d876783338b36196bc3571098cae *help/rappdirs.rdx
+8e2fa536466ca2e2b6234674ac9382bc *help/paths.rds
+e28074ce5c15946535bfaaef401d6bcd *help/rappdirs.rdb
+6ad3e57a69b0a2869b7e480c93291abe *help/rappdirs.rdx
 a66025431b910611f44d7e5ee6c33b09 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
-5e3f1f194a98b10e9f6a2c9086c75b6d *libs/x64/rappdirs.dll
+8eea4f342796dcc6a1c1ab211f1745dd *libs/x64/rappdirs.dll
 9d16f8860aaf604204092eb5e685d185 *libs/x64/symbols.rds

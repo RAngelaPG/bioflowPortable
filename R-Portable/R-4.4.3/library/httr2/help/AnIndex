@@ -14,10 +14,12 @@ jwt_claim	jwt_claim
 jwt_encode_hmac	jwt_claim
 jwt_encode_sig	jwt_claim
 last_request	last_response
+last_request_json	last_response
 last_response	last_response
-local_mock	with_mocked_responses
+last_response_json	last_response
 local_mocked_responses	with_mocked_responses
-multi_req_perform	multi_req_perform
+local_verbosity	with_verbosity
+new_response	new_response
 oauth_cache_clear	oauth_cache_clear
 oauth_cache_path	oauth_cache_path
 oauth_client	oauth_client
@@ -57,6 +59,11 @@ req_cookies_set	req_cookie_preserve
 req_cookie_preserve	req_cookie_preserve
 req_dry_run	req_dry_run
 req_error	req_error
+req_get_body	req_get_body_type
+req_get_body_type	req_get_body_type
+req_get_headers	req_get_headers
+req_get_method	req_get_method
+req_get_url	req_get_url
 req_headers	req_headers
 req_headers_redacted	req_headers
 req_method	req_method
@@ -79,7 +86,6 @@ req_perform_stream	req_perform_stream
 req_progress	req_progress
 req_proxy	req_proxy
 req_retry	req_retry
-req_stream	req_perform_stream
 req_template	req_template
 req_throttle	req_throttle
 req_timeout	req_timeout
@@ -122,6 +128,7 @@ resp_stream_is_complete	resp_stream_raw
 resp_stream_lines	resp_stream_raw
 resp_stream_raw	resp_stream_raw
 resp_stream_sse	resp_stream_raw
+resp_timing	resp_timing
 resp_url	resp_url
 resp_url_path	resp_url
 resp_url_queries	resp_url
@@ -135,6 +142,7 @@ secret_make_key	secrets
 secret_read_rds	secrets
 secret_write_rds	secrets
 signal_total_pages	signal_total_pages
+StreamingBody	StreamingBody
 throttle_status	throttle_status
 url_build	url_build
 url_modify	url_modify
@@ -143,6 +151,5 @@ url_modify_relative	url_modify
 url_parse	url_parse
 url_query_build	url_query_parse
 url_query_parse	url_query_parse
-with_mock	with_mocked_responses
 with_mocked_responses	with_mocked_responses
 with_verbosity	with_verbosity

@@ -1,5 +1,5 @@
 32bcc50a43d7a2258b65404072039bbd *CITATION
-7932b2c19bec67255f0c6a3fb167ecdb *DESCRIPTION
+09e82a2bad8a6b1800cba6e15b0ec932 *DESCRIPTION
 3efa91234810925b57ea91771ef599db *INDEX
 1188f1334bcc38a509c1d4a99bcc9f26 *Meta/Rd.rds
 1ce4c56ac383c849cf0ad4ca137b0eb2 *Meta/data.rds
@@ -7,7 +7,7 @@ a5220c8fcf5a4598725b33188e4524d9 *Meta/features.rds
 4ca6bc931dd755843ddbe2a801e44c25 *Meta/hsearch.rds
 0f22088b9db69b01011a0a9c1f304ece *Meta/links.rds
 4b8212d0398bad08bc0152d7440d5a8d *Meta/nsInfo.rds
-2a2a30ce4d72fb5dfcdb8900a0abf2c9 *Meta/package.rds
+fbdee2e85c121b09ba5530f74e7fde11 *Meta/package.rds
 2bce853f8f2923f9e2b005959d2bdba4 *Meta/vignette.rds
 42874c30088916fe52b52bde58004616 *NAMESPACE
 d6c68f1fe41ced6e98a766a3757313da *R/network
@@ -21,14 +21,14 @@ e426433ac42ea149a73be4923359cf0d *doc/networkVignette.Rnw
 1ba1e108053322695a598c35f4d7fc51 *doc/networkVignette.pdf
 a407cc1ed99510c9c829d444be617c12 *help/AnIndex
 a0d66fa4ae2d0fdf27cdd0fc8dfa50d4 *help/aliases.rds
-35763e710761a88998cc6e4496c517ad *help/network.rdb
-4b304c2a4566f1a1785d2dc2120d8c3c *help/network.rdx
-394eae794ddb326030edb835562aac4e *help/paths.rds
+a564f1471bf40248f340a02a22db6c32 *help/network.rdb
+65c110c1408a05ed966859f67613bb15 *help/network.rdx
+b443fe0ef1b538c4c94f4650631b5755 *help/paths.rds
 653661e258380d0f36f8471846ae25a2 *html/00Index.html
 8b9362669af13540a86a3ac6cf22f99d *html/R.css
 2fce00a65f9969063ffe26e50ccbd87c *include/netregistration.h
 4b9aa09dd1d9f3ff6e9cd5236188d653 *include/network.h
-0520f93979ba9b271681fb6f130cd9bc *libs/x64/network.dll
+59c1475e8c058a8427dd3359634149de *libs/x64/network.dll
 1042f7e37eb0d282bdc23fe81d9c5649 *libs/x64/symbols.rds
 c78b6af71f6256929251472b1d75fbe1 *network.api/networkapi.c
 1c85daf92af86106d5fb3e0797eda213 *network.api/networkapi.h

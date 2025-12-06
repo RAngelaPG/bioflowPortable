@@ -1,7 +1,7 @@
 Package: bioflow
 Title: CGIAR Breeding Analytics Pipeline
 Description: CGIAR Breeding Analytics Pipeline
-Version: 0.1.0
+Version: 2.0.2
 Authors@R: c(
     person("Giovanny", "Covarrubias Pazaran", , "covaruberpaz@gmail.com", role = c("aut", "cre")),
     person("Ibnou", "Dieng", , "i.dieng@cgiar.org", role = c("aut")),
@@ -14,18 +14,20 @@ Authors@R: c(
 License: GPL (>= 3)
 URL: https://github.com/Breeding-Analytics/bioflow/
 BugReports: https://github.com/Breeding-Analytics/bioflow/issues
-Imports: ape, cgiarBase (>= 1.0.3), cgiarOcs (>= 1.1), cgiarPipeline
-        (>= 1.0.6), config (>= 0.3.2), data.table, DT, future,
-        ggnetwork, ggplot2, golem (>= 0.4.0), grafify, gridExtra,
-        htmltools, httr2, inline, janitor, jsonlite, kableExtra, lme4,
-        lme4breeding (>= 1.0.1), LMMsolver, magrittr, markdown,
-        nasapower, network, pedigreemm, pkgload, plotly, plyr,
-        promises, psych, QBMS (>= 1.5.0), RColorBrewer, reshape, rhub,
-        rlang, rmdformats, roxygen2, RSpectra, shiny (>= 1.7.5),
-        shinyAce, shinyalert, shinybusy, shinyBS, shinycssloaders,
-        shinydashboard, shinydashboardPlus, shinyjs, shinymanager,
-        shinyWidgets, slickR, sommer, st4gi (>= 3.1.1), stats, stringi,
-        stringr, textshape, tibble, tidyr, utils, vcfR, digest
+Imports: ape, bslib, cgiarBase (>= 1.0.3), cgiarOcs (>= 1.1),
+        cgiarPipeline (>= 1.0.6), cgiarGenomics (>= 1.0.1), config (>=
+        0.3.2), data.table, DT, future, ggnetwork, ggplot2, golem (>=
+        0.4.0), grafify, gridExtra, htmltools, httr2, inline, janitor,
+        jsonlite, kableExtra, lme4, lme4breeding (>= 1.0.1), LMMsolver,
+        magrittr, markdown, nasapower, network, pedigreemm, pkgload,
+        plotly, plyr, promises, psych, RColorBrewer, reshape, rhub,
+        rlang, rmdformats, roxygen2, rstatix, RSpectra, shiny (>=
+        1.7.5), shinyAce, shinyalert, shinybusy, shinyBS,
+        shinycssloaders, shinydashboard, shinydashboardPlus, shinyjs,
+        shinymanager, shinyWidgets, sommer, st4gi (>= 3.1.1), stats,
+        stringi, stringr, textshape, tibble, tidyr, utils, vcfR,
+        digest, paws, callr, ggcorrplot, SNPRelate (>= 1.38.1),
+        dartR.base, rstatix
 Suggests: knitr, rmarkdown, spelling, testthat (>= 3.0.0)
 VignetteBuilder: knitr
 Config/testthat/edition: 3
@@ -35,19 +37,20 @@ LazyData: true
 RoxygenNote: 7.3.2.9000
 Remotes: Breeding-Analytics/cgiarBase,
         Breeding-Analytics/cgiarPipeline, Breeding-Analytics/cgiarOcs,
-        reyzaguirre/st4gi, covaruber/lme4breeding
+        Breeding-Analytics/cgiarGenomics, reyzaguirre/st4gi,
+        covaruber/lme4breeding, zhengxwen/SNPRelate, icarda/QBMS
 RemoteType: github
 RemoteHost: api.github.com
 RemoteRepo: bioflow
 RemoteUsername: Breeding-Analytics
 RemoteRef: HEAD
-RemoteSha: 2d912faae9c0af653b2f84b4052e9adfc3a3f6cd
+RemoteSha: 6427b0a1358859cf0f4231df29435e265e134618
 GithubRepo: bioflow
 GithubUsername: Breeding-Analytics
 GithubRef: HEAD
-GithubSHA1: 2d912faae9c0af653b2f84b4052e9adfc3a3f6cd
+GithubSHA1: 6427b0a1358859cf0f4231df29435e265e134618
 NeedsCompilation: no
-Packaged: 2025-03-06 17:08:36 UTC; RAPACHECO
+Packaged: 2025-12-06 17:43:54 UTC; RAPACHECO
 Author: Giovanny Covarrubias Pazaran [aut, cre],
   Ibnou Dieng [aut],
   Khaled Al-Shamaa [aut],
@@ -57,4 +60,4 @@ Author: Giovanny Covarrubias Pazaran [aut, cre],
   Aubin Amignide [aut]
 Maintainer: Giovanny Covarrubias Pazaran <covaruberpaz@gmail.com>
 Depends: R (>= 3.5.0)
-Built: R 4.4.3; ; 2025-03-06 17:08:39 UTC; windows
+Built: R 4.4.3; ; 2025-12-06 17:44:01 UTC; windows
