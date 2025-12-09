@@ -1,3 +1,11 @@
+# httr2 1.2.2
+
+* httr2 will now emit OpenTelemetry traces for all requests when tracing is enabled. Requires the `otelsdk` package (@atheriel, #729).
+* `req_throttle()` no longer resets the token bucket when used repeatedly with the same host (#801) and never generates negative wait times (#820).
+* `req_perform_connection()` no longer errors with `no applicable method for 'close' applied to an object of class "c('httr2_failure', 'httr2_error', 'rlang_error', 'error', 'condition')"` (#817).
+* New `resps_ok()` returns a logical vector indicating which requests were successful (#807).
+* `url_modify()` refactored to better retain exact formatting of URL not modified components (#788, #794)
+
 # httr2 1.2.1
 
 * Colons in paths are no longer escaped.
@@ -286,7 +294,7 @@
 
 ## OAuth features
 
-* A new `vignette("oauth")` gives many more details about how OAuth works and
+* A new [OAuth vignette](https://httr2.r-lib.org/articles/oauth.html) gives many more details about how OAuth works and
   how to use it with httr2 (#234), and the OAuth docs have been overhauled to
   make it more clear that you should use `req_oauth_*()`, not `oauth_*()` (#330).
 

@@ -359,7 +359,7 @@ well with the pipe.</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>req <span class="ot">&lt;-</span> <span class="fu">request</span>(<span class="fu">example_url</span>())</span>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>req</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="co">#&gt; &lt;httr2_request&gt;</span></span>
-<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co">#&gt; GET http://127.0.0.1:63556/</span></span>
+<span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="co">#&gt; GET http://127.0.0.1:58759/</span></span>
 <span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="co">#&gt; Body: empty</span></span></code></pre></div>
 <p>Here, instead of an external website, we use a test server that’s
 built-in to httr2 itself. That ensures that this vignette will work
@@ -370,8 +370,8 @@ dry run:</p>
 <span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="co">#&gt; GET / HTTP/1.1</span></span>
 <span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a><span class="co">#&gt; accept: */*</span></span>
 <span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a><span class="co">#&gt; accept-encoding: deflate, gzip</span></span>
-<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:63556</span></span>
-<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.1 r-curl/6.4.0 libcurl/8.14.1</span></span></code></pre></div>
+<span id="cb3-5"><a href="#cb3-5" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:58759</span></span>
+<span id="cb3-6"><a href="#cb3-6" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.2 r-curl/7.0.0 libcurl/8.14.1</span></span></code></pre></div>
 <p>The first line of the request contains three important pieces of
 information:</p>
 <ul>
@@ -383,7 +383,7 @@ and DELETE, to delete a resource.</p></li>
 <li><p>The <strong>path</strong>, which is the URL stripped of details
 that the server already knows, i.e. the protocol (<code>http</code> or
 <code>https</code>), the host (<code>localhost</code>), and the port
-(<code>63556</code>).</p></li>
+(<code>58759</code>).</p></li>
 <li><p>The version of the HTTP protocol. This is unimportant for our
 purposes because it’s handled at a lower level.</p></li>
 </ul>
@@ -401,10 +401,10 @@ them or add your own with <code>req_headers()</code>:</p>
 <span id="cb4-8"><a href="#cb4-8" tabindex="-1"></a><span class="co">#&gt; GET / HTTP/1.1</span></span>
 <span id="cb4-9"><a href="#cb4-9" tabindex="-1"></a><span class="co">#&gt; accept: application/json</span></span>
 <span id="cb4-10"><a href="#cb4-10" tabindex="-1"></a><span class="co">#&gt; accept-encoding: deflate, gzip</span></span>
-<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:63556</span></span>
+<span id="cb4-11"><a href="#cb4-11" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:58759</span></span>
 <span id="cb4-12"><a href="#cb4-12" tabindex="-1"></a><span class="co">#&gt; name: Hadley</span></span>
 <span id="cb4-13"><a href="#cb4-13" tabindex="-1"></a><span class="co">#&gt; shoe-size: 11</span></span>
-<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.1 r-curl/6.4.0 libcurl/8.14.1</span></span></code></pre></div>
+<span id="cb4-14"><a href="#cb4-14" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.2 r-curl/7.0.0 libcurl/8.14.1</span></span></code></pre></div>
 <p>Header names are case-insensitive, and servers will ignore headers
 that they don’t understand.</p>
 <p>The headers finish with a blank line which is followed by the
@@ -421,8 +421,8 @@ some data encoded as JSON:</p>
 <span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="co">#&gt; accept-encoding: deflate, gzip</span></span>
 <span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="co">#&gt; content-length: 15</span></span>
 <span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a><span class="co">#&gt; content-type: application/json</span></span>
-<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:63556</span></span>
-<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.1 r-curl/6.4.0 libcurl/8.14.1</span></span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:58759</span></span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.2 r-curl/7.0.0 libcurl/8.14.1</span></span>
 <span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a><span class="co">#&gt; {</span></span>
 <span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a><span class="co">#&gt;   &quot;x&quot;: 1,</span></span>
@@ -450,8 +450,8 @@ uses the encoding used when you submit a form from a web browser:</p>
 <span id="cb6-6"><a href="#cb6-6" tabindex="-1"></a><span class="co">#&gt; accept-encoding: deflate, gzip</span></span>
 <span id="cb6-7"><a href="#cb6-7" tabindex="-1"></a><span class="co">#&gt; content-length: 7</span></span>
 <span id="cb6-8"><a href="#cb6-8" tabindex="-1"></a><span class="co">#&gt; content-type: application/x-www-form-urlencoded</span></span>
-<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:63556</span></span>
-<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.1 r-curl/6.4.0 libcurl/8.14.1</span></span>
+<span id="cb6-9"><a href="#cb6-9" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:58759</span></span>
+<span id="cb6-10"><a href="#cb6-10" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.2 r-curl/7.0.0 libcurl/8.14.1</span></span>
 <span id="cb6-11"><a href="#cb6-11" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb6-12"><a href="#cb6-12" tabindex="-1"></a><span class="co">#&gt; x=1&amp;y=a</span></span></code></pre></div>
 <p>And <code>req_body_multipart()</code> uses the multipart encoding
@@ -464,19 +464,19 @@ data or complete files:</p>
 <span id="cb7-5"><a href="#cb7-5" tabindex="-1"></a><span class="co">#&gt; accept: */*</span></span>
 <span id="cb7-6"><a href="#cb7-6" tabindex="-1"></a><span class="co">#&gt; accept-encoding: deflate, gzip</span></span>
 <span id="cb7-7"><a href="#cb7-7" tabindex="-1"></a><span class="co">#&gt; content-length: 246</span></span>
-<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="co">#&gt; content-type: multipart/form-data; boundary=------------------------GVorfcVDeYZ2BVHV0JRnZ5</span></span>
-<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:63556</span></span>
-<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.1 r-curl/6.4.0 libcurl/8.14.1</span></span>
+<span id="cb7-8"><a href="#cb7-8" tabindex="-1"></a><span class="co">#&gt; content-type: multipart/form-data; boundary=------------------------IbcbImmSt64vCdoTZkrpjk</span></span>
+<span id="cb7-9"><a href="#cb7-9" tabindex="-1"></a><span class="co">#&gt; host: 127.0.0.1:58759</span></span>
+<span id="cb7-10"><a href="#cb7-10" tabindex="-1"></a><span class="co">#&gt; user-agent: httr2/1.2.2 r-curl/7.0.0 libcurl/8.14.1</span></span>
 <span id="cb7-11"><a href="#cb7-11" tabindex="-1"></a><span class="co">#&gt; </span></span>
-<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a><span class="co">#&gt; --------------------------GVorfcVDeYZ2BVHV0JRnZ5</span></span>
+<span id="cb7-12"><a href="#cb7-12" tabindex="-1"></a><span class="co">#&gt; --------------------------IbcbImmSt64vCdoTZkrpjk</span></span>
 <span id="cb7-13"><a href="#cb7-13" tabindex="-1"></a><span class="co">#&gt; Content-Disposition: form-data; name=&quot;x&quot;</span></span>
 <span id="cb7-14"><a href="#cb7-14" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb7-15"><a href="#cb7-15" tabindex="-1"></a><span class="co">#&gt; 1</span></span>
-<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a><span class="co">#&gt; --------------------------GVorfcVDeYZ2BVHV0JRnZ5</span></span>
+<span id="cb7-16"><a href="#cb7-16" tabindex="-1"></a><span class="co">#&gt; --------------------------IbcbImmSt64vCdoTZkrpjk</span></span>
 <span id="cb7-17"><a href="#cb7-17" tabindex="-1"></a><span class="co">#&gt; Content-Disposition: form-data; name=&quot;y&quot;</span></span>
 <span id="cb7-18"><a href="#cb7-18" tabindex="-1"></a><span class="co">#&gt; </span></span>
 <span id="cb7-19"><a href="#cb7-19" tabindex="-1"></a><span class="co">#&gt; a</span></span>
-<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a><span class="co">#&gt; --------------------------GVorfcVDeYZ2BVHV0JRnZ5--</span></span></code></pre></div>
+<span id="cb7-20"><a href="#cb7-20" tabindex="-1"></a><span class="co">#&gt; --------------------------IbcbImmSt64vCdoTZkrpjk--</span></span></code></pre></div>
 <p>If you need to send data encoded in a different form, you can use
 <code>req_body_raw()</code> to add the data to the body and set the
 <code>Content-Type</code> header.</p>
@@ -489,7 +489,7 @@ server, call <code>req_perform()</code>:</p>
 <span id="cb8-2"><a href="#cb8-2" tabindex="-1"></a>resp <span class="ot">&lt;-</span> req <span class="sc">|&gt;</span> <span class="fu">req_perform</span>()</span>
 <span id="cb8-3"><a href="#cb8-3" tabindex="-1"></a>resp</span>
 <span id="cb8-4"><a href="#cb8-4" tabindex="-1"></a><span class="co">#&gt; &lt;httr2_response&gt;</span></span>
-<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="co">#&gt; GET http://127.0.0.1:63556/json</span></span>
+<span id="cb8-5"><a href="#cb8-5" tabindex="-1"></a><span class="co">#&gt; GET http://127.0.0.1:58759/json</span></span>
 <span id="cb8-6"><a href="#cb8-6" tabindex="-1"></a><span class="co">#&gt; Status: 200 OK</span></span>
 <span id="cb8-7"><a href="#cb8-7" tabindex="-1"></a><span class="co">#&gt; Content-Type: application/json</span></span>
 <span id="cb8-8"><a href="#cb8-8" tabindex="-1"></a><span class="co">#&gt; Body: In memory (407 bytes)</span></span></code></pre></div>
@@ -497,7 +497,7 @@ server, call <code>req_perform()</code>:</p>
 <code>resp_raw()</code>:</p>
 <div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>resp <span class="sc">|&gt;</span> <span class="fu">resp_raw</span>()</span>
 <span id="cb9-2"><a href="#cb9-2" tabindex="-1"></a><span class="co">#&gt; HTTP/1.1 200 OK</span></span>
-<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="co">#&gt; Date: Mon, 21 Jul 2025 17:36:03 GMT</span></span>
+<span id="cb9-3"><a href="#cb9-3" tabindex="-1"></a><span class="co">#&gt; Date: Fri, 05 Dec 2025 17:46:05 GMT</span></span>
 <span id="cb9-4"><a href="#cb9-4" tabindex="-1"></a><span class="co">#&gt; Content-Type: application/json</span></span>
 <span id="cb9-5"><a href="#cb9-5" tabindex="-1"></a><span class="co">#&gt; Content-Length: 407</span></span>
 <span id="cb9-6"><a href="#cb9-6" tabindex="-1"></a><span class="co">#&gt; ETag: &quot;de760e6d&quot;</span></span>
@@ -544,7 +544,7 @@ functions:</p>
 specific header with <code>resp_header()</code>:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>resp <span class="sc">|&gt;</span> <span class="fu">resp_headers</span>()</span>
 <span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a><span class="co">#&gt; &lt;httr2_headers&gt;</span></span>
-<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="co">#&gt; Date: Mon, 21 Jul 2025 17:36:03 GMT</span></span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a><span class="co">#&gt; Date: Fri, 05 Dec 2025 17:46:05 GMT</span></span>
 <span id="cb11-4"><a href="#cb11-4" tabindex="-1"></a><span class="co">#&gt; Content-Type: application/json</span></span>
 <span id="cb11-5"><a href="#cb11-5" tabindex="-1"></a><span class="co">#&gt; Content-Length: 407</span></span>
 <span id="cb11-6"><a href="#cb11-6" tabindex="-1"></a><span class="co">#&gt; ETag: &quot;de760e6d&quot;</span></span>
@@ -611,7 +611,8 @@ request either fails or you get a transient HTTP error, it’ll
 automatically retry after a short delay.</p></li>
 </ul>
 <p>For more details see their documentation, as well as examples of the
-usage in real APIs in <code>vignette(&quot;wrapping-apis&quot;)</code>.</p>
+usage in real APIs in the <a href="https://httr2.r-lib.org/articles/wrapping-apis.html">Wrapping
+APIs</a> article.</p>
 </div>
 
 

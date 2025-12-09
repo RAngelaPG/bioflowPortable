@@ -100,6 +100,7 @@ response	response
 response_json	response
 resps_data	resps_successes
 resps_failures	resps_successes
+resps_ok	resps_successes
 resps_requests	resps_successes
 resps_successes	resps_successes
 resp_body_html	resp_body_raw
